@@ -17,26 +17,28 @@ module.exports = () => {
   fs.mkdirSync(databasePath);
   fs.mkdirSync(path.resolve(databasePath, './words'));
   fs.mkdirSync(path.resolve(databasePath, './accents'));
+  fs.mkdirSync(path.resolve(databasePath, './stats'));
 
   /** Scan audio files for accents */
   const accents = fs.readdirSync(audioAssetsPath);
 
-  wordsArray.forEach((word) => {
+  /** For each word, create an entry */
+  const wordObjects = wordsArray.map((word) => {
     const availableAccents = accents.filter((name) => {
       const recordingURI = path.resolve(audioAssetsPath, name, `${word}.webm`);
       return fs.existsSync(recordingURI);
     });
-    const yaml = jsYaml.safeDump({
+    return {
       word,
       availableAccents,
       recordings: availableAccents.map((accent) => ({
         accent,
         src: `assets/audio/${accent}/${word}.webm`,
       })),
-    });
-    fs.writeFileSync(path.resolve(databasePath, 'words', `${word}.yaml`), yaml);
+    };
   });
 
+  /** For each accent, create an entry */
   accents.forEach((name) => {
     const wordsRecorded = fs.readdirSync(path.resolve(audioAssetsPath, name));
     fs.writeFileSync(
@@ -47,6 +49,32 @@ module.exports = () => {
           (word) => !wordsRecorded.includes(`${word}.webm`),
         ),
       }),
+    );
+  });
+
+  const recordingsToMake = wordObjects
+    .filter(({ availableAccents }) => availableAccents.length < accents.length)
+    .sort((a, b) =>
+      a.availableAccents.length > b.availableAccents.length ? -1 : 1,
+    )
+    .map(({ word, availableAccents }) => ({
+      accentRequired: accents.find(
+        (accent) => !availableAccents.includes(accent),
+      ),
+      word,
+    }));
+
+  fs.writeFileSync(
+    path.resolve(databasePath, 'stats', 'recordingsToMake.yaml'),
+    jsYaml.safeDump(recordingsToMake),
+  );
+
+  /** Write the words database */
+  wordObjects.forEach((json) => {
+    const yaml = jsYaml.safeDump(json);
+    fs.writeFileSync(
+      path.resolve(databasePath, 'words', `${json.word}.yaml`),
+      yaml,
     );
   });
 };

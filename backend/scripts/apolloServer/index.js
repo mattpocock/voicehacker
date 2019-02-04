@@ -20,6 +20,11 @@ const typeDefs = gql`
     src: String!
   }
 
+  type RequiredRecording {
+    accentRequired: String!
+    word: String!
+  }
+
   type Accent {
     name: String!
     wordsToRecord: [String]!
@@ -27,6 +32,7 @@ const typeDefs = gql`
 
   type Query {
     getWordsToRecord(limit: Int!, accent: String!): [String!]!
+    getMultiAccentWordsToRecord(limit: Int!): [RequiredRecording!]!
   }
 
   type Mutation {
@@ -62,6 +68,16 @@ const resolvers = {
       const file = jsyaml.safeLoad(fs.readFileSync(accentFile).toString());
 
       return file.wordsToRecord.slice(0, args.limit);
+    },
+    getMultiAccentWordsToRecord: (parent, args) => {
+      const recordingsToMakeFile = path.resolve(
+        databaseDir,
+        'stats',
+        'recordingsToMake.yaml',
+      );
+      return jsyaml
+        .safeLoad(fs.readFileSync(recordingsToMakeFile).toString())
+        .slice(0, args.limit);
     },
   },
   Mutation: {

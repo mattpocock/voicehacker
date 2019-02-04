@@ -1,9 +1,12 @@
 word: key
 availableAccents:
   - general-american
+  - irish
   - rp
 recordings:
   - accent: general-american
     src: assets/audio/general-american/key.webm
+  - accent: irish
+    src: assets/audio/irish/key.webm
   - accent: rp
     src: assets/audio/rp/key.webm

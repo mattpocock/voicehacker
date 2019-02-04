@@ -1,6 +1,12 @@
 word: throat
 availableAccents:
   - general-american
+  - irish
+  - rp
 recordings:
   - accent: general-american
     src: assets/audio/general-american/throat.webm
+  - accent: irish
+    src: assets/audio/irish/throat.webm
+  - accent: rp
+    src: assets/audio/rp/throat.webm

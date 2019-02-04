@@ -1,6 +1,12 @@
 word: anyone
 availableAccents:
   - general-american
+  - irish
+  - rp
 recordings:
   - accent: general-american
     src: assets/audio/general-american/anyone.webm
+  - accent: irish
+    src: assets/audio/irish/anyone.webm
+  - accent: rp
+    src: assets/audio/rp/anyone.webm

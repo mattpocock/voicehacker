@@ -1,9 +1,12 @@
 word: thing
 availableAccents:
   - general-american
+  - irish
   - rp
 recordings:
   - accent: general-american
     src: assets/audio/general-american/thing.webm
+  - accent: irish
+    src: assets/audio/irish/thing.webm
   - accent: rp
     src: assets/audio/rp/thing.webm

@@ -1,9 +1,12 @@
 word: answer
 availableAccents:
   - general-american
+  - irish
   - rp
 recordings:
   - accent: general-american
     src: assets/audio/general-american/answer.webm
+  - accent: irish
+    src: assets/audio/irish/answer.webm
   - accent: rp
     src: assets/audio/rp/answer.webm

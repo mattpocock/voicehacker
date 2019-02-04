@@ -1,9 +1,12 @@
 word: that
 availableAccents:
   - general-american
+  - irish
   - rp
 recordings:
   - accent: general-american
     src: assets/audio/general-american/that.webm
+  - accent: irish
+    src: assets/audio/irish/that.webm
   - accent: rp
     src: assets/audio/rp/that.webm

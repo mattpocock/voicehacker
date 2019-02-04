@@ -1,6 +1,12 @@
 word: apparently
 availableAccents:
   - general-american
+  - irish
+  - rp
 recordings:
   - accent: general-american
     src: assets/audio/general-american/apparently.webm
+  - accent: irish
+    src: assets/audio/irish/apparently.webm
+  - accent: rp
+    src: assets/audio/rp/apparently.webm

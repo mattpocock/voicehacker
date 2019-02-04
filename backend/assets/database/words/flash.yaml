@@ -1,9 +1,12 @@
 word: flash
 availableAccents:
   - general-american
+  - irish
   - rp
 recordings:
   - accent: general-american
     src: assets/audio/general-american/flash.webm
+  - accent: irish
+    src: assets/audio/irish/flash.webm
   - accent: rp
     src: assets/audio/rp/flash.webm

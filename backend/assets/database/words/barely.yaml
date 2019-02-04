@@ -1,6 +1,9 @@
 word: barely
 availableAccents:
   - general-american
+  - irish
 recordings:
   - accent: general-american
     src: assets/audio/general-american/barely.webm
+  - accent: irish
+    src: assets/audio/irish/barely.webm

@@ -1,9 +1,12 @@
 word: fast
 availableAccents:
   - general-american
+  - irish
   - rp
 recordings:
   - accent: general-american
     src: assets/audio/general-american/fast.webm
+  - accent: irish
+    src: assets/audio/irish/fast.webm
   - accent: rp
     src: assets/audio/rp/fast.webm

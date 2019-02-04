@@ -1,9 +1,12 @@
 word: isn't
 availableAccents:
   - general-american
+  - irish
   - rp
 recordings:
   - accent: general-american
     src: assets/audio/general-american/isn't.webm
+  - accent: irish
+    src: assets/audio/irish/isn't.webm
   - accent: rp
     src: assets/audio/rp/isn't.webm

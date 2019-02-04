@@ -1,6 +1,12 @@
 word: third
 availableAccents:
   - general-american
+  - irish
+  - rp
 recordings:
   - accent: general-american
     src: assets/audio/general-american/third.webm
+  - accent: irish
+    src: assets/audio/irish/third.webm
+  - accent: rp
+    src: assets/audio/rp/third.webm

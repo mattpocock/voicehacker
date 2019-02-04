@@ -1,9 +1,12 @@
 word: behind
 availableAccents:
   - general-american
+  - irish
   - rp
 recordings:
   - accent: general-american
     src: assets/audio/general-american/behind.webm
+  - accent: irish
+    src: assets/audio/irish/behind.webm
   - accent: rp
     src: assets/audio/rp/behind.webm

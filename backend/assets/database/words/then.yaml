@@ -1,9 +1,12 @@
 word: then
 availableAccents:
   - general-american
+  - irish
   - rp
 recordings:
   - accent: general-american
     src: assets/audio/general-american/then.webm
+  - accent: irish
+    src: assets/audio/irish/then.webm
   - accent: rp
     src: assets/audio/rp/then.webm

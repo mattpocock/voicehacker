@@ -1,6 +1,12 @@
 word: although
 availableAccents:
   - general-american
+  - irish
+  - rp
 recordings:
   - accent: general-american
     src: assets/audio/general-american/although.webm
+  - accent: irish
+    src: assets/audio/irish/although.webm
+  - accent: rp
+    src: assets/audio/rp/although.webm

@@ -1,3 +1,6 @@
 word: caught
-availableAccents: []
-recordings: []
+availableAccents:
+  - general-american
+recordings:
+  - accent: general-american
+    src: assets/audio/general-american/caught.webm

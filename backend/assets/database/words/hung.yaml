@@ -1,9 +1,12 @@
 word: hung
 availableAccents:
   - general-american
+  - irish
   - rp
 recordings:
   - accent: general-american
     src: assets/audio/general-american/hung.webm
+  - accent: irish
+    src: assets/audio/irish/hung.webm
   - accent: rp
     src: assets/audio/rp/hung.webm

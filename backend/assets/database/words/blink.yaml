@@ -1,9 +1,12 @@
 word: blink
 availableAccents:
   - general-american
+  - irish
   - rp
 recordings:
   - accent: general-american
     src: assets/audio/general-american/blink.webm
+  - accent: irish
+    src: assets/audio/irish/blink.webm
   - accent: rp
     src: assets/audio/rp/blink.webm

@@ -1,9 +1,12 @@
 word: middle
 availableAccents:
   - general-american
+  - irish
   - rp
 recordings:
   - accent: general-american
     src: assets/audio/general-american/middle.webm
+  - accent: irish
+    src: assets/audio/irish/middle.webm
   - accent: rp
     src: assets/audio/rp/middle.webm

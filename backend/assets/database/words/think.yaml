@@ -1,6 +1,12 @@
 word: think
 availableAccents:
   - general-american
+  - irish
+  - rp
 recordings:
   - accent: general-american
     src: assets/audio/general-american/think.webm
+  - accent: irish
+    src: assets/audio/irish/think.webm
+  - accent: rp
+    src: assets/audio/rp/think.webm

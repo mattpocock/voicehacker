@@ -10,27 +10,12 @@ export default class extends React.PureComponent<Props, State> {
     wordIndex: 0,
     isLoading: false,
     words: [],
-    accent: 'general-american',
   };
 
   handleBlob = async ({ blob }: { blob: Blob }) => {
-    const { wordIndex, words, accent } = this.state;
+    const { wordIndex, words } = this.state;
 
-    // const result = await new Promise((resolve, reject) => {
-    //   try {
-    //     const reader = new FileReader();
-    //     reader.onload = () => {
-    //       resolve(reader.result);
-    //     };
-    //     reader.readAsDataURL(blob);
-    //   } catch (e) {
-    //     reject(e);
-    //   }
-    // });
-
-    const file = new File([blob], `${words[wordIndex]}.webm`);
-
-    console.log(file);
+    const file = new File([blob], `${words[wordIndex].word}.webm`);
 
     client.mutate({
       mutation: gql`
@@ -40,8 +25,8 @@ export default class extends React.PureComponent<Props, State> {
       `,
       variables: {
         file,
-        word: words[wordIndex],
-        accent,
+        word: words[wordIndex].word,
+        accent: words[wordIndex].accentRequired,
       },
     });
 
@@ -82,25 +67,26 @@ export default class extends React.PureComponent<Props, State> {
   }
 
   getWords = () => {
-    const { accent } = this.state;
     this.setState({ isLoading: true, words: [] });
     client
       .query({
         query: gql`
-          query Words($accent: String!, $limit: Int!) {
-            getWordsToRecord(accent: $accent, limit: $limit)
+          query Words($limit: Int!) {
+            getMultiAccentWordsToRecord(limit: $limit) {
+              accentRequired
+              word
+            }
           }
         `,
         variables: {
           limit: 10,
-          accent,
         },
         fetchPolicy: 'no-cache',
       })
-      .then((result: { data: { getWordsToRecord?: string[] } }) => {
+      .then((result: { data: { getMultiAccentWordsToRecord?: [Word] } }) => {
         this.setState({
           isLoading: false,
-          words: result.data.getWordsToRecord,
+          words: result.data.getMultiAccentWordsToRecord,
         });
       });
   };
@@ -121,7 +107,13 @@ export default class extends React.PureComponent<Props, State> {
               record={recording && !isLoading}
               onStop={this.handleBlob}
             />
-            <h1>{words[wordIndex] && words[wordIndex].toUpperCase()}</h1>
+            <h1>
+              {words &&
+                words[wordIndex] &&
+                `${words[wordIndex].word.toUpperCase()} - ${words[
+                  wordIndex
+                ].accentRequired.toLocaleUpperCase()}`}
+            </h1>
             <Button onClick={this.toggleRecording}>
               {recording ? 'Stop' : 'Start'}
             </Button>
@@ -139,6 +131,10 @@ interface State {
   recording: boolean;
   wordIndex: number;
   isLoading: boolean;
-  words: string[];
-  accent: string;
+  words: [Word?];
+}
+
+interface Word {
+  accentRequired: string;
+  word: string;
 }

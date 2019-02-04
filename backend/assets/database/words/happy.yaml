@@ -1,9 +1,12 @@
 word: happy
 availableAccents:
   - general-american
+  - irish
   - rp
 recordings:
   - accent: general-american
     src: assets/audio/general-american/happy.webm
+  - accent: irish
+    src: assets/audio/irish/happy.webm
   - accent: rp
     src: assets/audio/rp/happy.webm

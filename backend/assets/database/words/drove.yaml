@@ -1,9 +1,12 @@
 word: drove
 availableAccents:
   - general-american
+  - irish
   - rp
 recordings:
   - accent: general-american
     src: assets/audio/general-american/drove.webm
+  - accent: irish
+    src: assets/audio/irish/drove.webm
   - accent: rp
     src: assets/audio/rp/drove.webm

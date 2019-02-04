@@ -1,9 +1,12 @@
 word: meet
 availableAccents:
   - general-american
+  - irish
   - rp
 recordings:
   - accent: general-american
     src: assets/audio/general-american/meet.webm
+  - accent: irish
+    src: assets/audio/irish/meet.webm
   - accent: rp
     src: assets/audio/rp/meet.webm

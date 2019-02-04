@@ -1,9 +1,12 @@
 word: along
 availableAccents:
   - general-american
+  - irish
   - rp
 recordings:
   - accent: general-american
     src: assets/audio/general-american/along.webm
+  - accent: irish
+    src: assets/audio/irish/along.webm
   - accent: rp
     src: assets/audio/rp/along.webm

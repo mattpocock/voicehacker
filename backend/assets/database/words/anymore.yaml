@@ -1,9 +1,12 @@
 word: anymore
 availableAccents:
   - general-american
+  - irish
   - rp
 recordings:
   - accent: general-american
     src: assets/audio/general-american/anymore.webm
+  - accent: irish
+    src: assets/audio/irish/anymore.webm
   - accent: rp
     src: assets/audio/rp/anymore.webm

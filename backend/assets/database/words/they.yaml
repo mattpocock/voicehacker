@@ -1,9 +1,12 @@
 word: they
 availableAccents:
   - general-american
+  - irish
   - rp
 recordings:
   - accent: general-american
     src: assets/audio/general-american/they.webm
+  - accent: irish
+    src: assets/audio/irish/they.webm
   - accent: rp
     src: assets/audio/rp/they.webm

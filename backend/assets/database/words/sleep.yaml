@@ -1,9 +1,12 @@
 word: sleep
 availableAccents:
   - general-american
+  - irish
   - rp
 recordings:
   - accent: general-american
     src: assets/audio/general-american/sleep.webm
+  - accent: irish
+    src: assets/audio/irish/sleep.webm
   - accent: rp
     src: assets/audio/rp/sleep.webm

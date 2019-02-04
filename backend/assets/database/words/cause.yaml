@@ -1,3 +1,6 @@
 word: cause
-availableAccents: []
-recordings: []
+availableAccents:
+  - general-american
+recordings:
+  - accent: general-american
+    src: assets/audio/general-american/cause.webm

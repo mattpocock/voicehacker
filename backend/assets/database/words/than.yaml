@@ -1,9 +1,12 @@
 word: than
 availableAccents:
   - general-american
+  - irish
   - rp
 recordings:
   - accent: general-american
     src: assets/audio/general-american/than.webm
+  - accent: irish
+    src: assets/audio/irish/than.webm
   - accent: rp
     src: assets/audio/rp/than.webm

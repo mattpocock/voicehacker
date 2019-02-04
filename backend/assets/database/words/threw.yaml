@@ -1,6 +1,12 @@
 word: threw
 availableAccents:
   - general-american
+  - irish
+  - rp
 recordings:
   - accent: general-american
     src: assets/audio/general-american/threw.webm
+  - accent: irish
+    src: assets/audio/irish/threw.webm
+  - accent: rp
+    src: assets/audio/rp/threw.webm

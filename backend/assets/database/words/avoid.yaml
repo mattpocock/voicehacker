@@ -1,9 +1,12 @@
 word: avoid
 availableAccents:
   - general-american
+  - irish
   - rp
 recordings:
   - accent: general-american
     src: assets/audio/general-american/avoid.webm
+  - accent: irish
+    src: assets/audio/irish/avoid.webm
   - accent: rp
     src: assets/audio/rp/avoid.webm

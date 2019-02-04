@@ -1,9 +1,12 @@
 word: rang
 availableAccents:
   - general-american
+  - irish
   - rp
 recordings:
   - accent: general-american
     src: assets/audio/general-american/rang.webm
+  - accent: irish
+    src: assets/audio/irish/rang.webm
   - accent: rp
     src: assets/audio/rp/rang.webm

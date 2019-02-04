@@ -1,9 +1,12 @@
 word: either
 availableAccents:
   - general-american
+  - irish
   - rp
 recordings:
   - accent: general-american
     src: assets/audio/general-american/either.webm
+  - accent: irish
+    src: assets/audio/irish/either.webm
   - accent: rp
     src: assets/audio/rp/either.webm

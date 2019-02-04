@@ -1,6 +1,12 @@
 word: aunt
 availableAccents:
   - general-american
+  - irish
+  - rp
 recordings:
   - accent: general-american
     src: assets/audio/general-american/aunt.webm
+  - accent: irish
+    src: assets/audio/irish/aunt.webm
+  - accent: rp
+    src: assets/audio/rp/aunt.webm

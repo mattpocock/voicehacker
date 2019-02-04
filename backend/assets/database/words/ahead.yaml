@@ -1,9 +1,12 @@
 word: ahead
 availableAccents:
   - general-american
+  - irish
   - rp
 recordings:
   - accent: general-american
     src: assets/audio/general-american/ahead.webm
+  - accent: irish
+    src: assets/audio/irish/ahead.webm
   - accent: rp
     src: assets/audio/rp/ahead.webm

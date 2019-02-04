@@ -1,9 +1,12 @@
 word: box
 availableAccents:
   - general-american
+  - irish
   - rp
 recordings:
   - accent: general-american
     src: assets/audio/general-american/box.webm
+  - accent: irish
+    src: assets/audio/irish/box.webm
   - accent: rp
     src: assets/audio/rp/box.webm

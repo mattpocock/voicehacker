@@ -1,6 +1,9 @@
 word: across
 availableAccents:
   - general-american
+  - irish
 recordings:
   - accent: general-american
     src: assets/audio/general-american/across.webm
+  - accent: irish
+    src: assets/audio/irish/across.webm
