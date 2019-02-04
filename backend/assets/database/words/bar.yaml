@@ -1,0 +1,9 @@
+word: bar
+availableAccents:
+  - general-american
+  - rp
+recordings:
+  - accent: general-american
+    src: assets/audio/general-american/bar.webm
+  - accent: rp
+    src: assets/audio/rp/bar.webm

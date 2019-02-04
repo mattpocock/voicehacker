@@ -1,0 +1,12 @@
+word: anyway
+availableAccents:
+  - general-american
+  - irish
+  - rp
+recordings:
+  - accent: general-american
+    src: assets/audio/general-american/anyway.webm
+  - accent: irish
+    src: assets/audio/irish/anyway.webm
+  - accent: rp
+    src: assets/audio/rp/anyway.webm

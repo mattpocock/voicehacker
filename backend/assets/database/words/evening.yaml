@@ -1,0 +1,9 @@
+word: evening
+availableAccents:
+  - general-american
+  - rp
+recordings:
+  - accent: general-american
+    src: assets/audio/general-american/evening.webm
+  - accent: rp
+    src: assets/audio/rp/evening.webm

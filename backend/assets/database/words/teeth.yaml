@@ -1,0 +1,9 @@
+word: teeth
+availableAccents:
+  - general-american
+  - rp
+recordings:
+  - accent: general-american
+    src: assets/audio/general-american/teeth.webm
+  - accent: rp
+    src: assets/audio/rp/teeth.webm

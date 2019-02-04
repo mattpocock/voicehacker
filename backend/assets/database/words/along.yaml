@@ -1,0 +1,9 @@
+word: along
+availableAccents:
+  - general-american
+  - rp
+recordings:
+  - accent: general-american
+    src: assets/audio/general-american/along.webm
+  - accent: rp
+    src: assets/audio/rp/along.webm

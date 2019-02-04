@@ -1,0 +1,9 @@
+word: rather
+availableAccents:
+  - general-american
+  - rp
+recordings:
+  - accent: general-american
+    src: assets/audio/general-american/rather.webm
+  - accent: rp
+    src: assets/audio/rp/rather.webm

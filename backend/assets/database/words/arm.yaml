@@ -1,0 +1,12 @@
+word: arm
+availableAccents:
+  - general-american
+  - irish
+  - rp
+recordings:
+  - accent: general-american
+    src: assets/audio/general-american/arm.webm
+  - accent: irish
+    src: assets/audio/irish/arm.webm
+  - accent: rp
+    src: assets/audio/rp/arm.webm

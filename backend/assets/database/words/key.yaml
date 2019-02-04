@@ -1,0 +1,9 @@
+word: key
+availableAccents:
+  - general-american
+  - rp
+recordings:
+  - accent: general-american
+    src: assets/audio/general-american/key.webm
+  - accent: rp
+    src: assets/audio/rp/key.webm

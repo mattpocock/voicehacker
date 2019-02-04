@@ -1,0 +1,6 @@
+word: throat
+availableAccents:
+  - general-american
+recordings:
+  - accent: general-american
+    src: assets/audio/general-american/throat.webm

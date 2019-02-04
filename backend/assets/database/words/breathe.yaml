@@ -1,0 +1,6 @@
+word: breathe
+availableAccents:
+  - general-american
+recordings:
+  - accent: general-american
+    src: assets/audio/general-american/breathe.webm

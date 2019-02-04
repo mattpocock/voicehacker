@@ -1,0 +1,9 @@
+word: during
+availableAccents:
+  - general-american
+  - rp
+recordings:
+  - accent: general-american
+    src: assets/audio/general-american/during.webm
+  - accent: rp
+    src: assets/audio/rp/during.webm

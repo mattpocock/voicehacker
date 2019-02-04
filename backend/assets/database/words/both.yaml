@@ -1,0 +1,6 @@
+word: both
+availableAccents:
+  - general-american
+recordings:
+  - accent: general-american
+    src: assets/audio/general-american/both.webm

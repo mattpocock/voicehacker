@@ -1,0 +1,12 @@
+word: bother
+availableAccents:
+  - general-american
+  - irish
+  - rp
+recordings:
+  - accent: general-american
+    src: assets/audio/general-american/bother.webm
+  - accent: irish
+    src: assets/audio/irish/bother.webm
+  - accent: rp
+    src: assets/audio/rp/bother.webm

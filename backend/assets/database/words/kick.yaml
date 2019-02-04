@@ -1,0 +1,9 @@
+word: kick
+availableAccents:
+  - general-american
+  - rp
+recordings:
+  - accent: general-american
+    src: assets/audio/general-american/kick.webm
+  - accent: rp
+    src: assets/audio/rp/kick.webm

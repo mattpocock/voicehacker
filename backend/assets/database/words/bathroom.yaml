@@ -1,0 +1,12 @@
+word: bathroom
+availableAccents:
+  - general-american
+  - irish
+  - rp
+recordings:
+  - accent: general-american
+    src: assets/audio/general-american/bathroom.webm
+  - accent: irish
+    src: assets/audio/irish/bathroom.webm
+  - accent: rp
+    src: assets/audio/rp/bathroom.webm

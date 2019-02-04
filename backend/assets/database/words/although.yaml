@@ -1,0 +1,6 @@
+word: although
+availableAccents:
+  - general-american
+recordings:
+  - accent: general-american
+    src: assets/audio/general-american/although.webm

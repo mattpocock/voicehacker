@@ -1,0 +1,26 @@
+{
+  "name": "audio-test",
+  "scripts": {
+    "start": "gatsby develop"
+  },
+  "dependencies": {
+    "@material-ui/core": "^3.9.1",
+    "apollo-fetch": "^0.7.0",
+    "formik": "^1.4.3",
+    "gatsby": "^2.0.111",
+    "gatsby-plugin-typescript": "^2.0.6",
+    "gatsby-source-filesystem": "^2.0.20",
+    "graphql": "^14.1.1",
+    "graphql-tag": "^2.10.1",
+    "react": "^16.7.0",
+    "react-dom": "^16.7.0",
+    "react-mic": "^12.4.1"
+  },
+  "devDependencies": {
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-plugin-import": "^2.16.0",
+    "eslint-plugin-jsx-a11y": "^6.2.0",
+    "eslint-plugin-react": "^7.12.4"
+  }
+}

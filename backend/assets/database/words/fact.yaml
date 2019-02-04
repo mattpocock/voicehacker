@@ -1,0 +1,9 @@
+word: fact
+availableAccents:
+  - general-american
+  - rp
+recordings:
+  - accent: general-american
+    src: assets/audio/general-american/fact.webm
+  - accent: rp
+    src: assets/audio/rp/fact.webm

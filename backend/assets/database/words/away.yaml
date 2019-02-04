@@ -1,0 +1,12 @@
+word: away
+availableAccents:
+  - general-american
+  - irish
+  - rp
+recordings:
+  - accent: general-american
+    src: assets/audio/general-american/away.webm
+  - accent: irish
+    src: assets/audio/irish/away.webm
+  - accent: rp
+    src: assets/audio/rp/away.webm

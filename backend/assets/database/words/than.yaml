@@ -1,0 +1,9 @@
+word: than
+availableAccents:
+  - general-american
+  - rp
+recordings:
+  - accent: general-american
+    src: assets/audio/general-american/than.webm
+  - accent: rp
+    src: assets/audio/rp/than.webm

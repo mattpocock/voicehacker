@@ -1,0 +1,9 @@
+word: even
+availableAccents:
+  - general-american
+  - rp
+recordings:
+  - accent: general-american
+    src: assets/audio/general-american/even.webm
+  - accent: rp
+    src: assets/audio/rp/even.webm

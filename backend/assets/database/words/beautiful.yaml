@@ -1,0 +1,12 @@
+word: beautiful
+availableAccents:
+  - general-american
+  - irish
+  - rp
+recordings:
+  - accent: general-american
+    src: assets/audio/general-american/beautiful.webm
+  - accent: irish
+    src: assets/audio/irish/beautiful.webm
+  - accent: rp
+    src: assets/audio/rp/beautiful.webm

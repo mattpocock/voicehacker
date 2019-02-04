@@ -1,0 +1,6 @@
+word: because
+availableAccents:
+  - general-american
+recordings:
+  - accent: general-american
+    src: assets/audio/general-american/because.webm

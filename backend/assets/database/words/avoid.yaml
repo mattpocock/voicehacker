@@ -1,0 +1,9 @@
+word: avoid
+availableAccents:
+  - general-american
+  - rp
+recordings:
+  - accent: general-american
+    src: assets/audio/general-american/avoid.webm
+  - accent: rp
+    src: assets/audio/rp/avoid.webm

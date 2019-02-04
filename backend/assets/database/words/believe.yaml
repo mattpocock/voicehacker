@@ -1,0 +1,9 @@
+word: believe
+availableAccents:
+  - general-american
+  - rp
+recordings:
+  - accent: general-american
+    src: assets/audio/general-american/believe.webm
+  - accent: rp
+    src: assets/audio/rp/believe.webm

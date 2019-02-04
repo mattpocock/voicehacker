@@ -1,0 +1,9 @@
+word: arrive
+availableAccents:
+  - general-american
+  - rp
+recordings:
+  - accent: general-american
+    src: assets/audio/general-american/arrive.webm
+  - accent: rp
+    src: assets/audio/rp/arrive.webm

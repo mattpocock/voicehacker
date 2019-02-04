@@ -1,0 +1,31 @@
+{
+  "name": "native-test",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "gatsby develop"
+  },
+  "dependencies": {
+    "gatsby": "^2.0.111",
+    "gatsby-plugin-react-native-web": "2.0.0-beta.0",
+    "gatsby-plugin-styled-components": "^3.0.5",
+    "gatsby-plugin-typescript": "^2.0.6",
+    "react": "^16.7.0",
+    "react-art": "^16.7.0",
+    "react-dom": "^16.7.0",
+    "react-native-web": "^0.10.0",
+    "styled-components": "^3"
+  },
+  "devDependencies": {
+    "@types/react-native": "^0.57.32",
+    "@types/styled-components": "^3",
+    "babel-plugin-react-native-web": "^0.10.0",
+    "babel-plugin-styled-components": "^1.10.0",
+    "eslint": "^5.13.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-plugin-import": "^2.16.0",
+    "eslint-plugin-jsx-a11y": "^6.2.0",
+    "eslint-plugin-react": "^7.12.4"
+  }
+}

@@ -1,0 +1,9 @@
+word: happen
+availableAccents:
+  - general-american
+  - rp
+recordings:
+  - accent: general-american
+    src: assets/audio/general-american/happen.webm
+  - accent: rp
+    src: assets/audio/rp/happen.webm

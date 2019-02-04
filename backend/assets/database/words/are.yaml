@@ -1,0 +1,12 @@
+word: are
+availableAccents:
+  - general-american
+  - irish
+  - rp
+recordings:
+  - accent: general-american
+    src: assets/audio/general-american/are.webm
+  - accent: irish
+    src: assets/audio/irish/are.webm
+  - accent: rp
+    src: assets/audio/rp/are.webm

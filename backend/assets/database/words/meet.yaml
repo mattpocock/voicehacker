@@ -1,0 +1,9 @@
+word: meet
+availableAccents:
+  - general-american
+  - rp
+recordings:
+  - accent: general-american
+    src: assets/audio/general-american/meet.webm
+  - accent: rp
+    src: assets/audio/rp/meet.webm

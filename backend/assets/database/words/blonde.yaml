@@ -1,0 +1,9 @@
+word: blonde
+availableAccents:
+  - general-american
+  - rp
+recordings:
+  - accent: general-american
+    src: assets/audio/general-american/blonde.webm
+  - accent: rp
+    src: assets/audio/rp/blonde.webm

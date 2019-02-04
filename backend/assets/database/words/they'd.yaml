@@ -1,0 +1,9 @@
+word: they'd
+availableAccents:
+  - general-american
+  - rp
+recordings:
+  - accent: general-american
+    src: assets/audio/general-american/they'd.webm
+  - accent: rp
+    src: assets/audio/rp/they'd.webm

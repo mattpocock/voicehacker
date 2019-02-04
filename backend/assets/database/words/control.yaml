@@ -1,0 +1,12 @@
+word: control
+availableAccents:
+  - general-american
+  - irish
+  - rp
+recordings:
+  - accent: general-american
+    src: assets/audio/general-american/control.webm
+  - accent: irish
+    src: assets/audio/irish/control.webm
+  - accent: rp
+    src: assets/audio/rp/control.webm

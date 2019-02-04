@@ -1,0 +1,12 @@
+word: anything
+availableAccents:
+  - general-american
+  - irish
+  - rp
+recordings:
+  - accent: general-american
+    src: assets/audio/general-american/anything.webm
+  - accent: irish
+    src: assets/audio/irish/anything.webm
+  - accent: rp
+    src: assets/audio/rp/anything.webm

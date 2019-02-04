@@ -1,0 +1,6 @@
+word: apparently
+availableAccents:
+  - general-american
+recordings:
+  - accent: general-american
+    src: assets/audio/general-american/apparently.webm
