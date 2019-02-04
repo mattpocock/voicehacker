@@ -3,6 +3,8 @@ availableAccents:
   - general-american
   - irish
   - rp
+  - liverpool
+  - cockney
 recordings:
   - accent: general-american
     src: assets/audio/general-american/control.webm
@@ -10,3 +12,7 @@ recordings:
     src: assets/audio/irish/control.webm
   - accent: rp
     src: assets/audio/rp/control.webm
+  - accent: liverpool
+    src: assets/audio/liverpool/control.webm
+  - accent: cockney
+    src: assets/audio/cockney/control.webm

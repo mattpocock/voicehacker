@@ -3,6 +3,8 @@ availableAccents:
   - general-american
   - irish
   - rp
+  - liverpool
+  - cockney
 recordings:
   - accent: general-american
     src: assets/audio/general-american/afternoon.webm
@@ -10,3 +12,7 @@ recordings:
     src: assets/audio/irish/afternoon.webm
   - accent: rp
     src: assets/audio/rp/afternoon.webm
+  - accent: liverpool
+    src: assets/audio/liverpool/afternoon.webm
+  - accent: cockney
+    src: assets/audio/cockney/afternoon.webm

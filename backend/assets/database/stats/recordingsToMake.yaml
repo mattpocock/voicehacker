@@ -1,11 +1,137 @@
-- accentRequired: rp
-  word: barely
-- accentRequired: rp
-  word: black
+- accentRequired: liverpool
+  word: thought
+- accentRequired: liverpool
+  word: during
+- accentRequired: liverpool
+  word: conversation
+- accentRequired: liverpool
+  word: expression
+- accentRequired: liverpool
+  word: threw
+- accentRequired: liverpool
+  word: favorite
+- accentRequired: liverpool
+  word: throat
+- accentRequired: liverpool
+  word: along
+- accentRequired: liverpool
+  word: asleep
+- accentRequired: liverpool
+  word: also
+- accentRequired: liverpool
+  word: bar
+- accentRequired: liverpool
+  word: avoid
+- accentRequired: liverpool
+  word: blink
+- accentRequired: liverpool
+  word: bring
+- accentRequired: liverpool
+  word: block
+- accentRequired: liverpool
+  word: either
+- accentRequired: liverpool
+  word: blonde
+- accentRequired: liverpool
+  word: evening
+- accentRequired: liverpool
+  word: blue
+- accentRequired: liverpool
+  word: five
+- accentRequired: liverpool
+  word: box
+- accentRequired: liverpool
+  word: happen
+- accentRequired: liverpool
+  word: class
+- accentRequired: liverpool
+  word: hung
+- accentRequired: liverpool
+  word: drag
+- accentRequired: liverpool
+  word: rang
+- accentRequired: liverpool
+  word: fact
+- accentRequired: liverpool
+  word: something
+- accentRequired: liverpool
+  word: every
+- accentRequired: liverpool
+  word: easy
+- accentRequired: liverpool
+  word: eyebrow
+- accentRequired: liverpool
+  word: key
+- accentRequired: liverpool
+  word: ahead
+- accentRequired: liverpool
+  word: meet
+- accentRequired: liverpool
+  word: arrive
+- accentRequired: liverpool
+  word: sleep
+- accentRequired: liverpool
+  word: behind
+- accentRequired: liverpool
+  word: anger
+- accentRequired: liverpool
+  word: about
+- accentRequired: liverpool
+  word: anymore
+- accentRequired: liverpool
+  word: drove
+- accentRequired: liverpool
+  word: father
+- accentRequired: liverpool
+  word: hang
+- accentRequired: liverpool
+  word: anyone
+- accentRequired: liverpool
+  word: morning
+- accentRequired: liverpool
+  word: happy
+- accentRequired: liverpool
+  word: although
+- accentRequired: liverpool
+  word: teeth
+- accentRequired: liverpool
+  word: another
+- accentRequired: liverpool
+  word: kick
+- accentRequired: liverpool
+  word: ball
+- accentRequired: liverpool
+  word: slip
+- accentRequired: liverpool
+  word: back
+- accentRequired: liverpool
+  word: believe
+- accentRequired: liverpool
+  word: rather
+- accentRequired: liverpool
+  word: apparently
+- accentRequired: liverpool
+  word: as
+- accentRequired: liverpool
+  word: attack
+- accentRequired: liverpool
+  word: aunt
+- accentRequired: liverpool
+  word: isn't
+- accentRequired: liverpool
+  word: even
+- accentRequired: liverpool
+  word: answer
+- accentRequired: liverpool
+  word: middle
 - accentRequired: rp
   word: across
 - accentRequired: rp
+  word: black
+- accentRequired: rp
   word: because
+- accentRequired: rp
+  word: barely
 - accentRequired: irish
   word: through
 - accentRequired: irish
@@ -15,41 +141,41 @@
 - accentRequired: irish
   word: both
 - accentRequired: irish
-  word: afraid
+  word: alright
 - accentRequired: irish
   word: breath
 - accentRequired: irish
-  word: again
+  word: always
 - accentRequired: irish
   word: breathe
 - accentRequired: irish
-  word: air
+  word: almost
 - accentRequired: irish
   word: brother
 - accentRequired: irish
-  word: almost
+  word: air
 - accentRequired: irish
   word: burn
 - accentRequired: irish
-  word: already
+  word: again
 - accentRequired: irish
   word: burst
 - accentRequired: irish
-  word: always
+  word: afraid
 - accentRequired: irish
   word: call
 - accentRequired: irish
-  word: above
+  word: actually
 - accentRequired: irish
   word: calm
 - accentRequired: irish
-  word: after
+  word: already
 - accentRequired: irish
   word: carefully
 - accentRequired: irish
   word: all
 - accentRequired: irish
-  word: alright
+  word: after
 - accentRequired: irish
   word: cause
 - accentRequired: irish
@@ -61,13 +187,13 @@
 - accentRequired: irish
   word: admit
 - accentRequired: irish
-  word: alone
-- accentRequired: irish
   word: agree
 - accentRequired: irish
-  word: actually
+  word: alone
+- accentRequired: irish
+  word: above
 - accentRequired: general-american
-  word: hello
+  word: green
 - accentRequired: general-american
   word: how
 - accentRequired: general-american
@@ -835,7 +961,7 @@
 - accentRequired: general-american
   word: red
 - accentRequired: general-american
-  word: green
+  word: chair
 - accentRequired: general-american
   word: relationship
 - accentRequired: general-american
@@ -1343,7 +1469,7 @@
 - accentRequired: general-american
   word: sun
 - accentRequired: general-american
-  word: chair
+  word: hello
 - accentRequired: general-american
   word: sure
 - accentRequired: general-american

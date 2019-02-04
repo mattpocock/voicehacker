@@ -6,6 +6,7 @@ const words = require('../../words');
 
 const wordsArray = words.split('\n');
 const databasePath = path.resolve(__dirname, '../../assets/database');
+const configPath = path.resolve(__dirname, '../../config');
 const audioAssetsPath = path.resolve(__dirname, '../../assets/audio');
 
 module.exports = () => {
@@ -20,7 +21,11 @@ module.exports = () => {
   fs.mkdirSync(path.resolve(databasePath, './stats'));
 
   /** Scan audio files for accents */
-  const accents = fs.readdirSync(audioAssetsPath);
+  const accents = jsYaml
+    .safeLoad(
+      fs.readFileSync(path.resolve(configPath, 'accents.yaml')).toString(),
+    )
+    .map(({ name }) => name);
 
   /** For each word, create an entry */
   const wordObjects = wordsArray.map((word) => {
@@ -40,7 +45,11 @@ module.exports = () => {
 
   /** For each accent, create an entry */
   accents.forEach((name) => {
-    const wordsRecorded = fs.readdirSync(path.resolve(audioAssetsPath, name));
+    const accentAudioPath = path.resolve(audioAssetsPath, name);
+    if (!fs.existsSync(accentAudioPath)) {
+      fs.mkdirSync(accentAudioPath);
+    }
+    const wordsRecorded = fs.readdirSync(accentAudioPath);
     fs.writeFileSync(
       path.resolve(databasePath, 'accents', `${name}.yaml`),
       jsYaml.safeDump({
