@@ -1,6 +1,10 @@
 import * as React from 'react';
 import { graphql } from 'gatsby';
 import styled from 'styled-components';
+import FloatingWhiteBox from '../components/FloatingWhiteBox';
+import theme from '../config/theme';
+import Header from '../components/Header';
+import Padding from '../components/Padding';
 
 export default ({
   data: {
@@ -8,13 +12,16 @@ export default ({
   },
 }: Props) => (
   <Wrapper>
-    <Title>Hello</Title>
-    {edges.map(({ node: { src, word } }) => (
-      <>
-        <p>{word}</p>
-        <audio src={src} controls />
-      </>
-    ))}
+    <Header white>Hello</Header>
+    <Padding padding="1.5rem" />
+    <FloatingWhiteBox>
+      {edges.map(({ node: { src, word } }) => (
+        <>
+          <p>{word}</p>
+          <audio src={src} controls />
+        </>
+      ))}
+    </FloatingWhiteBox>
   </Wrapper>
 );
 
@@ -48,11 +55,6 @@ export const SOUND_QUERY = graphql`
       }
     }
   }
-`;
-
-const Title = styled.h2`
-  font-size: 2rem;
-  text-align: center;
 `;
 
 const Wrapper = styled.div`
