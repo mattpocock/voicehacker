@@ -1,7 +1,6 @@
 import * as React from 'react';
 import { graphql } from 'gatsby';
-import styled from 'styled-components/native';
-import { Button, Text } from 'react-native';
+import styled from 'styled-components';
 
 export default ({
   data: {
@@ -12,7 +11,7 @@ export default ({
     <Title>Hello</Title>
     {edges.map(({ node: { src, word } }) => (
       <>
-        <Text>{word}</Text>
+        <p>{word}</p>
         <audio src={src} controls />
       </>
     ))}
@@ -51,12 +50,12 @@ export const SOUND_QUERY = graphql`
   }
 `;
 
-const Title = styled.Text`
+const Title = styled.h2`
   font-size: 2rem;
   text-align: center;
 `;
 
-const Wrapper = styled.View`
+const Wrapper = styled.div`
   min-height: 100vh;
   justify-content: center;
   align-items: center;

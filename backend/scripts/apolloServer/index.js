@@ -5,8 +5,8 @@ const jsyaml = require('js-yaml');
 const env = require('../../env.json');
 const composeDatabase = require('../database/composeDatabase');
 
-const databaseDir = path.resolve(__dirname, '../../assets/database');
-const audioDir = path.resolve(__dirname, '../../assets/audio');
+const databaseDir = path.resolve(__dirname, '../../../assets/database');
+const audioDir = path.resolve(__dirname, '../../../assets/audio');
 
 const typeDefs = gql`
   type Word {

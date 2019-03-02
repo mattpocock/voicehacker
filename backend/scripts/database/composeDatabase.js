@@ -5,9 +5,9 @@ const jsYaml = require('js-yaml');
 const words = require('../../words');
 
 const wordsArray = words.split('\n');
-const databasePath = path.resolve(__dirname, '../../assets/database');
+const databasePath = path.resolve(__dirname, '../../../assets/database');
 const configPath = path.resolve(__dirname, '../../config');
-const audioAssetsPath = path.resolve(__dirname, '../../assets/audio');
+const audioAssetsPath = path.resolve(__dirname, '../../../assets/audio');
 
 module.exports = () => {
   /** Clear out previous database */

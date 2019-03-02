@@ -4,7 +4,8 @@
   "author": "matt <matt.pocock@thevirtualforge.com>",
   "license": "MIT",
   "scripts": {
-    "start": "nodemon scripts/apolloServer/index.js"
+    "start": "nodemon scripts/apolloServer/index.js",
+    "composeDatabase": "node scripts/database/run.js"
   },
   "dependencies": {
     "@types/apollo-upload-client": "^8.1.1",
