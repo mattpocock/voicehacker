@@ -1,6 +1,17 @@
 word: breath
+translation:
+  - B
+  - R
+  - EH
+  - TH
 availableAccents:
   - general-american
 recordings:
   - accent: general-american
-    src: assets/audio/general-american/breath.webm
+    src: general-american/breath.webm
+relatedWords:
+  - breakfast
+  - boyfriend
+  - bedroom
+  - bathroom
+  - everything

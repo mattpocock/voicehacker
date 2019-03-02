@@ -1,4 +1,13 @@
 word: beautiful
+translation:
+  - B
+  - 'Y'
+  - UW
+  - T
+  - AH
+  - F
+  - AH
+  - L
 availableAccents:
   - general-american
   - irish
@@ -7,12 +16,18 @@ availableAccents:
   - cockney
 recordings:
   - accent: general-american
-    src: assets/audio/general-american/beautiful.webm
+    src: general-american/beautiful.webm
   - accent: irish
-    src: assets/audio/irish/beautiful.webm
+    src: irish/beautiful.webm
   - accent: rp
-    src: assets/audio/rp/beautiful.webm
+    src: rp/beautiful.webm
   - accent: liverpool
-    src: assets/audio/liverpool/beautiful.webm
+    src: liverpool/beautiful.webm
   - accent: cockney
-    src: assets/audio/cockney/beautiful.webm
+    src: cockney/beautiful.webm
+relatedWords:
+  - bottle
+  - continue
+  - computer
+  - usual
+  - breakfast

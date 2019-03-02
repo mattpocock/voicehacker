@@ -1,12 +1,23 @@
 word: eyebrow
+translation:
+  - AY
+  - B
+  - R
+  - AW
 availableAccents:
   - general-american
   - irish
   - rp
 recordings:
   - accent: general-american
-    src: assets/audio/general-american/eyebrow.webm
+    src: general-american/eyebrow.webm
   - accent: irish
-    src: assets/audio/irish/eyebrow.webm
+    src: irish/eyebrow.webm
   - accent: rp
-    src: assets/audio/rp/eyebrow.webm
+    src: rp/eyebrow.webm
+relatedWords:
+  - brown
+  - bright
+  - frown
+  - bar
+  - ground

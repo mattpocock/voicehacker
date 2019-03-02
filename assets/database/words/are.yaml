@@ -1,4 +1,7 @@
 word: are
+translation:
+  - AA
+  - R
 availableAccents:
   - general-american
   - irish
@@ -7,12 +10,19 @@ availableAccents:
   - cockney
 recordings:
   - accent: general-american
-    src: assets/audio/general-american/are.webm
+    src: general-american/are.webm
   - accent: irish
-    src: assets/audio/irish/are.webm
+    src: irish/are.webm
   - accent: rp
-    src: assets/audio/rp/are.webm
+    src: rp/are.webm
   - accent: liverpool
-    src: assets/audio/liverpool/are.webm
+    src: liverpool/are.webm
   - accent: cockney
-    src: assets/audio/cockney/are.webm
+    src: cockney/are.webm
+relatedWords:
+  - hard
+  - tomorrow
+  - heart
+  - part
+  - large
+  - aren't

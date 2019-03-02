@@ -1,12 +1,23 @@
 word: ahead
+translation:
+  - AH
+  - HH
+  - EH
+  - D
 availableAccents:
   - general-american
   - irish
   - rp
 recordings:
   - accent: general-american
-    src: assets/audio/general-american/ahead.webm
+    src: general-american/ahead.webm
   - accent: irish
-    src: assets/audio/irish/ahead.webm
+    src: irish/ahead.webm
   - accent: rp
-    src: assets/audio/rp/ahead.webm
+    src: rp/ahead.webm
+relatedWords:
+  - direction
+  - head
+  - handle
+  - held
+  - hundred

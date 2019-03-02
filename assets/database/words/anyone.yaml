@@ -1,12 +1,25 @@
 word: anyone
+translation:
+  - EH
+  - 'N'
+  - IY
+  - W
+  - AH
+  - 'N'
 availableAccents:
   - general-american
   - irish
   - rp
 recordings:
   - accent: general-american
-    src: assets/audio/general-american/anyone.webm
+    src: general-american/anyone.webm
   - accent: irish
-    src: assets/audio/irish/anyone.webm
+    src: irish/anyone.webm
   - accent: rp
-    src: assets/audio/rp/anyone.webm
+    src: rp/anyone.webm
+relatedWords:
+  - everyone
+  - eventually
+  - anyway
+  - definitely
+  - question

@@ -1,12 +1,24 @@
 word: evening
+translation:
+  - IY
+  - V
+  - 'N'
+  - IH
+  - NG
 availableAccents:
   - general-american
   - irish
   - rp
 recordings:
   - accent: general-american
-    src: assets/audio/general-american/evening.webm
+    src: general-american/evening.webm
   - accent: irish
-    src: assets/audio/irish/evening.webm
+    src: irish/evening.webm
   - accent: rp
-    src: assets/audio/rp/evening.webm
+    src: rp/evening.webm
+relatedWords:
+  - anything
+  - eventually
+  - even
+  - everything
+  - morning

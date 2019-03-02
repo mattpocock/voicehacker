@@ -1,4 +1,7 @@
 word: though
+translation:
+  - DH
+  - OW
 availableAccents:
   - general-american
   - irish
@@ -7,12 +10,18 @@ availableAccents:
   - cockney
 recordings:
   - accent: general-american
-    src: assets/audio/general-american/though.webm
+    src: general-american/though.webm
   - accent: irish
-    src: assets/audio/irish/though.webm
+    src: irish/though.webm
   - accent: rp
-    src: assets/audio/rp/though.webm
+    src: rp/though.webm
   - accent: liverpool
-    src: assets/audio/liverpool/though.webm
+    src: liverpool/though.webm
   - accent: cockney
-    src: assets/audio/cockney/though.webm
+    src: cockney/though.webm
+relatedWords:
+  - clothes
+  - those
+  - although
+  - don't
+  - almost

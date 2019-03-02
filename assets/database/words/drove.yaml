@@ -1,12 +1,23 @@
 word: drove
+translation:
+  - D
+  - R
+  - OW
+  - V
 availableAccents:
   - general-american
   - irish
   - rp
 recordings:
   - accent: general-american
-    src: assets/audio/general-american/drove.webm
+    src: general-american/drove.webm
   - accent: irish
-    src: assets/audio/irish/drove.webm
+    src: irish/drove.webm
   - accent: rp
-    src: assets/audio/rp/drove.webm
+    src: rp/drove.webm
+relatedWords:
+  - drive
+  - road
+  - approach
+  - drag
+  - hundred

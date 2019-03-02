@@ -1,6 +1,18 @@
 word: afraid
+translation:
+  - AH
+  - F
+  - R
+  - EY
+  - D
 availableAccents:
   - general-american
 recordings:
   - accent: general-american
-    src: assets/audio/general-american/afraid.webm
+    src: general-american/afraid.webm
+relatedWords:
+  - today
+  - forward
+  - girlfriend
+  - friend
+  - boyfriend

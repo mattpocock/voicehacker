@@ -1,12 +1,28 @@
 word: expression
+translation:
+  - IH
+  - K
+  - S
+  - P
+  - R
+  - EH
+  - SH
+  - AH
+  - 'N'
 availableAccents:
   - general-american
   - irish
   - rp
 recordings:
   - accent: general-american
-    src: assets/audio/general-american/expression.webm
+    src: general-american/expression.webm
   - accent: irish
-    src: assets/audio/irish/expression.webm
+    src: irish/expression.webm
   - accent: rp
-    src: assets/audio/rp/expression.webm
+    src: rp/expression.webm
+relatedWords:
+  - relationship
+  - parents
+  - interest
+  - conversation
+  - question

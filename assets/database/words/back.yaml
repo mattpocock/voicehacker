@@ -1,12 +1,22 @@
 word: back
+translation:
+  - B
+  - AE
+  - K
 availableAccents:
   - general-american
   - irish
   - rp
 recordings:
   - accent: general-american
-    src: assets/audio/general-american/back.webm
+    src: general-american/back.webm
   - accent: irish
-    src: assets/audio/irish/back.webm
+    src: irish/back.webm
   - accent: rp
-    src: assets/audio/rp/back.webm
+    src: rp/back.webm
+relatedWords:
+  - black
+  - practically
+  - blink
+  - grab
+  - bad

@@ -1,6 +1,16 @@
 word: case
+translation:
+  - K
+  - EY
+  - S
 availableAccents:
   - general-american
 recordings:
   - accent: general-american
-    src: assets/audio/general-american/case.webm
+    src: general-american/case.webm
+relatedWords:
+  - conversation
+  - explain
+  - exclaim
+  - escape
+  - race

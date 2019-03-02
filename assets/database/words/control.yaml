@@ -1,4 +1,12 @@
 word: control
+translation:
+  - K
+  - AH
+  - 'N'
+  - T
+  - R
+  - OW
+  - L
 availableAccents:
   - general-american
   - irish
@@ -7,12 +15,18 @@ availableAccents:
   - cockney
 recordings:
   - accent: general-american
-    src: assets/audio/general-american/control.webm
+    src: general-american/control.webm
   - accent: irish
-    src: assets/audio/irish/control.webm
+    src: irish/control.webm
   - accent: rp
-    src: assets/audio/rp/control.webm
+    src: rp/control.webm
   - accent: liverpool
-    src: assets/audio/liverpool/control.webm
+    src: liverpool/control.webm
   - accent: cockney
-    src: assets/audio/cockney/control.webm
+    src: cockney/control.webm
+relatedWords:
+  - broken
+  - practically
+  - apparently
+  - quietly
+  - trouble

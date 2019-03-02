@@ -1,12 +1,23 @@
 word: slip
+translation:
+  - S
+  - L
+  - IH
+  - P
 availableAccents:
   - general-american
   - irish
   - rp
 recordings:
   - accent: general-american
-    src: assets/audio/general-american/slip.webm
+    src: general-american/slip.webm
   - accent: irish
-    src: assets/audio/irish/slip.webm
+    src: irish/slip.webm
   - accent: rp
-    src: assets/audio/rp/slip.webm
+    src: rp/slip.webm
+relatedWords:
+  - hospital
+  - simply
+  - explain
+  - place
+  - disappear

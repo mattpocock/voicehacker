@@ -1,12 +1,23 @@
 word: throat
+translation:
+  - TH
+  - R
+  - OW
+  - T
 availableAccents:
   - general-american
   - irish
   - rp
 recordings:
   - accent: general-american
-    src: assets/audio/general-american/throat.webm
+    src: general-american/throat.webm
   - accent: irish
-    src: assets/audio/irish/throat.webm
+    src: irish/throat.webm
   - accent: rp
-    src: assets/audio/rp/throat.webm
+    src: rp/throat.webm
+relatedWords:
+  - control
+  - truth
+  - throw
+  - tomorrow
+  - stair

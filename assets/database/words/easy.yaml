@@ -1,12 +1,23 @@
 word: easy
+translation:
+  - IY
+  - Z
+  - IY
 availableAccents:
   - general-american
   - irish
   - rp
 recordings:
   - accent: general-american
-    src: assets/audio/general-american/easy.webm
+    src: general-american/easy.webm
   - accent: irish
-    src: assets/audio/irish/easy.webm
+    src: irish/easy.webm
   - accent: rp
-    src: assets/audio/rp/easy.webm
+    src: rp/easy.webm
+relatedWords:
+  - crazy
+  - she's
+  - he's
+  - exactly
+  - reason
+  - realize

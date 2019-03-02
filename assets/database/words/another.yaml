@@ -1,12 +1,24 @@
 word: another
+translation:
+  - AH
+  - 'N'
+  - AH
+  - DH
+  - ER
 availableAccents:
   - general-american
   - irish
   - rp
 recordings:
   - accent: general-american
-    src: assets/audio/general-american/another.webm
+    src: general-american/another.webm
   - accent: irish
-    src: assets/audio/irish/another.webm
+    src: irish/another.webm
   - accent: rp
-    src: assets/audio/rp/another.webm
+    src: rp/another.webm
+relatedWords:
+  - direction
+  - other
+  - together
+  - wonder
+  - consider

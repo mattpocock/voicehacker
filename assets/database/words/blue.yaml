@@ -1,12 +1,22 @@
 word: blue
+translation:
+  - B
+  - L
+  - UW
 availableAccents:
   - general-american
   - irish
   - rp
 recordings:
   - accent: general-american
-    src: assets/audio/general-american/blue.webm
+    src: general-american/blue.webm
   - accent: irish
-    src: assets/audio/irish/blue.webm
+    src: irish/blue.webm
   - accent: rp
-    src: assets/audio/rp/blue.webm
+    src: rp/blue.webm
+relatedWords:
+  - beautiful
+  - blood
+  - blink
+  - able
+  - table

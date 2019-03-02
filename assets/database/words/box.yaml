@@ -1,12 +1,23 @@
 word: box
+translation:
+  - B
+  - AA
+  - K
+  - S
 availableAccents:
   - general-american
   - irish
   - rp
 recordings:
   - accent: general-american
-    src: assets/audio/general-american/box.webm
+    src: general-american/box.webm
   - accent: irish
-    src: assets/audio/irish/box.webm
+    src: irish/box.webm
   - accent: rp
-    src: assets/audio/rp/box.webm
+    src: rp/box.webm
+relatedWords:
+  - conversation
+  - breakfast
+  - obviously
+  - possible
+  - block

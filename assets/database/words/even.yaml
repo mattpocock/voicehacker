@@ -1,12 +1,23 @@
 word: even
+translation:
+  - IY
+  - V
+  - IH
+  - 'N'
 availableAccents:
   - general-american
   - irish
   - rp
 recordings:
   - accent: general-american
-    src: assets/audio/general-american/even.webm
+    src: general-american/even.webm
   - accent: irish
-    src: assets/audio/irish/even.webm
+    src: irish/even.webm
   - accent: rp
-    src: assets/audio/rp/even.webm
+    src: rp/even.webm
+relatedWords:
+  - eventually
+  - evening
+  - everything
+  - relationship
+  - between

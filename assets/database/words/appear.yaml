@@ -1,4 +1,9 @@
 word: appear
+translation:
+  - AH
+  - P
+  - IH
+  - R
 availableAccents:
   - general-american
   - irish
@@ -7,12 +12,18 @@ availableAccents:
   - cockney
 recordings:
   - accent: general-american
-    src: assets/audio/general-american/appear.webm
+    src: general-american/appear.webm
   - accent: irish
-    src: assets/audio/irish/appear.webm
+    src: irish/appear.webm
   - accent: rp
-    src: assets/audio/rp/appear.webm
+    src: rp/appear.webm
   - accent: liverpool
-    src: assets/audio/liverpool/appear.webm
+    src: liverpool/appear.webm
   - accent: cockney
-    src: assets/audio/cockney/appear.webm
+    src: cockney/appear.webm
+relatedWords:
+  - important
+  - relationship
+  - practically
+  - expression
+  - disappear

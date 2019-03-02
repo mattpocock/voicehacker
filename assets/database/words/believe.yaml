@@ -1,12 +1,24 @@
 word: believe
+translation:
+  - B
+  - IH
+  - L
+  - IY
+  - V
 availableAccents:
   - general-american
   - irish
   - rp
 recordings:
   - accent: general-american
-    src: assets/audio/general-american/believe.webm
+    src: general-american/believe.webm
   - accent: irish
-    src: assets/audio/irish/believe.webm
+    src: irish/believe.webm
   - accent: rp
-    src: assets/audio/rp/believe.webm
+    src: rp/believe.webm
+relatedWords:
+  - obviously
+  - eventually
+  - really
+  - simply
+  - nearly

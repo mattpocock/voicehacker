@@ -1,12 +1,23 @@
 word: class
+translation:
+  - K
+  - L
+  - AE
+  - S
 availableAccents:
   - general-american
   - irish
   - rp
 recordings:
   - accent: general-american
-    src: assets/audio/general-american/class.webm
+    src: general-american/class.webm
   - accent: irish
-    src: assets/audio/irish/class.webm
+    src: irish/class.webm
   - accent: rp
-    src: assets/audio/rp/class.webm
+    src: rp/class.webm
+relatedWords:
+  - relax
+  - exclaim
+  - slam
+  - glance
+  - black

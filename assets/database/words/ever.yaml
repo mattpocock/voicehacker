@@ -1,4 +1,8 @@
 word: ever
+translation:
+  - EH
+  - V
+  - ER
 availableAccents:
   - general-american
   - irish
@@ -7,12 +11,18 @@ availableAccents:
   - cockney
 recordings:
   - accent: general-american
-    src: assets/audio/general-american/ever.webm
+    src: general-american/ever.webm
   - accent: irish
-    src: assets/audio/irish/ever.webm
+    src: irish/ever.webm
   - accent: rp
-    src: assets/audio/rp/ever.webm
+    src: rp/ever.webm
   - accent: liverpool
-    src: assets/audio/liverpool/ever.webm
+    src: liverpool/ever.webm
   - accent: cockney
-    src: assets/audio/cockney/ever.webm
+    src: cockney/ever.webm
+relatedWords:
+  - never
+  - every
+  - several
+  - whatever
+  - however

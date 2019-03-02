@@ -1,9 +1,21 @@
 word: because
+translation:
+  - B
+  - IH
+  - K
+  - AO
+  - Z
 availableAccents:
   - general-american
   - irish
 recordings:
   - accent: general-american
-    src: assets/audio/general-american/because.webm
+    src: general-american/because.webm
   - accent: irish
-    src: assets/audio/irish/because.webm
+    src: irish/because.webm
+relatedWords:
+  - became
+  - busy
+  - business
+  - besides
+  - before

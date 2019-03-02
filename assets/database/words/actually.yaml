@@ -1,6 +1,20 @@
 word: actually
+translation:
+  - AE
+  - K
+  - CH
+  - UW
+  - AH
+  - L
+  - IY
 availableAccents:
   - general-american
 recordings:
   - accent: general-american
-    src: assets/audio/general-american/actually.webm
+    src: general-american/actually.webm
+relatedWords:
+  - practically
+  - complete
+  - usually
+  - family
+  - exactly

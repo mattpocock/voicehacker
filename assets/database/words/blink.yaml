@@ -1,12 +1,24 @@
 word: blink
+translation:
+  - B
+  - L
+  - IH
+  - NG
+  - K
 availableAccents:
   - general-american
   - irish
   - rp
 recordings:
   - accent: general-american
-    src: assets/audio/general-american/blink.webm
+    src: general-american/blink.webm
   - accent: irish
-    src: assets/audio/irish/blink.webm
+    src: irish/blink.webm
   - accent: rp
-    src: assets/audio/rp/blink.webm
+    src: rp/blink.webm
+relatedWords:
+  - think
+  - believe
+  - became
+  - black
+  - become

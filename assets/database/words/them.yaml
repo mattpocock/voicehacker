@@ -1,4 +1,8 @@
 word: them
+translation:
+  - DH
+  - EH
+  - M
 availableAccents:
   - general-american
   - irish
@@ -7,12 +11,18 @@ availableAccents:
   - cockney
 recordings:
   - accent: general-american
-    src: assets/audio/general-american/them.webm
+    src: general-american/them.webm
   - accent: irish
-    src: assets/audio/irish/them.webm
+    src: irish/them.webm
   - accent: rp
-    src: assets/audio/rp/them.webm
+    src: rp/them.webm
   - accent: liverpool
-    src: assets/audio/liverpool/them.webm
+    src: liverpool/them.webm
   - accent: cockney
-    src: assets/audio/cockney/them.webm
+    src: cockney/them.webm
+relatedWords:
+  - themselves
+  - men
+  - together
+  - met
+  - comment

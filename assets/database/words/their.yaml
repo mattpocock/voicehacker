@@ -1,4 +1,8 @@
 word: their
+translation:
+  - DH
+  - EH
+  - R
 availableAccents:
   - general-american
   - irish
@@ -7,12 +11,18 @@ availableAccents:
   - cockney
 recordings:
   - accent: general-american
-    src: assets/audio/general-american/their.webm
+    src: general-american/their.webm
   - accent: irish
-    src: assets/audio/irish/their.webm
+    src: irish/their.webm
   - accent: rp
-    src: assets/audio/rp/their.webm
+    src: rp/their.webm
   - accent: liverpool
-    src: assets/audio/liverpool/their.webm
+    src: liverpool/their.webm
   - accent: cockney
-    src: assets/audio/cockney/their.webm
+    src: cockney/their.webm
+relatedWords:
+  - they're
+  - there's
+  - there
+  - everyone
+  - together

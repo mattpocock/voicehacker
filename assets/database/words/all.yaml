@@ -1,6 +1,16 @@
 word: all
+translation:
+  - AO
+  - L
 availableAccents:
   - general-american
 recordings:
   - accent: general-american
-    src: assets/audio/general-american/all.webm
+    src: general-american/all.webm
+relatedWords:
+  - call
+  - along
+  - ball
+  - small
+  - always
+  - wall

@@ -1,4 +1,7 @@
 word: the
+translation:
+  - DH
+  - AH
 availableAccents:
   - general-american
   - irish
@@ -7,12 +10,18 @@ availableAccents:
   - cockney
 recordings:
   - accent: general-american
-    src: assets/audio/general-american/the.webm
+    src: general-american/the.webm
   - accent: irish
-    src: assets/audio/irish/the.webm
+    src: irish/the.webm
   - accent: rp
-    src: assets/audio/rp/the.webm
+    src: rp/the.webm
   - accent: liverpool
-    src: assets/audio/liverpool/the.webm
+    src: liverpool/the.webm
   - accent: cockney
-    src: assets/audio/cockney/the.webm
+    src: cockney/the.webm
+relatedWords:
+  - together
+  - another
+  - brother
+  - mother
+  - other

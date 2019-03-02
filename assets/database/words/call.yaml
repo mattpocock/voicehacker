@@ -1,6 +1,16 @@
 word: call
+translation:
+  - K
+  - AO
+  - L
 availableAccents:
   - general-american
 recordings:
   - accent: general-american
-    src: assets/audio/general-american/call.webm
+    src: general-american/call.webm
+relatedWords:
+  - kill
+  - class
+  - lost
+  - lock
+  - hall

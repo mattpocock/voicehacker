@@ -1,12 +1,23 @@
 word: bring
+translation:
+  - B
+  - R
+  - IH
+  - NG
 availableAccents:
   - general-american
   - irish
   - rp
 recordings:
   - accent: general-american
-    src: assets/audio/general-american/bring.webm
+    src: general-american/bring.webm
   - accent: irish
-    src: assets/audio/irish/bring.webm
+    src: irish/bring.webm
   - accent: rp
-    src: assets/audio/rp/bring.webm
+    src: rp/bring.webm
+relatedWords:
+  - during
+  - everything
+  - drink
+  - before
+  - morning

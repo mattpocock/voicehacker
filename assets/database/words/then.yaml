@@ -1,4 +1,8 @@
 word: then
+translation:
+  - DH
+  - EH
+  - 'N'
 availableAccents:
   - general-american
   - irish
@@ -7,12 +11,18 @@ availableAccents:
   - cockney
 recordings:
   - accent: general-american
-    src: assets/audio/general-american/then.webm
+    src: general-american/then.webm
   - accent: irish
-    src: assets/audio/irish/then.webm
+    src: irish/then.webm
   - accent: rp
-    src: assets/audio/rp/then.webm
+    src: rp/then.webm
   - accent: liverpool
-    src: assets/audio/liverpool/then.webm
+    src: liverpool/then.webm
   - accent: cockney
-    src: assets/audio/cockney/then.webm
+    src: cockney/then.webm
+relatedWords:
+  - girlfriend
+  - than
+  - anything
+  - whether
+  - friend

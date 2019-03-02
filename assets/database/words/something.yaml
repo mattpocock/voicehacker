@@ -1,12 +1,25 @@
 word: something
+translation:
+  - S
+  - AH
+  - M
+  - TH
+  - IH
+  - NG
 availableAccents:
   - general-american
   - irish
   - rp
 recordings:
   - accent: general-american
-    src: assets/audio/general-american/something.webm
+    src: general-american/something.webm
   - accent: irish
-    src: assets/audio/irish/something.webm
+    src: irish/something.webm
   - accent: rp
-    src: assets/audio/rp/something.webm
+    src: rp/something.webm
+relatedWords:
+  - nothing
+  - single
+  - someone
+  - minute
+  - become

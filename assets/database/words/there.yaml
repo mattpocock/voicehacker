@@ -1,4 +1,8 @@
 word: there
+translation:
+  - DH
+  - EH
+  - R
 availableAccents:
   - general-american
   - irish
@@ -7,12 +11,18 @@ availableAccents:
   - cockney
 recordings:
   - accent: general-american
-    src: assets/audio/general-american/there.webm
+    src: general-american/there.webm
   - accent: irish
-    src: assets/audio/irish/there.webm
+    src: irish/there.webm
   - accent: rp
-    src: assets/audio/rp/there.webm
+    src: rp/there.webm
   - accent: liverpool
-    src: assets/audio/liverpool/there.webm
+    src: liverpool/there.webm
   - accent: cockney
-    src: assets/audio/cockney/there.webm
+    src: cockney/there.webm
+relatedWords:
+  - they're
+  - there's
+  - their
+  - everyone
+  - together

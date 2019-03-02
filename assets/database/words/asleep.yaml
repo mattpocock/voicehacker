@@ -1,12 +1,24 @@
 word: asleep
+translation:
+  - AH
+  - S
+  - L
+  - IY
+  - P
 availableAccents:
   - general-american
   - irish
   - rp
 recordings:
   - accent: general-american
-    src: assets/audio/general-american/asleep.webm
+    src: general-american/asleep.webm
   - accent: irish
-    src: assets/audio/irish/asleep.webm
+    src: irish/asleep.webm
   - accent: rp
-    src: assets/audio/rp/asleep.webm
+    src: rp/asleep.webm
+relatedWords:
+  - especially
+  - police
+  - seriously
+  - relationship
+  - hospital

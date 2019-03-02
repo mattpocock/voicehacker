@@ -1,12 +1,23 @@
 word: drag
+translation:
+  - D
+  - R
+  - AE
+  - G
 availableAccents:
   - general-american
   - irish
   - rp
 recordings:
   - accent: general-american
-    src: assets/audio/general-american/drag.webm
+    src: general-american/drag.webm
   - accent: irish
-    src: assets/audio/irish/drag.webm
+    src: irish/drag.webm
   - accent: rp
-    src: assets/audio/rp/drag.webm
+    src: rp/drag.webm
+relatedWords:
+  - guard
+  - ground
+  - grab
+  - glad
+  - girlfriend

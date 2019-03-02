@@ -1,12 +1,23 @@
 word: fact
+translation:
+  - F
+  - AE
+  - K
+  - T
 availableAccents:
   - general-american
   - irish
   - rp
 recordings:
   - accent: general-american
-    src: assets/audio/general-american/fact.webm
+    src: general-american/fact.webm
   - accent: irish
-    src: assets/audio/irish/fact.webm
+    src: irish/fact.webm
   - accent: rp
-    src: assets/audio/rp/fact.webm
+    src: rp/fact.webm
+relatedWords:
+  - perfect
+  - accept
+  - afternoon
+  - act
+  - after

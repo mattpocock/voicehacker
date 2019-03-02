@@ -1,4 +1,12 @@
 word: afternoon
+translation:
+  - AE
+  - F
+  - T
+  - ER
+  - 'N'
+  - UW
+  - 'N'
 availableAccents:
   - general-american
   - irish
@@ -7,12 +15,18 @@ availableAccents:
   - cockney
 recordings:
   - accent: general-american
-    src: assets/audio/general-american/afternoon.webm
+    src: general-american/afternoon.webm
   - accent: irish
-    src: assets/audio/irish/afternoon.webm
+    src: irish/afternoon.webm
   - accent: rp
-    src: assets/audio/rp/afternoon.webm
+    src: rp/afternoon.webm
   - accent: liverpool
-    src: assets/audio/liverpool/afternoon.webm
+    src: liverpool/afternoon.webm
   - accent: cockney
-    src: assets/audio/cockney/afternoon.webm
+    src: cockney/afternoon.webm
+relatedWords:
+  - understand
+  - different
+  - interrupt
+  - turn
+  - pants

@@ -1,4 +1,8 @@
 word: thing
+translation:
+  - TH
+  - IH
+  - NG
 availableAccents:
   - general-american
   - irish
@@ -7,12 +11,18 @@ availableAccents:
   - cockney
 recordings:
   - accent: general-american
-    src: assets/audio/general-american/thing.webm
+    src: general-american/thing.webm
   - accent: irish
-    src: assets/audio/irish/thing.webm
+    src: irish/thing.webm
   - accent: rp
-    src: assets/audio/rp/thing.webm
+    src: rp/thing.webm
   - accent: liverpool
-    src: assets/audio/liverpool/thing.webm
+    src: liverpool/thing.webm
   - accent: cockney
-    src: assets/audio/cockney/thing.webm
+    src: cockney/thing.webm
+relatedWords:
+  - think
+  - anything
+  - nothing
+  - something
+  - everything

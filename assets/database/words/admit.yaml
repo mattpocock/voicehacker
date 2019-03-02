@@ -1,6 +1,18 @@
 word: admit
+translation:
+  - AH
+  - D
+  - M
+  - IH
+  - T
 availableAccents:
   - general-american
 recordings:
   - accent: general-american
-    src: assets/audio/general-american/admit.webm
+    src: general-american/admit.webm
+relatedWords:
+  - immediately
+  - middle
+  - didn't
+  - different
+  - important

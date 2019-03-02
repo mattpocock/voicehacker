@@ -1,12 +1,23 @@
 word: happy
+translation:
+  - HH
+  - AE
+  - P
+  - IY
 availableAccents:
   - general-american
   - irish
   - rp
 recordings:
   - accent: general-american
-    src: assets/audio/general-american/happy.webm
+    src: general-american/happy.webm
   - accent: irish
-    src: assets/audio/irish/happy.webm
+    src: irish/happy.webm
   - accent: rp
-    src: assets/audio/rp/happy.webm
+    src: rp/happy.webm
+relatedWords:
+  - practically
+  - happen
+  - perhaps
+  - keep
+  - asleep

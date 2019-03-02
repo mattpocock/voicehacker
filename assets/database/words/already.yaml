@@ -1,6 +1,19 @@
 word: already
+translation:
+  - AO
+  - L
+  - R
+  - EH
+  - D
+  - IY
 availableAccents:
   - general-american
 recordings:
   - accent: general-american
-    src: assets/audio/general-american/already.webm
+    src: general-american/already.webm
+relatedWords:
+  - definitely
+  - carefully
+  - ready
+  - barely
+  - apparently

@@ -1,12 +1,25 @@
 word: behind
+translation:
+  - B
+  - IH
+  - HH
+  - AY
+  - 'N'
+  - D
 availableAccents:
   - general-american
   - irish
   - rp
 recordings:
   - accent: general-american
-    src: assets/audio/general-american/behind.webm
+    src: general-american/behind.webm
   - accent: irish
-    src: assets/audio/irish/behind.webm
+    src: irish/behind.webm
   - accent: rp
-    src: assets/audio/rp/behind.webm
+    src: rp/behind.webm
+relatedWords:
+  - inside
+  - beside
+  - besides
+  - children
+  - hide

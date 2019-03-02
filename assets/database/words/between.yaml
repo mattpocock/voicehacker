@@ -1,4 +1,11 @@
 word: between
+translation:
+  - B
+  - IH
+  - T
+  - W
+  - IY
+  - 'N'
 availableAccents:
   - general-american
   - irish
@@ -7,12 +14,18 @@ availableAccents:
   - cockney
 recordings:
   - accent: general-american
-    src: assets/audio/general-american/between.webm
+    src: general-american/between.webm
   - accent: irish
-    src: assets/audio/irish/between.webm
+    src: irish/between.webm
   - accent: rp
-    src: assets/audio/rp/between.webm
+    src: rp/between.webm
   - accent: liverpool
-    src: assets/audio/liverpool/between.webm
+    src: liverpool/between.webm
   - accent: cockney
-    src: assets/audio/cockney/between.webm
+    src: cockney/between.webm
+relatedWords:
+  - twenty
+  - eventually
+  - behind
+  - weren't
+  - women

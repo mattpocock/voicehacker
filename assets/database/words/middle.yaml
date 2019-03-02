@@ -1,12 +1,24 @@
 word: middle
+translation:
+  - M
+  - IH
+  - D
+  - AH
+  - L
 availableAccents:
   - general-american
   - irish
   - rp
 recordings:
   - accent: general-american
-    src: assets/audio/general-american/middle.webm
+    src: general-american/middle.webm
   - accent: irish
-    src: assets/audio/irish/middle.webm
+    src: irish/middle.webm
   - accent: rp
-    src: assets/audio/rp/middle.webm
+    src: rp/middle.webm
+relatedWords:
+  - immediately
+  - children
+  - admit
+  - complete
+  - hospital

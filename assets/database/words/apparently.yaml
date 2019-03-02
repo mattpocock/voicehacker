@@ -1,12 +1,28 @@
 word: apparently
+translation:
+  - AH
+  - P
+  - EH
+  - R
+  - AH
+  - 'N'
+  - T
+  - L
+  - IY
 availableAccents:
   - general-american
   - irish
   - rp
 recordings:
   - accent: general-american
-    src: assets/audio/general-american/apparently.webm
+    src: general-american/apparently.webm
   - accent: irish
-    src: assets/audio/irish/apparently.webm
+    src: irish/apparently.webm
   - accent: rp
-    src: assets/audio/rp/apparently.webm
+    src: rp/apparently.webm
+relatedWords:
+  - relationship
+  - definitely
+  - present
+  - practically
+  - parents

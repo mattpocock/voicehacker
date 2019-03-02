@@ -1,6 +1,20 @@
 word: carefully
+translation:
+  - K
+  - EH
+  - R
+  - F
+  - AH
+  - L
+  - IY
 availableAccents:
   - general-american
 recordings:
   - accent: general-american
-    src: assets/audio/general-american/carefully.webm
+    src: general-american/carefully.webm
+relatedWords:
+  - apparently
+  - breakfast
+  - definitely
+  - practically
+  - complete

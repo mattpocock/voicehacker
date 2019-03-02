@@ -1,6 +1,16 @@
 word: book
+translation:
+  - B
+  - UH
+  - K
 availableAccents:
   - general-american
 recordings:
   - accent: general-american
-    src: assets/audio/general-american/book.webm
+    src: general-american/book.webm
+relatedWords:
+  - look
+  - blink
+  - couldn't
+  - became
+  - shook

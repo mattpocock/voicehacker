@@ -1,4 +1,9 @@
 word: fast
+translation:
+  - F
+  - AE
+  - S
+  - T
 availableAccents:
   - general-american
   - irish
@@ -7,12 +12,18 @@ availableAccents:
   - cockney
 recordings:
   - accent: general-american
-    src: assets/audio/general-american/fast.webm
+    src: general-american/fast.webm
   - accent: irish
-    src: assets/audio/irish/fast.webm
+    src: irish/fast.webm
   - accent: rp
-    src: assets/audio/rp/fast.webm
+    src: rp/fast.webm
   - accent: liverpool
-    src: assets/audio/liverpool/fast.webm
+    src: liverpool/fast.webm
   - accent: cockney
-    src: assets/audio/cockney/fast.webm
+    src: cockney/fast.webm
+relatedWords:
+  - first
+  - fact
+  - accept
+  - afternoon
+  - stuff

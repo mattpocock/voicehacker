@@ -1,12 +1,22 @@
 word: bar
+translation:
+  - B
+  - AA
+  - R
 availableAccents:
   - general-american
   - irish
   - rp
 recordings:
   - accent: general-american
-    src: assets/audio/general-american/bar.webm
+    src: general-american/bar.webm
   - accent: irish
-    src: assets/audio/irish/bar.webm
+    src: irish/bar.webm
   - accent: rp
-    src: assets/audio/rp/bar.webm
+    src: rp/bar.webm
+relatedWords:
+  - probably
+  - problem
+  - bring
+  - block
+  - grab

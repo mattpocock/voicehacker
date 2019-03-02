@@ -1,12 +1,22 @@
 word: rang
+translation:
+  - R
+  - AE
+  - NG
 availableAccents:
   - general-american
   - irish
   - rp
 recordings:
   - accent: general-american
-    src: assets/audio/general-american/rang.webm
+    src: general-american/rang.webm
   - accent: irish
-    src: assets/audio/irish/rang.webm
+    src: irish/rang.webm
   - accent: rp
-    src: assets/audio/rp/rang.webm
+    src: rp/rang.webm
+relatedWords:
+  - angry
+  - carry
+  - bring
+  - thank
+  - strong

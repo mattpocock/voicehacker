@@ -1,6 +1,16 @@
 word: three
+translation:
+  - TH
+  - R
+  - IY
 availableAccents:
   - general-american
 recordings:
   - accent: general-american
-    src: assets/audio/general-american/three.webm
+    src: general-american/three.webm
+relatedWords:
+  - everything
+  - real
+  - anymore
+  - reason
+  - dream

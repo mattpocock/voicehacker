@@ -1,4 +1,9 @@
 word: cover
+translation:
+  - K
+  - AH
+  - V
+  - ER
 availableAccents:
   - general-american
   - irish
@@ -7,12 +12,18 @@ availableAccents:
   - cockney
 recordings:
   - accent: general-american
-    src: assets/audio/general-american/cover.webm
+    src: general-american/cover.webm
   - accent: irish
-    src: assets/audio/irish/cover.webm
+    src: irish/cover.webm
   - accent: rp
-    src: assets/audio/rp/cover.webm
+    src: rp/cover.webm
   - accent: liverpool
-    src: assets/audio/liverpool/cover.webm
+    src: liverpool/cover.webm
   - accent: cockney
-    src: assets/audio/cockney/cover.webm
+    src: cockney/cover.webm
+relatedWords:
+  - conversation
+  - consider
+  - several
+  - color
+  - computer

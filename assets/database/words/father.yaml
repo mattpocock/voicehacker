@@ -1,12 +1,23 @@
 word: father
+translation:
+  - F
+  - AA
+  - DH
+  - ER
 availableAccents:
   - general-american
   - irish
   - rp
 recordings:
   - accent: general-american
-    src: assets/audio/general-american/father.webm
+    src: general-american/father.webm
   - accent: irish
-    src: assets/audio/irish/father.webm
+    src: irish/father.webm
   - accent: rp
-    src: assets/audio/rp/father.webm
+    src: rp/father.webm
+relatedWords:
+  - bother
+  - further
+  - yourself
+  - afternoon
+  - finger

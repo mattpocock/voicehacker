@@ -1,6 +1,17 @@
 word: breathe
+translation:
+  - B
+  - R
+  - IY
+  - DH
 availableAccents:
   - general-american
 recordings:
   - accent: general-american
-    src: assets/audio/general-american/breathe.webm
+    src: general-american/breathe.webm
+relatedWords:
+  - probably
+  - brother
+  - barely
+  - practically
+  - three

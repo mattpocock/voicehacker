@@ -1,6 +1,18 @@
 word: brother
+translation:
+  - B
+  - R
+  - AH
+  - DH
+  - ER
 availableAccents:
   - general-american
 recordings:
   - accent: general-american
-    src: assets/audio/general-american/brother.webm
+    src: general-american/brother.webm
+relatedWords:
+  - trouble
+  - rub
+  - bother
+  - mother
+  - brush

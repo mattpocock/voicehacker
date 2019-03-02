@@ -1,6 +1,16 @@
 word: air
+translation:
+  - EH
+  - R
 availableAccents:
   - general-american
 recordings:
   - accent: general-american
-    src: assets/audio/general-american/air.webm
+    src: general-american/air.webm
+relatedWords:
+  - ready
+  - tear
+  - recognize
+  - boyfriend
+  - chair
+  - breakfast

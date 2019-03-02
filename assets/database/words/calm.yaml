@@ -1,6 +1,16 @@
 word: calm
+translation:
+  - K
+  - AA
+  - M
 availableAccents:
   - general-american
 recordings:
   - accent: general-american
-    src: assets/audio/general-american/calm.webm
+    src: general-american/calm.webm
+relatedWords:
+  - comment
+  - mark
+  - lock
+  - smoke
+  - locker

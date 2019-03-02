@@ -1,6 +1,17 @@
 word: burst
+translation:
+  - B
+  - ER
+  - S
+  - T
 availableAccents:
   - general-american
 recordings:
   - accent: general-american
-    src: assets/audio/general-american/burst.webm
+    src: general-american/burst.webm
+relatedWords:
+  - sister
+  - best
+  - better
+  - breakfast
+  - first

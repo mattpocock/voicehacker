@@ -1,12 +1,22 @@
 word: thought
+translation:
+  - TH
+  - AO
+  - T
 availableAccents:
   - general-american
   - irish
   - rp
 recordings:
   - accent: general-american
-    src: assets/audio/general-american/thought.webm
+    src: general-american/thought.webm
   - accent: irish
-    src: assets/audio/irish/thought.webm
+    src: irish/thought.webm
   - accent: rp
-    src: assets/audio/rp/thought.webm
+    src: rp/thought.webm
+relatedWords:
+  - fault
+  - toward
+  - daughter
+  - truth
+  - short

@@ -1,12 +1,25 @@
 word: morning
+translation:
+  - M
+  - AO
+  - R
+  - 'N'
+  - IH
+  - NG
 availableAccents:
   - general-american
   - irish
   - rp
 recordings:
   - accent: general-american
-    src: assets/audio/general-american/morning.webm
+    src: general-american/morning.webm
   - accent: irish
-    src: assets/audio/irish/morning.webm
+    src: irish/morning.webm
   - accent: rp
-    src: assets/audio/rp/morning.webm
+    src: rp/morning.webm
+relatedWords:
+  - important
+  - remain
+  - ignore
+  - normal
+  - anymore

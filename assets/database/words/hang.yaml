@@ -1,12 +1,22 @@
 word: hang
+translation:
+  - HH
+  - AE
+  - NG
 availableAccents:
   - general-american
   - irish
   - rp
 recordings:
   - accent: general-american
-    src: assets/audio/general-american/hang.webm
+    src: general-american/hang.webm
   - accent: irish
-    src: assets/audio/irish/hang.webm
+    src: irish/hang.webm
   - accent: rp
-    src: assets/audio/rp/hang.webm
+    src: rp/hang.webm
+relatedWords:
+  - haven't
+  - perhaps
+  - thank
+  - had
+  - anger

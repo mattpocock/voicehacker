@@ -1,4 +1,9 @@
 word: drive
+translation:
+  - D
+  - R
+  - AY
+  - V
 availableAccents:
   - general-american
   - irish
@@ -7,12 +12,18 @@ availableAccents:
   - cockney
 recordings:
   - accent: general-american
-    src: assets/audio/general-american/drive.webm
+    src: general-american/drive.webm
   - accent: irish
-    src: assets/audio/irish/drive.webm
+    src: irish/drive.webm
   - accent: rp
-    src: assets/audio/rp/drive.webm
+    src: rp/drive.webm
   - accent: liverpool
-    src: assets/audio/liverpool/drive.webm
+    src: liverpool/drive.webm
   - accent: cockney
-    src: assets/audio/cockney/drive.webm
+    src: cockney/drive.webm
+relatedWords:
+  - drove
+  - dry
+  - remind
+  - ride
+  - hard

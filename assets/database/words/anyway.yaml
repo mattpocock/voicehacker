@@ -1,4 +1,10 @@
 word: anyway
+translation:
+  - EH
+  - 'N'
+  - IY
+  - W
+  - EY
 availableAccents:
   - general-american
   - irish
@@ -7,12 +13,18 @@ availableAccents:
   - cockney
 recordings:
   - accent: general-american
-    src: assets/audio/general-american/anyway.webm
+    src: general-american/anyway.webm
   - accent: irish
-    src: assets/audio/irish/anyway.webm
+    src: irish/anyway.webm
   - accent: rp
-    src: assets/audio/rp/anyway.webm
+    src: rp/anyway.webm
   - accent: liverpool
-    src: assets/audio/liverpool/anyway.webm
+    src: liverpool/anyway.webm
   - accent: cockney
-    src: assets/audio/cockney/anyway.webm
+    src: cockney/anyway.webm
+relatedWords:
+  - eventually
+  - anyone
+  - twenty
+  - everyone
+  - between

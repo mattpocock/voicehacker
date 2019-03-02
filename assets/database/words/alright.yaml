@@ -1,6 +1,18 @@
 word: alright
+translation:
+  - AO
+  - L
+  - R
+  - AY
+  - T
 availableAccents:
   - general-american
 recordings:
   - accent: general-american
-    src: assets/audio/general-american/alright.webm
+    src: general-american/alright.webm
+relatedWords:
+  - already
+  - struggle
+  - almost
+  - quietly
+  - trail

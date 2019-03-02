@@ -1,4 +1,9 @@
 word: think
+translation:
+  - TH
+  - IH
+  - NG
+  - K
 availableAccents:
   - general-american
   - irish
@@ -7,12 +12,18 @@ availableAccents:
   - cockney
 recordings:
   - accent: general-american
-    src: assets/audio/general-american/think.webm
+    src: general-american/think.webm
   - accent: irish
-    src: assets/audio/irish/think.webm
+    src: irish/think.webm
   - accent: rp
-    src: assets/audio/rp/think.webm
+    src: rp/think.webm
   - accent: liverpool
-    src: assets/audio/liverpool/think.webm
+    src: liverpool/think.webm
   - accent: cockney
-    src: assets/audio/cockney/think.webm
+    src: cockney/think.webm
+relatedWords:
+  - nothing
+  - blink
+  - drink
+  - everything
+  - anything

@@ -1,4 +1,14 @@
 word: apartment
+translation:
+  - AH
+  - P
+  - AA
+  - R
+  - T
+  - M
+  - AH
+  - 'N'
+  - T
 availableAccents:
   - general-american
   - irish
@@ -7,12 +17,18 @@ availableAccents:
   - cockney
 recordings:
   - accent: general-american
-    src: assets/audio/general-american/apartment.webm
+    src: general-american/apartment.webm
   - accent: irish
-    src: assets/audio/irish/apartment.webm
+    src: irish/apartment.webm
   - accent: rp
-    src: assets/audio/rp/apartment.webm
+    src: rp/apartment.webm
   - accent: liverpool
-    src: assets/audio/liverpool/apartment.webm
+    src: liverpool/apartment.webm
   - accent: cockney
-    src: assets/audio/cockney/apartment.webm
+    src: cockney/apartment.webm
+relatedWords:
+  - important
+  - tomorrow
+  - aren't
+  - present
+  - apparently

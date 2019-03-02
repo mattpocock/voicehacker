@@ -1,6 +1,18 @@
 word: always
+translation:
+  - AO
+  - L
+  - W
+  - EY
+  - Z
 availableAccents:
   - general-american
 recordings:
   - accent: general-american
-    src: assets/audio/general-american/always.webm
+    src: general-american/always.webm
+relatedWords:
+  - hallway
+  - wall
+  - amaze
+  - all
+  - will

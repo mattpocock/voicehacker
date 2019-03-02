@@ -1,12 +1,21 @@
 word: as
+translation:
+  - AE
+  - Z
 availableAccents:
   - general-american
   - irish
   - rp
 recordings:
   - accent: general-american
-    src: assets/audio/general-american/as.webm
+    src: general-american/as.webm
   - accent: irish
-    src: assets/audio/irish/as.webm
+    src: irish/as.webm
   - accent: rp
-    src: assets/audio/rp/as.webm
+    src: rp/as.webm
+relatedWords:
+  - has
+  - exactly
+  - flash
+  - confuse
+  - thank

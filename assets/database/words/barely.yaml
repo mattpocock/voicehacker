@@ -1,9 +1,21 @@
 word: barely
+translation:
+  - B
+  - EH
+  - R
+  - L
+  - IY
 availableAccents:
   - general-american
   - irish
 recordings:
   - accent: general-american
-    src: assets/audio/general-american/barely.webm
+    src: general-american/barely.webm
   - accent: irish
-    src: assets/audio/irish/barely.webm
+    src: irish/barely.webm
+relatedWords:
+  - probably
+  - carefully
+  - apparently
+  - already
+  - obviously

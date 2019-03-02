@@ -1,12 +1,29 @@
 word: conversation
+translation:
+  - K
+  - AA
+  - 'N'
+  - V
+  - ER
+  - S
+  - EY
+  - SH
+  - AH
+  - 'N'
 availableAccents:
   - general-american
   - irish
   - rp
 recordings:
   - accent: general-american
-    src: assets/audio/general-american/conversation.webm
+    src: general-american/conversation.webm
   - accent: irish
-    src: assets/audio/irish/conversation.webm
+    src: irish/conversation.webm
   - accent: rp
-    src: assets/audio/rp/conversation.webm
+    src: rp/conversation.webm
+relatedWords:
+  - direction
+  - situation
+  - consider
+  - concern
+  - nervous

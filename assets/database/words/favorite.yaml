@@ -1,12 +1,25 @@
 word: favorite
+translation:
+  - F
+  - EY
+  - V
+  - ER
+  - IH
+  - T
 availableAccents:
   - general-american
   - irish
   - rp
 recordings:
   - accent: general-american
-    src: assets/audio/general-american/favorite.webm
+    src: general-american/favorite.webm
   - accent: irish
-    src: assets/audio/irish/favorite.webm
+    src: irish/favorite.webm
   - accent: rp
-    src: assets/audio/rp/favorite.webm
+    src: rp/favorite.webm
+relatedWords:
+  - different
+  - whatever
+  - afternoon
+  - sister
+  - shift

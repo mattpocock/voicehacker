@@ -1,12 +1,23 @@
 word: about
+translation:
+  - AH
+  - B
+  - AW
+  - T
 availableAccents:
   - general-american
   - irish
   - rp
 recordings:
   - accent: general-american
-    src: assets/audio/general-american/about.webm
+    src: general-american/about.webm
   - accent: irish
-    src: assets/audio/irish/about.webm
+    src: irish/about.webm
   - accent: rp
-    src: assets/audio/rp/about.webm
+    src: rp/about.webm
+relatedWords:
+  - but
+  - breakfast
+  - beautiful
+  - bottom
+  - bottle

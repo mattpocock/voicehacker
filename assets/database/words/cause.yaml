@@ -1,6 +1,16 @@
 word: cause
+translation:
+  - K
+  - AA
+  - Z
 availableAccents:
   - general-american
 recordings:
   - accent: general-american
-    src: assets/audio/general-american/cause.webm
+    src: general-american/cause.webm
+relatedWords:
+  - shock
+  - caught
+  - calm
+  - because
+  - car

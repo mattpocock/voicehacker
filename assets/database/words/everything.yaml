@@ -1,4 +1,12 @@
 word: everything
+translation:
+  - EH
+  - V
+  - R
+  - IY
+  - TH
+  - IH
+  - NG
 availableAccents:
   - general-american
   - irish
@@ -7,12 +15,18 @@ availableAccents:
   - cockney
 recordings:
   - accent: general-american
-    src: assets/audio/general-american/everything.webm
+    src: general-american/everything.webm
   - accent: irish
-    src: assets/audio/irish/everything.webm
+    src: irish/everything.webm
   - accent: rp
-    src: assets/audio/rp/everything.webm
+    src: rp/everything.webm
   - accent: liverpool
-    src: assets/audio/liverpool/everything.webm
+    src: liverpool/everything.webm
   - accent: cockney
-    src: assets/audio/cockney/everything.webm
+    src: cockney/everything.webm
+relatedWords:
+  - anything
+  - very
+  - eventually
+  - everyone
+  - evening

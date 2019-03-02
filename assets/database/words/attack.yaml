@@ -1,12 +1,23 @@
 word: attack
+translation:
+  - AH
+  - T
+  - AE
+  - K
 availableAccents:
   - general-american
   - irish
   - rp
 recordings:
   - accent: general-american
-    src: assets/audio/general-american/attack.webm
+    src: general-american/attack.webm
   - accent: irish
-    src: assets/audio/irish/attack.webm
+    src: irish/attack.webm
   - accent: rp
-    src: assets/audio/rp/attack.webm
+    src: rp/attack.webm
+relatedWords:
+  - jacket
+  - practically
+  - quiet
+  - understand
+  - quietly

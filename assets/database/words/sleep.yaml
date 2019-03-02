@@ -1,12 +1,23 @@
 word: sleep
+translation:
+  - S
+  - L
+  - IY
+  - P
 availableAccents:
   - general-american
   - irish
   - rp
 recordings:
   - accent: general-american
-    src: assets/audio/general-american/sleep.webm
+    src: general-american/sleep.webm
   - accent: irish
-    src: assets/audio/irish/sleep.webm
+    src: irish/sleep.webm
   - accent: rp
-    src: assets/audio/rp/sleep.webm
+    src: rp/sleep.webm
+relatedWords:
+  - simply
+  - especially
+  - asleep
+  - police
+  - slightly

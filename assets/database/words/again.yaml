@@ -1,6 +1,17 @@
 word: again
+translation:
+  - AH
+  - G
+  - EH
+  - 'N'
 availableAccents:
   - general-american
 recordings:
   - accent: general-american
-    src: assets/audio/general-american/again.webm
+    src: general-american/again.webm
+relatedWords:
+  - against
+  - recognize
+  - gonna
+  - seven
+  - interest

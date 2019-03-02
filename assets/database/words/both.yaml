@@ -1,6 +1,16 @@
 word: both
+translation:
+  - B
+  - OW
+  - TH
 availableAccents:
   - general-american
 recordings:
   - accent: general-american
-    src: assets/audio/general-american/both.webm
+    src: general-american/both.webm
+relatedWords:
+  - throat
+  - bathroom
+  - broken
+  - broke
+  - breath

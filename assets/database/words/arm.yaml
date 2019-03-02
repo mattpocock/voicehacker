@@ -1,4 +1,8 @@
 word: arm
+translation:
+  - AA
+  - R
+  - M
 availableAccents:
   - general-american
   - irish
@@ -7,12 +11,18 @@ availableAccents:
   - cockney
 recordings:
   - accent: general-american
-    src: assets/audio/general-american/arm.webm
+    src: general-american/arm.webm
   - accent: irish
-    src: assets/audio/irish/arm.webm
+    src: irish/arm.webm
   - accent: rp
-    src: assets/audio/rp/arm.webm
+    src: rp/arm.webm
   - accent: liverpool
-    src: assets/audio/liverpool/arm.webm
+    src: liverpool/arm.webm
   - accent: cockney
-    src: assets/audio/cockney/arm.webm
+    src: cockney/arm.webm
+relatedWords:
+  - promise
+  - mark
+  - apartment
+  - problem
+  - tomorrow

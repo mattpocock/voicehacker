@@ -1,4 +1,8 @@
 word: that
+translation:
+  - DH
+  - AE
+  - T
 availableAccents:
   - general-american
   - irish
@@ -7,12 +11,18 @@ availableAccents:
   - cockney
 recordings:
   - accent: general-american
-    src: assets/audio/general-american/that.webm
+    src: general-american/that.webm
   - accent: irish
-    src: assets/audio/irish/that.webm
+    src: irish/that.webm
   - accent: rp
-    src: assets/audio/rp/that.webm
+    src: rp/that.webm
   - accent: liverpool
-    src: assets/audio/liverpool/that.webm
+    src: liverpool/that.webm
   - accent: cockney
-    src: assets/audio/cockney/that.webm
+    src: cockney/that.webm
+relatedWords:
+  - that's
+  - sat
+  - rather
+  - stand
+  - afternoon

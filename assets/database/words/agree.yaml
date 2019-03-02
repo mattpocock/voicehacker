@@ -1,6 +1,17 @@
 word: agree
+translation:
+  - AH
+  - G
+  - R
+  - IY
 availableAccents:
   - general-american
 recordings:
   - accent: general-american
-    src: assets/audio/general-american/agree.webm
+    src: general-american/agree.webm
+relatedWords:
+  - practically
+  - area
+  - probably
+  - carefully
+  - seriously

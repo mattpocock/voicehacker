@@ -1,12 +1,23 @@
 word: also
+translation:
+  - AO
+  - L
+  - S
+  - OW
 availableAccents:
   - general-american
   - irish
   - rp
 recordings:
   - accent: general-american
-    src: assets/audio/general-american/also.webm
+    src: general-american/also.webm
   - accent: irish
-    src: assets/audio/irish/also.webm
+    src: irish/also.webm
   - accent: rp
-    src: assets/audio/rp/also.webm
+    src: rp/also.webm
+relatedWords:
+  - almost
+  - lost
+  - softly
+  - small
+  - slowly

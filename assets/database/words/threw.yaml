@@ -1,12 +1,22 @@
 word: threw
+translation:
+  - TH
+  - R
+  - UW
 availableAccents:
   - general-american
   - irish
   - rp
 recordings:
   - accent: general-american
-    src: assets/audio/general-american/threw.webm
+    src: general-american/threw.webm
   - accent: irish
-    src: assets/audio/irish/threw.webm
+    src: irish/threw.webm
   - accent: rp
-    src: assets/audio/rp/threw.webm
+    src: rp/threw.webm
+relatedWords:
+  - truth
+  - through
+  - bathroom
+  - everything
+  - three

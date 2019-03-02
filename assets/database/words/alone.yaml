@@ -1,6 +1,17 @@
 word: alone
+translation:
+  - AH
+  - L
+  - OW
+  - 'N'
 availableAccents:
   - general-american
 recordings:
   - accent: general-american
-    src: assets/audio/general-american/alone.webm
+    src: general-american/alone.webm
+relatedWords:
+  - control
+  - handle
+  - silent
+  - hello
+  - finally

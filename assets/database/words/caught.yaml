@@ -1,6 +1,16 @@
 word: caught
+translation:
+  - K
+  - AA
+  - T
 availableAccents:
   - general-american
 recordings:
   - accent: general-american
-    src: assets/audio/general-american/caught.webm
+    src: general-american/caught.webm
+relatedWords:
+  - comment
+  - pocket
+  - doctor
+  - locker
+  - taken

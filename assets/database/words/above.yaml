@@ -1,6 +1,17 @@
 word: above
+translation:
+  - AH
+  - B
+  - AH
+  - V
 availableAccents:
   - general-american
 recordings:
   - accent: general-american
-    src: assets/audio/general-american/above.webm
+    src: general-american/above.webm
+relatedWords:
+  - obviously
+  - brother
+  - bottom
+  - seven
+  - haven't

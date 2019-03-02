@@ -1,4 +1,8 @@
 word: cell
+translation:
+  - S
+  - EH
+  - L
 availableAccents:
   - general-american
   - irish
@@ -7,12 +11,19 @@ availableAccents:
   - cockney
 recordings:
   - accent: general-american
-    src: assets/audio/general-american/cell.webm
+    src: general-american/cell.webm
   - accent: irish
-    src: assets/audio/irish/cell.webm
+    src: irish/cell.webm
   - accent: rp
-    src: assets/audio/rp/cell.webm
+    src: rp/cell.webm
   - accent: liverpool
-    src: assets/audio/liverpool/cell.webm
+    src: liverpool/cell.webm
   - accent: cockney
-    src: assets/audio/cockney/cell.webm
+    src: cockney/cell.webm
+relatedWords:
+  - less
+  - herself
+  - self
+  - yourself
+  - else
+  - himself

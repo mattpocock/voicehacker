@@ -1,4 +1,7 @@
 word: they
+translation:
+  - DH
+  - EY
 availableAccents:
   - general-american
   - irish
@@ -7,12 +10,18 @@ availableAccents:
   - cockney
 recordings:
   - accent: general-american
-    src: assets/audio/general-american/they.webm
+    src: general-american/they.webm
   - accent: irish
-    src: assets/audio/irish/they.webm
+    src: irish/they.webm
   - accent: rp
-    src: assets/audio/rp/they.webm
+    src: rp/they.webm
   - accent: liverpool
-    src: assets/audio/liverpool/they.webm
+    src: liverpool/they.webm
   - accent: cockney
-    src: assets/audio/cockney/they.webm
+    src: cockney/they.webm
+relatedWords:
+  - they'd
+  - hate
+  - although
+  - grey
+  - gave

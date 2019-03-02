@@ -1,12 +1,24 @@
 word: happen
+translation:
+  - HH
+  - AE
+  - P
+  - AH
+  - 'N'
 availableAccents:
   - general-american
   - irish
   - rp
 recordings:
   - accent: general-american
-    src: assets/audio/general-american/happen.webm
+    src: general-american/happen.webm
   - accent: irish
-    src: assets/audio/irish/happen.webm
+    src: irish/happen.webm
   - accent: rp
-    src: assets/audio/rp/happen.webm
+    src: rp/happen.webm
+relatedWords:
+  - handle
+  - haven't
+  - hadn't
+  - parents
+  - person

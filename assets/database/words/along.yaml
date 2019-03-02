@@ -1,12 +1,23 @@
 word: along
+translation:
+  - AH
+  - L
+  - AO
+  - NG
 availableAccents:
   - general-american
   - irish
   - rp
 recordings:
   - accent: general-american
-    src: assets/audio/general-american/along.webm
+    src: general-american/along.webm
   - accent: irish
-    src: assets/audio/irish/along.webm
+    src: irish/along.webm
   - accent: rp
-    src: assets/audio/rp/along.webm
+    src: rp/along.webm
+relatedWords:
+  - normal
+  - uncle
+  - long
+  - single
+  - until

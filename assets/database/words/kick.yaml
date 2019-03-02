@@ -1,12 +1,23 @@
 word: kick
+translation:
+  - K
+  - IH
+  - K
 availableAccents:
   - general-american
   - irish
   - rp
 recordings:
   - accent: general-american
-    src: assets/audio/general-american/kick.webm
+    src: general-american/kick.webm
   - accent: irish
-    src: assets/audio/irish/kick.webm
+    src: irish/kick.webm
   - accent: rp
-    src: assets/audio/rp/kick.webm
+    src: rp/kick.webm
+relatedWords:
+  - continue
+  - skin
+  - expression
+  - thick
+  - pick
+  - explain

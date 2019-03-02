@@ -1,4 +1,9 @@
 word: bother
+translation:
+  - B
+  - AA
+  - DH
+  - ER
 availableAccents:
   - general-american
   - irish
@@ -7,12 +12,18 @@ availableAccents:
   - cockney
 recordings:
   - accent: general-american
-    src: assets/audio/general-american/bother.webm
+    src: general-american/bother.webm
   - accent: irish
-    src: assets/audio/irish/bother.webm
+    src: irish/bother.webm
   - accent: rp
-    src: assets/audio/rp/bother.webm
+    src: rp/bother.webm
   - accent: liverpool
-    src: assets/audio/liverpool/bother.webm
+    src: liverpool/bother.webm
   - accent: cockney
-    src: assets/audio/cockney/bother.webm
+    src: cockney/bother.webm
+relatedWords:
+  - brother
+  - father
+  - probably
+  - either
+  - mother

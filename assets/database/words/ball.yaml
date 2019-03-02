@@ -1,12 +1,22 @@
 word: ball
+translation:
+  - B
+  - AO
+  - L
 availableAccents:
   - general-american
   - irish
   - rp
 recordings:
   - accent: general-american
-    src: assets/audio/general-american/ball.webm
+    src: general-american/ball.webm
   - accent: irish
-    src: assets/audio/irish/ball.webm
+    src: irish/ball.webm
   - accent: rp
-    src: assets/audio/rp/ball.webm
+    src: rp/ball.webm
+relatedWords:
+  - call
+  - blink
+  - along
+  - blood
+  - black

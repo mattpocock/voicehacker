@@ -1,12 +1,25 @@
 word: anymore
+translation:
+  - EH
+  - 'N'
+  - IY
+  - M
+  - AO
+  - R
 availableAccents:
   - general-american
   - irish
   - rp
 recordings:
   - accent: general-american
-    src: assets/audio/general-american/anymore.webm
+    src: general-american/anymore.webm
   - accent: irish
-    src: assets/audio/irish/anymore.webm
+    src: irish/anymore.webm
   - accent: rp
-    src: assets/audio/rp/anymore.webm
+    src: rp/anymore.webm
+relatedWords:
+  - important
+  - remind
+  - everyone
+  - many
+  - morning

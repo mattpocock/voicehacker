@@ -1,12 +1,24 @@
 word: isn't
+translation:
+  - IH
+  - Z
+  - AH
+  - 'N'
+  - T
 availableAccents:
   - general-american
   - irish
   - rp
 recordings:
   - accent: general-american
-    src: assets/audio/general-american/isn't.webm
+    src: general-american/isn't.webm
   - accent: irish
-    src: assets/audio/irish/isn't.webm
+    src: irish/isn't.webm
   - accent: rp
-    src: assets/audio/rp/isn't.webm
+    src: rp/isn't.webm
+relatedWords:
+  - didn't
+  - minute
+  - different
+  - until
+  - business

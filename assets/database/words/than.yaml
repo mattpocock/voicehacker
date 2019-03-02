@@ -1,4 +1,8 @@
 word: than
+translation:
+  - DH
+  - AE
+  - 'N'
 availableAccents:
   - general-american
   - irish
@@ -7,12 +11,18 @@ availableAccents:
   - cockney
 recordings:
   - accent: general-american
-    src: assets/audio/general-american/than.webm
+    src: general-american/than.webm
   - accent: irish
-    src: assets/audio/irish/than.webm
+    src: irish/than.webm
   - accent: rp
-    src: assets/audio/rp/than.webm
+    src: rp/than.webm
   - accent: liverpool
-    src: assets/audio/liverpool/than.webm
+    src: liverpool/than.webm
   - accent: cockney
-    src: assets/audio/cockney/than.webm
+    src: cockney/than.webm
+relatedWords:
+  - man
+  - happen
+  - manage
+  - afternoon
+  - pants

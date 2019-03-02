@@ -1,12 +1,23 @@
 word: rather
+translation:
+  - R
+  - AE
+  - DH
+  - ER
 availableAccents:
   - general-american
   - irish
   - rp
 recordings:
   - accent: general-american
-    src: assets/audio/general-american/rather.webm
+    src: general-american/rather.webm
   - accent: irish
-    src: assets/audio/irish/rather.webm
+    src: irish/rather.webm
   - accent: rp
-    src: assets/audio/rp/rather.webm
+    src: rp/rather.webm
+relatedWords:
+  - brother
+  - mother
+  - anger
+  - crack
+  - afternoon

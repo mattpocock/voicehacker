@@ -1,4 +1,9 @@
 word: there's
+translation:
+  - DH
+  - EH
+  - R
+  - Z
 availableAccents:
   - general-american
   - irish
@@ -7,12 +12,18 @@ availableAccents:
   - cockney
 recordings:
   - accent: general-american
-    src: assets/audio/general-american/there's.webm
+    src: general-american/there's.webm
   - accent: irish
-    src: assets/audio/irish/there's.webm
+    src: irish/there's.webm
   - accent: rp
-    src: assets/audio/rp/there's.webm
+    src: rp/there's.webm
   - accent: liverpool
-    src: assets/audio/liverpool/there's.webm
+    src: liverpool/there's.webm
   - accent: cockney
-    src: assets/audio/cockney/there's.webm
+    src: cockney/there's.webm
+relatedWords:
+  - themselves
+  - present
+  - recognize
+  - they're
+  - there

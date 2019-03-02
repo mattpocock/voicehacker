@@ -1,12 +1,23 @@
 word: although
+translation:
+  - AO
+  - L
+  - DH
+  - OW
 availableAccents:
   - general-american
   - irish
   - rp
 recordings:
   - accent: general-american
-    src: assets/audio/general-american/although.webm
+    src: general-american/although.webm
   - accent: irish
-    src: assets/audio/irish/although.webm
+    src: irish/although.webm
   - accent: rp
-    src: assets/audio/rp/although.webm
+    src: rp/although.webm
+relatedWords:
+  - clothes
+  - also
+  - almost
+  - fall
+  - slow

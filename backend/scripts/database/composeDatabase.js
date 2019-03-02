@@ -2,6 +2,7 @@ const fs = require('fs');
 const path = require('path');
 const rimraf = require('rimraf');
 const jsYaml = require('js-yaml');
+const getCmellonTranslations = require('./utils/getCmellonTranslations');
 const words = require('../../words');
 
 const wordsArray = words.split('\n');
@@ -35,10 +36,11 @@ module.exports = () => {
     });
     return {
       word,
+      translation: getCmellonTranslations(word),
       availableAccents,
       recordings: availableAccents.map((accent) => ({
         accent,
-        src: `assets/audio/${accent}/${word}.webm`,
+        src: `${accent}/${word}.webm`,
       })),
     };
   });
@@ -78,8 +80,29 @@ module.exports = () => {
     jsYaml.safeDump(recordingsToMake),
   );
 
+  const wordObjectsWithRelatedWords = wordObjects.map((wordObject) => {
+    return {
+      ...wordObject,
+      relatedWords: wordObjects
+        .map((wordObjectToCheck) => {
+          return {
+            ...wordObjectToCheck,
+            score: wordObject.translation.filter((symbol) =>
+              wordObjectToCheck.translation.includes(symbol),
+            ).length,
+          };
+        })
+        .sort((a, b) => {
+          return a.score > b.score ? -1 : 1;
+        })
+        .slice(0, 6)
+        .filter(({ word }) => word !== wordObject.word)
+        .map(({ word }) => word),
+    };
+  });
+
   /** Write the words database */
-  wordObjects.forEach((json) => {
+  wordObjectsWithRelatedWords.forEach((json) => {
     const yaml = jsYaml.safeDump(json);
     fs.writeFileSync(
       path.resolve(databasePath, 'words', `${json.word}.yaml`),

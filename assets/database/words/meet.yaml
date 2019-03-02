@@ -1,12 +1,22 @@
 word: meet
+translation:
+  - M
+  - IY
+  - T
 availableAccents:
   - general-american
   - irish
   - rp
 recordings:
   - accent: general-american
-    src: assets/audio/general-american/meet.webm
+    src: general-american/meet.webm
   - accent: irish
-    src: assets/audio/irish/meet.webm
+    src: irish/meet.webm
   - accent: rp
-    src: assets/audio/rp/meet.webm
+    src: rp/meet.webm
+relatedWords:
+  - complete
+  - immediately
+  - completely
+  - empty
+  - team

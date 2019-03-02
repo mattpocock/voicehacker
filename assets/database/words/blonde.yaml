@@ -1,12 +1,24 @@
 word: blonde
+translation:
+  - B
+  - L
+  - AA
+  - 'N'
+  - D
 availableAccents:
   - general-american
   - irish
   - rp
 recordings:
   - accent: general-american
-    src: assets/audio/general-american/blonde.webm
+    src: general-american/blonde.webm
   - accent: irish
-    src: assets/audio/irish/blonde.webm
+    src: irish/blonde.webm
   - accent: rp
-    src: assets/audio/rp/blonde.webm
+    src: rp/blonde.webm
+relatedWords:
+  - children
+  - behind
+  - girlfriend
+  - suddenly
+  - handle

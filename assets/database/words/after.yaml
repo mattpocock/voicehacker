@@ -1,6 +1,17 @@
 word: after
+translation:
+  - AE
+  - F
+  - T
+  - ER
 availableAccents:
   - general-american
 recordings:
   - accent: general-american
-    src: assets/audio/general-american/after.webm
+    src: general-american/after.webm
+relatedWords:
+  - afternoon
+  - first
+  - favorite
+  - fact
+  - fast

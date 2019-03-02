@@ -1,6 +1,17 @@
 word: carry
+translation:
+  - K
+  - AE
+  - R
+  - IY
 availableAccents:
   - general-american
 recordings:
   - accent: general-american
-    src: assets/audio/general-american/carry.webm
+    src: general-american/carry.webm
+relatedWords:
+  - practically
+  - exactly
+  - track
+  - actually
+  - carefully

@@ -1,12 +1,23 @@
 word: avoid
+translation:
+  - AH
+  - V
+  - OY
+  - D
 availableAccents:
   - general-american
   - irish
   - rp
 recordings:
   - accent: general-american
-    src: assets/audio/general-american/avoid.webm
+    src: general-american/avoid.webm
   - accent: irish
-    src: assets/audio/irish/avoid.webm
+    src: irish/avoid.webm
   - accent: rp
-    src: assets/audio/rp/avoid.webm
+    src: rp/avoid.webm
+relatedWords:
+  - idea
+  - understand
+  - obviously
+  - children
+  - drove

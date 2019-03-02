@@ -1,12 +1,23 @@
 word: every
+translation:
+  - EH
+  - V
+  - ER
+  - IY
 availableAccents:
   - general-american
   - irish
   - rp
 recordings:
   - accent: general-american
-    src: assets/audio/general-american/every.webm
+    src: general-american/every.webm
   - accent: irish
-    src: assets/audio/irish/every.webm
+    src: irish/every.webm
   - accent: rp
-    src: assets/audio/rp/every.webm
+    src: rp/every.webm
+relatedWords:
+  - heavy
+  - never
+  - ever
+  - very
+  - everything

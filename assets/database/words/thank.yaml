@@ -1,4 +1,9 @@
 word: thank
+translation:
+  - TH
+  - AE
+  - NG
+  - K
 availableAccents:
   - general-american
   - irish
@@ -7,12 +12,18 @@ availableAccents:
   - cockney
 recordings:
   - accent: general-american
-    src: assets/audio/general-american/thank.webm
+    src: general-american/thank.webm
   - accent: irish
-    src: assets/audio/irish/thank.webm
+    src: irish/thank.webm
   - accent: rp
-    src: assets/audio/rp/thank.webm
+    src: rp/thank.webm
   - accent: liverpool
-    src: assets/audio/liverpool/thank.webm
+    src: liverpool/thank.webm
   - accent: cockney
-    src: assets/audio/cockney/thank.webm
+    src: cockney/thank.webm
+relatedWords:
+  - think
+  - crack
+  - rang
+  - carry
+  - ask

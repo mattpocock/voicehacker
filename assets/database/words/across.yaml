@@ -1,9 +1,21 @@
 word: across
+translation:
+  - AH
+  - K
+  - R
+  - AO
+  - S
 availableAccents:
   - general-american
   - irish
 recordings:
   - accent: general-american
-    src: assets/audio/general-american/across.webm
+    src: general-american/across.webm
   - accent: irish
-    src: assets/audio/irish/across.webm
+    src: irish/across.webm
+relatedWords:
+  - breakfast
+  - expression
+  - course
+  - cross
+  - broken

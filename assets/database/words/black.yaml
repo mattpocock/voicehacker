@@ -1,9 +1,20 @@
 word: black
+translation:
+  - B
+  - L
+  - AE
+  - K
 availableAccents:
   - general-american
   - irish
 recordings:
   - accent: general-american
-    src: assets/audio/general-american/black.webm
+    src: general-american/black.webm
   - accent: irish
-    src: assets/audio/irish/black.webm
+    src: irish/black.webm
+relatedWords:
+  - relax
+  - blink
+  - block
+  - class
+  - practically

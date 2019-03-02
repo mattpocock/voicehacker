@@ -1,12 +1,23 @@
 word: anger
+translation:
+  - AE
+  - NG
+  - G
+  - ER
 availableAccents:
   - general-american
   - irish
   - rp
 recordings:
   - accent: general-american
-    src: assets/audio/general-american/anger.webm
+    src: general-american/anger.webm
   - accent: irish
-    src: assets/audio/irish/anger.webm
+    src: irish/anger.webm
   - accent: rp
-    src: assets/audio/rp/anger.webm
+    src: rp/anger.webm
+relatedWords:
+  - angry
+  - finger
+  - began
+  - hang
+  - perhaps

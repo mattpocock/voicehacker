@@ -1,12 +1,22 @@
 word: hung
+translation:
+  - HH
+  - AH
+  - NG
 availableAccents:
   - general-american
   - irish
   - rp
 recordings:
   - accent: general-american
-    src: assets/audio/general-american/hung.webm
+    src: general-american/hung.webm
   - accent: irish
-    src: assets/audio/irish/hung.webm
+    src: irish/hung.webm
   - accent: rp
-    src: assets/audio/rp/hung.webm
+    src: rp/hung.webm
+relatedWords:
+  - young
+  - ahead
+  - single
+  - haven't
+  - somehow

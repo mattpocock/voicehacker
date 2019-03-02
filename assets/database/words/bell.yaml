@@ -1,4 +1,8 @@
 word: bell
+translation:
+  - B
+  - EH
+  - L
 availableAccents:
   - general-american
   - irish
@@ -7,12 +11,18 @@ availableAccents:
   - cockney
 recordings:
   - accent: general-american
-    src: assets/audio/general-american/bell.webm
+    src: general-american/bell.webm
   - accent: irish
-    src: assets/audio/irish/bell.webm
+    src: irish/bell.webm
   - accent: rp
-    src: assets/audio/rp/bell.webm
+    src: rp/bell.webm
   - accent: liverpool
-    src: assets/audio/liverpool/bell.webm
+    src: liverpool/bell.webm
   - accent: cockney
-    src: assets/audio/cockney/bell.webm
+    src: cockney/bell.webm
+relatedWords:
+  - barely
+  - myself
+  - several
+  - less
+  - yourself

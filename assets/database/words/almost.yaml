@@ -1,6 +1,19 @@
 word: almost
+translation:
+  - AO
+  - L
+  - M
+  - OW
+  - S
+  - T
 availableAccents:
   - general-american
 recordings:
   - accent: general-american
-    src: assets/audio/general-american/almost.webm
+    src: general-american/almost.webm
+relatedWords:
+  - also
+  - most
+  - lost
+  - softly
+  - small

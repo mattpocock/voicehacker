@@ -1,12 +1,24 @@
 word: during
+translation:
+  - D
+  - UH
+  - R
+  - IH
+  - NG
 availableAccents:
   - general-american
   - irish
   - rp
 recordings:
   - accent: general-american
-    src: assets/audio/general-american/during.webm
+    src: general-american/during.webm
   - accent: irish
-    src: assets/audio/irish/during.webm
+    src: irish/during.webm
   - accent: rp
-    src: assets/audio/rp/during.webm
+    src: rp/during.webm
+relatedWords:
+  - drink
+  - bring
+  - disappear
+  - respond
+  - everything

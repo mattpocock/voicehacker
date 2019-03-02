@@ -1,6 +1,9 @@
 const path = require('path');
 
 module.exports = {
+  mapping: {
+    'WordsYaml.recordings.src': 'File.relativePath',
+  },
   plugins: [
     'gatsby-plugin-typescript',
     'gatsby-plugin-styled-components',

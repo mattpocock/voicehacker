@@ -1,12 +1,22 @@
 word: teeth
+translation:
+  - T
+  - IY
+  - TH
 availableAccents:
   - general-american
   - irish
   - rp
 recordings:
   - accent: general-american
-    src: assets/audio/general-american/teeth.webm
+    src: general-american/teeth.webm
   - accent: irish
-    src: assets/audio/irish/teeth.webm
+    src: irish/teeth.webm
   - accent: rp
-    src: assets/audio/rp/teeth.webm
+    src: rp/teeth.webm
+relatedWords:
+  - immediately
+  - repeat
+  - city
+  - seat
+  - feet
