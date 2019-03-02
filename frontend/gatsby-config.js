@@ -4,6 +4,7 @@ module.exports = {
   mapping: {
     'WordsYaml.recordings.src': 'File.relativePath',
     'WordsYaml.relatedWords': 'WordsYaml.word',
+    'WordsYaml.recordings.accent': 'AccentsYaml.name',
   },
   plugins: [
     'gatsby-plugin-typescript',

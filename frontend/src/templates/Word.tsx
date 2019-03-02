@@ -1,13 +1,15 @@
-import { graphql, Link } from 'gatsby';
+import { graphql } from 'gatsby';
 import React from 'react';
+import CellHeading from '../components/CellHeading';
+import CellHeadingSubtitle from '../components/CellHeadingSubtitle';
+import Flex from '../components/Flex';
 import FloatingWhiteBox from '../components/FloatingWhiteBox';
 import Header from '../components/Header';
+import NextIcon from '../components/NextIcon';
 import Padding from '../components/Padding';
 import RecordingTable from '../components/RecordingTable';
 import SubHeadingWithDivider from '../components/SubHeadingWithDivider';
 import Table from '../components/Table';
-import styled from 'styled-components';
-import theme from '../config/theme';
 import useScrollToTopOnMount from '../hooks/useScrollToTopOnMount';
 
 const Word = (props: Props) => {
@@ -26,7 +28,7 @@ const Word = (props: Props) => {
           }))}
           schema={{
             renderCell: ({ accent }: Recording) => {
-              return <p>{accent}</p>;
+              return <CellHeading>{accent.displayName}</CellHeading>;
             },
           }}
         />
@@ -38,13 +40,20 @@ const Word = (props: Props) => {
           schema={{
             onClick: (rowObject) => props.navigate(`/words/${rowObject.word}`),
             renderCell: (rowObject) => (
-              <RelatedWordsWrapper>
-                <p style={{ color: 'black' }}>{rowObject.word}</p>
-                <p>
-                  Available in {rowObject.availableAccents.length} accent
-                  {rowObject.availableAccents.length > 1 ? 's' : ''}
-                </p>
-              </RelatedWordsWrapper>
+              <Flex alignItems="center" gutter="1rem" style={{ width: '100%' }}>
+                <div style={{ flexGrow: 1 }}>
+                  <CellHeading style={{ marginBottom: '0.25rem' }}>
+                    {rowObject.word}
+                  </CellHeading>
+                  <CellHeadingSubtitle>
+                    Available in {rowObject.availableAccents.length} accent
+                    {rowObject.availableAccents.length > 1 ? 's' : ''}
+                  </CellHeadingSubtitle>
+                </div>
+                <div>
+                  <NextIcon />
+                </div>
+              </Flex>
             ),
           }}
         />
@@ -70,7 +79,10 @@ interface Props {
 }
 
 interface Recording {
-  accent: string;
+  accent: {
+    name: string;
+    displayName: string;
+  };
   src: {
     id: string;
     publicURL: string;
@@ -83,7 +95,10 @@ export const WORD_QUERY = graphql`
       name: word
       availableAccents
       recordings {
-        accent
+        accent {
+          name
+          displayName
+        }
         src {
           id
           publicURL
@@ -99,11 +114,3 @@ export const WORD_QUERY = graphql`
 `;
 
 export default Word;
-
-const RelatedWordsWrapper = styled.div`
-  & > * {
-    color: ${theme.midGrey};
-    margin: 0;
-    text-align: left;
-  }
-`;

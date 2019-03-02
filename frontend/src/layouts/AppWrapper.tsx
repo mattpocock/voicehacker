@@ -26,7 +26,7 @@ interface Props {
 const Wrapper = styled.div`
   min-height: 100vh;
   position: relative;
-  padding: 1rem;
+  padding: 1.2rem;
 `;
 
 const BackgroundMainColorWash = styled.div`

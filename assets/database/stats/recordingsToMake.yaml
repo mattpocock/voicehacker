@@ -1,1912 +1,1920 @@
-- accentRequired: liverpool
+- accentRequired: &ref_0
+    name: liverpool
+    displayName: Liverpool
   word: thought
-- accentRequired: liverpool
+- accentRequired: *ref_0
   word: during
-- accentRequired: liverpool
+- accentRequired: *ref_0
   word: conversation
-- accentRequired: liverpool
+- accentRequired: *ref_0
   word: expression
-- accentRequired: liverpool
+- accentRequired: *ref_0
   word: threw
-- accentRequired: liverpool
+- accentRequired: *ref_0
   word: favorite
-- accentRequired: liverpool
+- accentRequired: *ref_0
   word: throat
-- accentRequired: liverpool
+- accentRequired: *ref_0
   word: along
-- accentRequired: liverpool
+- accentRequired: *ref_0
   word: asleep
-- accentRequired: liverpool
+- accentRequired: *ref_0
   word: also
-- accentRequired: liverpool
+- accentRequired: *ref_0
   word: bar
-- accentRequired: liverpool
+- accentRequired: *ref_0
   word: avoid
-- accentRequired: liverpool
+- accentRequired: *ref_0
   word: blink
-- accentRequired: liverpool
+- accentRequired: *ref_0
   word: bring
-- accentRequired: liverpool
+- accentRequired: *ref_0
   word: block
-- accentRequired: liverpool
+- accentRequired: *ref_0
   word: either
-- accentRequired: liverpool
+- accentRequired: *ref_0
   word: blonde
-- accentRequired: liverpool
+- accentRequired: *ref_0
   word: evening
-- accentRequired: liverpool
+- accentRequired: *ref_0
   word: blue
-- accentRequired: liverpool
+- accentRequired: *ref_0
   word: five
-- accentRequired: liverpool
+- accentRequired: *ref_0
   word: box
-- accentRequired: liverpool
+- accentRequired: *ref_0
   word: happen
-- accentRequired: liverpool
+- accentRequired: *ref_0
   word: class
-- accentRequired: liverpool
+- accentRequired: *ref_0
   word: hung
-- accentRequired: liverpool
+- accentRequired: *ref_0
   word: drag
-- accentRequired: liverpool
+- accentRequired: *ref_0
   word: rang
-- accentRequired: liverpool
+- accentRequired: *ref_0
   word: fact
-- accentRequired: liverpool
+- accentRequired: *ref_0
   word: something
-- accentRequired: liverpool
+- accentRequired: *ref_0
   word: every
-- accentRequired: liverpool
+- accentRequired: *ref_0
   word: easy
-- accentRequired: liverpool
+- accentRequired: *ref_0
   word: eyebrow
-- accentRequired: liverpool
+- accentRequired: *ref_0
   word: key
-- accentRequired: liverpool
+- accentRequired: *ref_0
   word: ahead
-- accentRequired: liverpool
+- accentRequired: *ref_0
   word: meet
-- accentRequired: liverpool
+- accentRequired: *ref_0
   word: arrive
-- accentRequired: liverpool
+- accentRequired: *ref_0
   word: sleep
-- accentRequired: liverpool
+- accentRequired: *ref_0
   word: behind
-- accentRequired: liverpool
+- accentRequired: *ref_0
   word: anger
-- accentRequired: liverpool
+- accentRequired: *ref_0
   word: about
-- accentRequired: liverpool
+- accentRequired: *ref_0
   word: anymore
-- accentRequired: liverpool
+- accentRequired: *ref_0
   word: drove
-- accentRequired: liverpool
+- accentRequired: *ref_0
   word: father
-- accentRequired: liverpool
+- accentRequired: *ref_0
   word: hang
-- accentRequired: liverpool
+- accentRequired: *ref_0
   word: anyone
-- accentRequired: liverpool
+- accentRequired: *ref_0
   word: morning
-- accentRequired: liverpool
+- accentRequired: *ref_0
   word: happy
-- accentRequired: liverpool
+- accentRequired: *ref_0
   word: although
-- accentRequired: liverpool
+- accentRequired: *ref_0
   word: teeth
-- accentRequired: liverpool
+- accentRequired: *ref_0
   word: another
-- accentRequired: liverpool
+- accentRequired: *ref_0
   word: kick
-- accentRequired: liverpool
+- accentRequired: *ref_0
   word: ball
-- accentRequired: liverpool
+- accentRequired: *ref_0
   word: slip
-- accentRequired: liverpool
+- accentRequired: *ref_0
   word: back
-- accentRequired: liverpool
+- accentRequired: *ref_0
   word: believe
-- accentRequired: liverpool
+- accentRequired: *ref_0
   word: rather
-- accentRequired: liverpool
+- accentRequired: *ref_0
   word: apparently
-- accentRequired: liverpool
+- accentRequired: *ref_0
   word: as
-- accentRequired: liverpool
+- accentRequired: *ref_0
   word: attack
-- accentRequired: liverpool
+- accentRequired: *ref_0
   word: aunt
-- accentRequired: liverpool
+- accentRequired: *ref_0
   word: isn't
-- accentRequired: liverpool
+- accentRequired: *ref_0
   word: even
-- accentRequired: liverpool
+- accentRequired: *ref_0
   word: answer
-- accentRequired: liverpool
+- accentRequired: *ref_0
   word: middle
-- accentRequired: rp
+- accentRequired: &ref_1
+    name: rp
+    displayName: RP
   word: across
-- accentRequired: rp
+- accentRequired: *ref_1
   word: black
-- accentRequired: rp
+- accentRequired: *ref_1
   word: because
-- accentRequired: rp
+- accentRequired: *ref_1
   word: barely
-- accentRequired: irish
+- accentRequired: &ref_2
+    name: irish
+    displayName: Irish
   word: through
-- accentRequired: irish
+- accentRequired: *ref_2
   word: book
-- accentRequired: irish
+- accentRequired: *ref_2
   word: three
-- accentRequired: irish
+- accentRequired: *ref_2
   word: both
-- accentRequired: irish
+- accentRequired: *ref_2
   word: alright
-- accentRequired: irish
+- accentRequired: *ref_2
   word: breath
-- accentRequired: irish
+- accentRequired: *ref_2
   word: always
-- accentRequired: irish
+- accentRequired: *ref_2
   word: breathe
-- accentRequired: irish
+- accentRequired: *ref_2
   word: almost
-- accentRequired: irish
+- accentRequired: *ref_2
   word: brother
-- accentRequired: irish
+- accentRequired: *ref_2
   word: air
-- accentRequired: irish
+- accentRequired: *ref_2
   word: burn
-- accentRequired: irish
+- accentRequired: *ref_2
   word: again
-- accentRequired: irish
+- accentRequired: *ref_2
   word: burst
-- accentRequired: irish
+- accentRequired: *ref_2
   word: afraid
-- accentRequired: irish
+- accentRequired: *ref_2
   word: call
-- accentRequired: irish
+- accentRequired: *ref_2
   word: actually
-- accentRequired: irish
+- accentRequired: *ref_2
   word: calm
-- accentRequired: irish
+- accentRequired: *ref_2
   word: already
-- accentRequired: irish
+- accentRequired: *ref_2
   word: carefully
-- accentRequired: irish
+- accentRequired: *ref_2
   word: all
-- accentRequired: irish
+- accentRequired: *ref_2
   word: after
-- accentRequired: irish
+- accentRequired: *ref_2
   word: cause
-- accentRequired: irish
+- accentRequired: *ref_2
   word: caught
-- accentRequired: irish
+- accentRequired: *ref_2
   word: case
-- accentRequired: irish
+- accentRequired: *ref_2
   word: carry
-- accentRequired: irish
+- accentRequired: *ref_2
   word: admit
-- accentRequired: irish
+- accentRequired: *ref_2
   word: agree
-- accentRequired: irish
+- accentRequired: *ref_2
   word: alone
-- accentRequired: irish
+- accentRequired: *ref_2
   word: above
-- accentRequired: general-american
+- accentRequired: &ref_3
+    name: general-american
+    displayName: General American
   word: green
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: how
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: yourself
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: hug
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: chase
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: huge
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: completely
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: huh
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: corner
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: human
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: course
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: hundred
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: daughter
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: ice
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: definitely
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: idea
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: done
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: if
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: ear
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: ignore
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: easily
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: imagine
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: else
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: important
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: entire
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: in
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: eventually
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: inside
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: exactly
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: instead
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: fall
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: interest
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: fault
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: interrupt
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: fill
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: into
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: fine
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: it
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: fire
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: it's
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: gently
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: its
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: hair
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: jacket
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: has
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: jeans
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: heard
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: jerk
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: horse
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: job
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: however
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: join
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: hurt
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: joke
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: I'd
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: jump
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: I'm
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: just
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: immediately
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: keep
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: kill
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: kept
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: laugh
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: kid
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: led
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: kind
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: leg
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: kiss
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: let
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: kitchen
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: look
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: knee
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: love
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: knew
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: mine
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: knock
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: month
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: known
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: mouth
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: lady
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: near
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: land
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: noise
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: large
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: nose
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: last
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: obviously
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: late
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: only
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: lay
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: pack
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: lead
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: pause
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: lean
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: phone
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: least
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: please
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: leave
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: practically
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: letter
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: promise
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: lie
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: quietly
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: life
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: really
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: lift
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: rose
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: light
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: sense
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: like
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: shook
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: line
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: shove
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: lip
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: simply
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: listen
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: slightly
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: little
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: small
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: live
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: someone
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: lock
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: sorry
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: locker
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: still
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: lost
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: strong
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: lot
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: suddenly
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: loud
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: surprise
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: low
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: tall
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: lunch
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: these
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: mad
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: those
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: made
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: tiny
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: make
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: tone
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: man
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: top
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: manage
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: truth
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: many
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: use
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: mark
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: walk
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: match
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: was
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: matter
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: wave
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: may
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: whatever
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: maybe
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: with
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: me
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: worse
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: mean
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: yeah
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: meant
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: yell
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: memory
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: yet
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: men
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: able
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: mention
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: act
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: met
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: against
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: might
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: ago
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: mind
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: allow
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: minute
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: amaze
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: mirror
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: and
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: miss
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: animal
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: mom
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: any
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: moment
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: area
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: mood
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: around
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: more
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: ass
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: most
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: attempt
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: move
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: baby
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: movie
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: bag
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: Mr.
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: be
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: Mrs.
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: became
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: much
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: bed
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: mum
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: been
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: mumble
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: began
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: music
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: beside
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: must
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: best
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: mutter
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: big
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: my
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: bite
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: name
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: blush
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: neck
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: bore
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: need
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: bottom
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: nervous
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: boyfriend
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: never
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: break
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: new
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: bright
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: next
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: broken
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: nice
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: brown
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: night
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: build
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: 'no'
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: business
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: nod
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: but
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: normal
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: by
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: not
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: can
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: note
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: car
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: notice
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: care
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: now
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: catch
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: number
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: change
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: of
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: cheek
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: 'off'
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: child
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: offer
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: chuckle
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: office
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: clean
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: often
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: climb
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: oh
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: cold
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: okay
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: color
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: old
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: comment
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: 'on'
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: computer
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: once
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: consider
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: onto
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: cool
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: open
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: could
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: or
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: counter
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: order
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: cross
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: our
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: cry
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: out
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: cut
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: outside
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: dad
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: over
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: dance
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: own
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: date
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: pain
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: dead
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: paint
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: dear
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: pants
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: deep
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: paper
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: did
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: parents
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: die
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: park
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: dinner
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: part
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: disappear
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: party
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: doctor
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: pass
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: dog
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: past
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: door
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: pay
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: down
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: perfect
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: dream
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: perhaps
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: drink
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: person
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: each
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: pick
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: empty
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: piece
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: enjoy
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: pink
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: escape
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: place
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: excite
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: plan
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: expect
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: play
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: eye
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: pocket
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: far
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: point
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: feel
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: police
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: fell
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: position
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: few
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: possible
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: fight
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: power
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: finish
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: present
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: fit
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: press
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: flip
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: pretend
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: fly
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: pretty
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: follow
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: problem
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: foot
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: pull
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: force
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: punch
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: form
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: push
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: found
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: put
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: free
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: question
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: from
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: quick
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: frown
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: quiet
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: fun
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: quite
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: game
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: race
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: gave
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: rain
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: get
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: ran
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: girl
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: reach
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: give
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: read
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: glad
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: ready
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: glare
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: real
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: go
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: realize
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: gonna
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: reason
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: got
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: recognize
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: grab
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: red
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: chair
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: relationship
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: grey
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: relax
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: grip
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: remain
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: ground
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: remember
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: grow
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: remind
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: guess
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: repeat
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: guy
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: reply
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: hadn't
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: respond
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: hallway
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: rest
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: handle
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: ride
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: hate
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: right
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: haven't
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: ring
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: he'd
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: road
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: head
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: rock
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: heavy
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: roll
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: hell
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: room
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: help
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: round
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: here
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: rub
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: hey
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: run
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: hide
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: rush
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: him
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: sad
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: hit
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: safe
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: home
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: said
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: hospital
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: same
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: hour
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: sat
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: confuse
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: save
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: crack
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: saw
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: does
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: say
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: early
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: scare
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: enough
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: school
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: everyone
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: scream
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: family
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: seat
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: finally
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: second
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: further
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: see
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: hall
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: seem
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: his
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: seen
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: hurry
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: self
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: I'll
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: send
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: is
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: sent
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: learn
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: serious
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: less
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: set
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: lose
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: settle
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: money
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: seven
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: myself
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: several
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: none
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: shadow
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: one
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: shake
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: pair
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: share
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: picture
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: she
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: probably
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: she'd
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: raise
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: she's
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: search
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: shift
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: shop
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: shirt
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: sister
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: shock
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: softly
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: shoe
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: stair
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: short
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: stuff
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: shot
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: talk
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: should
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: this
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: shoulder
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: tire
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: shouldn't
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: totally
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: shout
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: usually
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: shower
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: water
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: shrug
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: will
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: shut
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: wrong
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: sick
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: 'yes'
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: side
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: accept
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: sigh
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: age
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: sight
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: am
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: sign
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: angry
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: silence
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: approach
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: silent
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: ask
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: since
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: attention
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: single
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: band
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: sir
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: become
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: sit
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: before
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: situation
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: besides
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: six
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: bit
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: skin
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: body
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: sky
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: boy
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: slam
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: breakfast
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: slow
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: brought
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: smell
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: bus
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: smile
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: buy
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: smirk
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: can't
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: smoke
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: cat
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: snap
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: check
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: so
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: children
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: soft
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: clear
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: some
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: college
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: somehow
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: complete
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: sometimes
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: continue
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: somewhere
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: couldn't
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: son
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: crowd
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: soon
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: cute
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: sort
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: dark
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: sound
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: deal
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: space
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: desk
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: speak
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: different
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: spend
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: do
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: spent
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: don't
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: spoke
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: draw
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: spot
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: dry
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: stand
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: end
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: star
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: except
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: stare
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: explain
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: start
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: fear
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: state
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: felt
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: stay
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: find
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: step
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: fix
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: stick
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: focus
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: stomach
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: for
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: stood
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: forward
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: store
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: friend
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: story
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: full
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: straight
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: gasp
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: strange
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: giggle
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: street
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: given
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: struggle
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: glass
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: stuck
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: good
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: student
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: great
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: study
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: grin
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: stupid
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: group
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: such
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: gun
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: suck
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: half
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: sudden
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: hard
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: suggest
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: he
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: summer
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: heart
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: sun
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: hello
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: sure
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: herself
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: surround
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: high
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: sweet
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: hold
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: table
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: hot
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: take
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: couple
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: taken
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: drop
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: teacher
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: especially
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: team
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: figure
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: tear
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: gone
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: tell
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: house
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: ten
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: I've
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: tie
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: left
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: tight
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: marry
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: time
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: nearly
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: to
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: other
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: today
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: pop
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: together
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: return
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: told
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: show
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: tomorrow
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: song
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: tongue
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: suppose
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: tonight
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: throw
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: too
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: under
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: touch
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: we've
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: toward
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: year
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: town
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: add
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: track
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: an
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: trail
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: aren't
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: train
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: bad
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: tree
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: bedroom
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: trip
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: better
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: trouble
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: bottle
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: trust
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: broke
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: try
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: busy
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: turn
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: card
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: TV
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: chest
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: twenty
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: coffee
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: two
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: concern
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: type
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: crazy
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: uncle
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: damn
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: understand
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: decide
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: until
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: direction
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: up
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: doubt
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: upon
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: edge
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: us
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: exclaim
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: usual
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: feet
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: very
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: first
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: visit
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: food
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: voice
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: four
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: wait
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: funny
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: wake
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: girlfriend
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: want
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: God
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: warm
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: greet
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: warn
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: guard
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: wasn't
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: hand
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: watch
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: he's
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: way
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: her
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: we
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: himself
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: we'll
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: close
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: we're
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: eat
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: wear
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: finger
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: week
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: I
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: weird
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: long
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: well
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: nothing
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: went
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: quickly
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: were
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: slowly
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: weren't
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: themselves
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: wet
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: wall
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: what
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: a
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: what's
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: annoy
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: when
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: beat
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: where
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: blood
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: whether
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: brush
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: which
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: chance
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: while
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: come
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: whisper
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: cup
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: white
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: didn't
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: who
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: dress
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: whole
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: face
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: why
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: floor
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: wide
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: front
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: wife
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: glance
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: wind
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: groan
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: window
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: have
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: wipe
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: hi
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: wish
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: death
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: within
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: hear
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: without
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: mother
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: woke
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: seriously
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: woman
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: took
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: women
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: ah
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: won't
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: begin
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: wonder
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: came
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: wood
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: couch
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: word
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: doesn't
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: wore
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: field
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: work
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: gaze
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: world
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: had
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: would
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: hope
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: wouldn't
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: know
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: wow
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: stop
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: wrap
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: at
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: write
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: city
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: you
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: enter
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: you'd
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: gotten
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: you'll
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: excuse
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: worry
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: your
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: young
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: you've
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: you're
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: brain
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: people
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: held
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: forget
-- accentRequired: general-american
+- accentRequired: *ref_3
   word: day

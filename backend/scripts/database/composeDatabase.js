@@ -22,40 +22,44 @@ module.exports = () => {
   fs.mkdirSync(path.resolve(databasePath, './stats'));
 
   /** Scan audio files for accents */
-  const accents = jsYaml
-    .safeLoad(
-      fs.readFileSync(path.resolve(configPath, 'accents.yaml')).toString(),
-    )
-    .map(({ name }) => name);
+  const accents = jsYaml.safeLoad(
+    fs.readFileSync(path.resolve(configPath, 'accents.yaml')).toString(),
+  );
 
   /** For each word, create an entry */
   const wordObjects = wordsArray.map((word) => {
-    const availableAccents = accents.filter((name) => {
-      const recordingURI = path.resolve(audioAssetsPath, name, `${word}.webm`);
-      return fs.existsSync(recordingURI);
-    });
+    const availableAccents = accents
+      .filter(({ name }) => {
+        const recordingURI = path.resolve(
+          audioAssetsPath,
+          name,
+          `${word}.webm`,
+        );
+        return fs.existsSync(recordingURI);
+      })
+      .map(({ name }) => name);
     return {
       word,
       translation: getCmellonTranslations(word),
       availableAccents,
-      recordings: availableAccents.map((accent) => ({
-        accent,
-        src: `${accent}/${word}.webm`,
+      recordings: availableAccents.map((accentName) => ({
+        accent: accentName,
+        src: `${accentName}/${word}.webm`,
       })),
     };
   });
 
   /** For each accent, create an entry */
-  accents.forEach((name) => {
-    const accentAudioPath = path.resolve(audioAssetsPath, name);
+  accents.forEach((accent) => {
+    const accentAudioPath = path.resolve(audioAssetsPath, accent.name);
     if (!fs.existsSync(accentAudioPath)) {
       fs.mkdirSync(accentAudioPath);
     }
     const wordsRecorded = fs.readdirSync(accentAudioPath);
     fs.writeFileSync(
-      path.resolve(databasePath, 'accents', `${name}.yaml`),
+      path.resolve(databasePath, 'accents', `${accent.name}.yaml`),
       jsYaml.safeDump({
-        name,
+        ...accent,
         wordsToRecord: wordsArray.filter(
           (word) => !wordsRecorded.includes(`${word}.webm`),
         ),
@@ -70,7 +74,7 @@ module.exports = () => {
     )
     .map(({ word, availableAccents }) => ({
       accentRequired: accents.find(
-        (accent) => !availableAccents.includes(accent),
+        ({ name }) => !availableAccents.includes(name),
       ),
       word,
     }));

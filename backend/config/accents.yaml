@@ -1,5 +1,10 @@
 - name: general-american
+  displayName: "General American"
 - name: irish
+  displayName: "Irish"
 - name: rp
+  displayName: "RP"
 - name: liverpool
+  displayName: "Liverpool"
 - name: cockney
+  displayName: "Cockney"

@@ -1,4 +1,5 @@
 name: cockney
+displayName: Cockney
 wordsToRecord:
   - conversation
   - during
