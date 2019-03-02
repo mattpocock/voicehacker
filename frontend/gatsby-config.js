@@ -3,6 +3,7 @@ const path = require('path');
 module.exports = {
   mapping: {
     'WordsYaml.recordings.src': 'File.relativePath',
+    'WordsYaml.relatedWords': 'WordsYaml.word',
   },
   plugins: [
     'gatsby-plugin-typescript',

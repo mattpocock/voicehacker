@@ -9,7 +9,7 @@ exports.createPages = ({ graphql, actions }) => {
     await graphql(
       `
         {
-          allWordsYaml(limit: 30) {
+          allWordsYaml {
             edges {
               node {
                 id

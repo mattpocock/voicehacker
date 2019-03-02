@@ -84,6 +84,7 @@ module.exports = () => {
     return {
       ...wordObject,
       relatedWords: wordObjects
+        .filter((wordObjectToCheck) => wordObjectToCheck.recordings.length > 0)
         .map((wordObjectToCheck) => {
           return {
             ...wordObjectToCheck,

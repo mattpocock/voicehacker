@@ -21,8 +21,8 @@ recordings:
   - accent: cockney
     src: cockney/thing.webm
 relatedWords:
-  - think
   - anything
-  - nothing
-  - something
+  - think
   - everything
+  - something
+  - blink

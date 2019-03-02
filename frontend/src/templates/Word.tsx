@@ -1,5 +1,5 @@
 import React from 'react';
-import { StaticQuery, graphql } from 'gatsby';
+import { graphql, Link } from 'gatsby';
 
 const Word = (props: Props) => {
   return (
@@ -8,9 +8,16 @@ const Word = (props: Props) => {
       {props.data.wordInfo.recordings.map(({ src, accent }) => (
         <>
           <p>{accent}</p>
-          <audio src={src.publicUrl} controls />
+          <audio src={src.publicURL} controls />
         </>
       ))}
+      <div>
+        {props.data.wordInfo.relatedWords.map(({ word }) => (
+          <div>
+            <Link to={`/words/${word}`}>{word}</Link>
+          </div>
+        ))}
+      </div>
     </>
   );
 };
@@ -23,8 +30,11 @@ interface Props {
       recordings: {
         accent: string;
         src: {
-          publicUrl: string;
+          publicURL: string;
         };
+      }[];
+      relatedWords: {
+        word: string;
       }[];
     };
   };
@@ -40,6 +50,9 @@ export const WORD_QUERY = graphql`
         src {
           publicURL
         }
+      }
+      relatedWords {
+        word
       }
     }
   }
