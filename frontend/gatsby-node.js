@@ -6,6 +6,7 @@ exports.createPages = ({ graphql, actions }) => {
   return new Promise(async (resolve, reject) => {
     const wordTemplate = path.resolve('src/templates/Word.tsx');
     const accentTemplate = path.resolve('src/templates/Accent.tsx');
+    const soundTemplate = path.resolve('src/templates/Sound.tsx');
     await graphql(
       `
         {
@@ -57,8 +58,32 @@ exports.createPages = ({ graphql, actions }) => {
           component: accentTemplate,
           context: {
             accentId: accent.id,
-            accentName: accent.name,
-            accentRegex: `/${accent.name}/`,
+          },
+        });
+      });
+    });
+
+    await graphql(`
+      {
+        allSoundsYaml {
+          edges {
+            node {
+              id
+              symbol
+            }
+          }
+        }
+      }
+    `).then((result) => {
+      if (result.errors) {
+        reject(result.errors);
+      }
+      result.data.allSoundsYaml.edges.forEach(({ node }) => {
+        createPage({
+          path: `/sounds/${node.symbol}`,
+          component: soundTemplate,
+          context: {
+            soundId: node.id,
           },
         });
       });

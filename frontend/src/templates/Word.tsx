@@ -12,6 +12,9 @@ import SubHeadingWithDivider from '../components/SubHeadingWithDivider';
 import Table from '../components/Table';
 import useScrollToTopOnMount from '../hooks/useScrollToTopOnMount';
 import AppWrapper from '../layouts/AppWrapper';
+import CellWithSubtitle from '../components/CellWithSubtitle';
+import createAvailableAccentSubtitle from '../utils/createAvailableAccentSubtitle';
+import createWordsTitle from '../utils/createWordsTitle';
 
 const Word = (props: Props) => {
   useScrollToTopOnMount();
@@ -19,9 +22,9 @@ const Word = (props: Props) => {
     <AppWrapper>
       <FloatingWhiteBox>
         <Header>{props.data.wordInfo.name.toUpperCase()}</Header>
-        <Padding padding="1rem" />
-        <SubHeadingWithDivider>Recordings</SubHeadingWithDivider>
-        <Padding padding="1rem" />
+        <Padding />
+        <SubHeadingWithDivider>Accents</SubHeadingWithDivider>
+        <Padding />
         <RecordingTable
           data={props.data.wordInfo.recordings.map((recording) => ({
             ...recording,
@@ -33,29 +36,38 @@ const Word = (props: Props) => {
             },
           }}
         />
-        <Padding padding="1rem" />
+        <Padding />
         <SubHeadingWithDivider>Related Words</SubHeadingWithDivider>
-        <Padding padding="1rem" />
+        <Padding />
         <Table
-          data={props.data.wordInfo.relatedWords}
+          data={props.data.wordInfo.relatedWords.slice(0, 3)}
           schema={{
             onClick: (rowObject) => props.navigate(`/words/${rowObject.word}`),
             renderCell: (rowObject) => (
-              <Flex alignItems="center" gutter="1rem" style={{ width: '100%' }}>
-                <div style={{ flexGrow: 1 }}>
-                  <CellHeading style={{ marginBottom: '0.25rem' }}>
-                    {rowObject.word}
-                  </CellHeading>
-                  <CellHeadingSubtitle>
-                    Available in {rowObject.availableAccents.length} accent
-                    {rowObject.availableAccents.length > 1 ? 's' : ''}
-                  </CellHeadingSubtitle>
-                </div>
-                <div>
-                  <NextIcon />
-                </div>
-              </Flex>
+              <CellWithSubtitle
+                title={rowObject.word}
+                subtitle={createAvailableAccentSubtitle(
+                  rowObject.availableAccents,
+                )}
+              />
             ),
+          }}
+        />
+        <Padding />
+        <SubHeadingWithDivider>Sounds</SubHeadingWithDivider>
+        <Padding />
+        <Table
+          data={props.data.wordInfo.translation.filter((value) => value)}
+          schema={{
+            renderCell: (translation: Translation) => (
+              <CellWithSubtitle
+                title={createWordsTitle(translation.words)}
+                subtitle={translation.name}
+              />
+            ),
+            onClick: (translation: Translation) => {
+              props.navigate(`/sounds/${translation.symbol}`);
+            },
           }}
         />
       </FloatingWhiteBox>
@@ -75,6 +87,7 @@ interface Props {
         word: string;
         availableAccents: string[];
       }[];
+      translation: Translation[];
     };
   };
 }
@@ -88,6 +101,13 @@ interface Recording {
     id: string;
     publicURL: string;
   };
+}
+
+interface Translation {
+  id: string;
+  symbol: string;
+  name: string;
+  words: { word: string }[];
 }
 
 export const WORD_QUERY = graphql`
@@ -109,6 +129,14 @@ export const WORD_QUERY = graphql`
         id
         word
         availableAccents
+      }
+      translation {
+        symbol
+        name
+        id
+        words {
+          word
+        }
       }
     }
   }
