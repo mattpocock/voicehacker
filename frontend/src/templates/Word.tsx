@@ -1,20 +1,20 @@
 import { graphql } from 'gatsby';
 import React from 'react';
+import { connect } from 'react-redux';
 import CellHeading from '../components/CellHeading';
-import CellHeadingSubtitle from '../components/CellHeadingSubtitle';
-import Flex from '../components/Flex';
+import CellWithSubtitle from '../components/CellWithSubtitle';
 import FloatingWhiteBox from '../components/FloatingWhiteBox';
 import Header from '../components/Header';
-import NextIcon from '../components/NextIcon';
 import Padding from '../components/Padding';
 import RecordingTable from '../components/RecordingTable';
 import SubHeadingWithDivider from '../components/SubHeadingWithDivider';
 import Table from '../components/Table';
 import useScrollToTopOnMount from '../hooks/useScrollToTopOnMount';
 import AppWrapper from '../layouts/AppWrapper';
-import CellWithSubtitle from '../components/CellWithSubtitle';
 import createAvailableAccentSubtitle from '../utils/createAvailableAccentSubtitle';
 import createWordsTitle from '../utils/createWordsTitle';
+import { ReduxState } from '../utils/redux/redux';
+import Pill from '../components/Pill';
 
 const Word = (props: Props) => {
   useScrollToTopOnMount();
@@ -22,6 +22,17 @@ const Word = (props: Props) => {
     <AppWrapper>
       <FloatingWhiteBox>
         <Header>{props.data.wordInfo.name.toUpperCase()}</Header>
+        {props.practiceSound &&
+          props.data.wordInfo.translation
+            .filter((val) => val)
+            .find(
+              (translation) => translation.symbol === props.practiceSound,
+            ) && (
+            <>
+              <Padding padding="0.5rem" />
+              <Pill>Target Sound</Pill>
+            </>
+          )}
         <Padding />
         <SubHeadingWithDivider>Accents</SubHeadingWithDivider>
         <Padding />
@@ -32,7 +43,18 @@ const Word = (props: Props) => {
           }))}
           schema={{
             renderCell: ({ accent }: Recording) => {
-              return <CellHeading>{accent.displayName}</CellHeading>;
+              return (
+                <div>
+                  <CellHeading>{accent.displayName}</CellHeading>
+                  {props.practiceAccent &&
+                    accent.name === props.practiceAccent && (
+                      <>
+                        <Padding padding="0.5rem" />
+                        <Pill>Target Accent</Pill>
+                      </>
+                    )}
+                </div>
+              );
             },
           }}
         />
@@ -42,13 +64,26 @@ const Word = (props: Props) => {
         <Table
           data={props.data.wordInfo.relatedWords.slice(0, 3)}
           schema={{
-            onClick: (rowObject) => props.navigate(`/words/${rowObject.word}`),
-            renderCell: (rowObject) => (
+            onClick: (rowObject: RelatedWord) =>
+              props.navigate(`/words/${rowObject.word}`),
+            renderCell: (rowObject: RelatedWord) => (
               <CellWithSubtitle
                 title={rowObject.word}
                 subtitle={createAvailableAccentSubtitle(
                   rowObject.availableAccents,
                 )}
+                pills={[
+                  ...(props.practiceAccent &&
+                  rowObject.availableAccents.includes(props.practiceAccent)
+                    ? [<Pill>Target Accent</Pill>]
+                    : []),
+                  ...(props.practiceSound &&
+                  rowObject.translation
+                    .filter((val) => val)
+                    .find(({ symbol }) => symbol === props.practiceSound)
+                    ? [<Pill>Target Sound</Pill>]
+                    : []),
+                ]}
               />
             ),
           }}
@@ -63,6 +98,7 @@ const Word = (props: Props) => {
               <CellWithSubtitle
                 title={createWordsTitle(translation.words)}
                 subtitle={translation.name}
+                // pills={}
               />
             ),
             onClick: (translation: Translation) => {
@@ -77,19 +113,24 @@ const Word = (props: Props) => {
 
 interface Props {
   navigate: (url: string) => void;
+  practiceAccent: string;
+  practiceSound: string;
   data: {
     wordInfo: {
       name: string;
       availableAccents: string[];
       recordings: Recording[];
-      relatedWords: {
-        id: string;
-        word: string;
-        availableAccents: string[];
-      }[];
+      relatedWords: RelatedWord[];
       translation: Translation[];
     };
   };
+}
+
+interface RelatedWord {
+  id: string;
+  word: string;
+  availableAccents: string[];
+  translation: { symbol: string }[];
 }
 
 interface Recording {
@@ -129,6 +170,9 @@ export const WORD_QUERY = graphql`
         id
         word
         availableAccents
+        translation {
+          symbol
+        }
       }
       translation {
         symbol
@@ -142,4 +186,9 @@ export const WORD_QUERY = graphql`
   }
 `;
 
-export default Word;
+const mapStateToProps = (state: ReduxState) => ({
+  practiceAccent: state.global.practiceAccent,
+  practiceSound: state.global.practiceSound,
+});
+
+export default connect(mapStateToProps)(Word);

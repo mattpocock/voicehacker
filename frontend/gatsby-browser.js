@@ -1,7 +1,8 @@
-// /* eslint-disable */
-// import React from 'react';
-// import AppWrapper from './src/layouts/AppWrapper.tsx';
+/* eslint-disable */
+import React from 'react';
+import { Provider } from 'react-redux';
+import store from './src/utils/redux/createStore';
 
-// export const wrapRootElement = ({ element }) => (
-//   <AppWrapper>{element}</AppWrapper>
-// );
+export const wrapRootElement = ({ element }) => {
+  return <Provider store={store}>{element}</Provider>;
+};

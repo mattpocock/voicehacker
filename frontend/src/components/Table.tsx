@@ -33,6 +33,7 @@ export const TableRow = styled.button`
   background-color: inherit;
   box-sizing: border-box;
   width: calc(100% + 2rem);
+  text-align: left;
 `;
 
 export const TableWrapper = styled.div`

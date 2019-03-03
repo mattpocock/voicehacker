@@ -5,6 +5,7 @@ import 'sanitize.css';
 import { injectGlobal } from 'styled-components';
 // @ts-ignore
 import Backdrop from '../assets/images/backdrop.svg';
+import PracticeBar from '../components/PracticeBar';
 
 injectGlobal`
   html {
@@ -16,6 +17,7 @@ const AppWrapper = ({ children }: Props) => (
   <Wrapper>
     <BackgroundMainColorWash preserveAspectRatio="none" />
     {children}
+    <PracticeBar />
   </Wrapper>
 );
 
