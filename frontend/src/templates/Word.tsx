@@ -11,11 +11,12 @@ import RecordingTable from '../components/RecordingTable';
 import SubHeadingWithDivider from '../components/SubHeadingWithDivider';
 import Table from '../components/Table';
 import useScrollToTopOnMount from '../hooks/useScrollToTopOnMount';
+import AppWrapper from '../layouts/AppWrapper';
 
 const Word = (props: Props) => {
   useScrollToTopOnMount();
   return (
-    <>
+    <AppWrapper>
       <FloatingWhiteBox>
         <Header>{props.data.wordInfo.name.toUpperCase()}</Header>
         <Padding padding="1rem" />
@@ -58,7 +59,7 @@ const Word = (props: Props) => {
           }}
         />
       </FloatingWhiteBox>
-    </>
+    </AppWrapper>
   );
 };
 

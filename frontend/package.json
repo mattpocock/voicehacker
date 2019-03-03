@@ -5,7 +5,8 @@
   "license": "MIT",
   "scripts": {
     "start": "gatsby develop",
-    "build": "gatsby build"
+    "build": "gatsby build",
+    "serve": "gatsby serve"
   },
   "dependencies": {
     "@material-ui/core": "^3.9.2",

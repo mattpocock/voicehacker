@@ -37,7 +37,7 @@ export const TableRow = styled.button`
 
 export const TableWrapper = styled.div`
   & > button {
-    &:nth-child(odd) {
+    &:nth-child(even) {
       background-color: ${theme.mainColorTint};
     }
   }

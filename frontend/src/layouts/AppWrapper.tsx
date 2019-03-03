@@ -10,14 +10,14 @@ injectGlobal`
   }
 `;
 
-export default ({ children }: Props) => (
-  <>
-    <Wrapper>
-      <BackgroundMainColorWash />
-      {children}
-    </Wrapper>
-  </>
+const AppWrapper = ({ children }: Props) => (
+  <Wrapper>
+    <BackgroundMainColorWash />
+    {children}
+  </Wrapper>
 );
+
+export default AppWrapper;
 
 interface Props {
   children: any;
