@@ -1,5 +1,9 @@
 name: rp
 displayName: RP
+sounds:
+  - L
+  - R
+  - OW
 wordsToRecord:
   - this
   - accept
@@ -36,5 +40,5 @@ wordsToRecord:
   - been
   - still
   - very
-  - "yes"
+  - 'yes'
   - once

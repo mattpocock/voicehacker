@@ -1,3 +1,3 @@
-const compose = require('./composeDatabase');
+const compile = require('./compileDatabase');
 
-compose();
+compile();

@@ -1,6 +1,9 @@
 - accentRequired: &ref_0
     name: liverpool
     displayName: Liverpool
+    sounds:
+      - R
+      - L
   word: during
 - accentRequired: *ref_0
   word: attack
@@ -23,6 +26,8 @@
 - accentRequired: &ref_1
     name: irish
     displayName: Irish
+    sounds:
+      - R
   word: admit
 - accentRequired: *ref_1
   word: carry
@@ -43,6 +48,9 @@
 - accentRequired: &ref_2
     name: general-american
     displayName: General American
+    sounds:
+      - R
+      - L
   word: one
 - accentRequired: *ref_2
   word: once

@@ -19,11 +19,15 @@ module.exports = () => {
   fs.mkdirSync(databasePath);
   fs.mkdirSync(path.resolve(databasePath, './words'));
   fs.mkdirSync(path.resolve(databasePath, './accents'));
+  fs.mkdirSync(path.resolve(databasePath, './sounds'));
   fs.mkdirSync(path.resolve(databasePath, './stats'));
 
-  /** Scan audio files for accents */
   const accents = jsYaml.safeLoad(
     fs.readFileSync(path.resolve(configPath, 'accents.yaml')).toString(),
+  );
+
+  const sounds = jsYaml.safeLoad(
+    fs.readFileSync(path.resolve(configPath, 'sounds.yaml')).toString(),
   );
 
   /** For each word, create an entry */
@@ -67,6 +71,7 @@ module.exports = () => {
     );
   });
 
+  /** Create a recordingsToMake stats file */
   const recordingsToMake = wordObjects
     .filter(({ availableAccents }) => availableAccents.length < accents.length)
     .sort((a, b) =>
@@ -84,6 +89,7 @@ module.exports = () => {
     jsYaml.safeDump(recordingsToMake),
   );
 
+  /** Add related words to word Objects */
   const wordObjectsWithRelatedWords = wordObjects.map((wordObject) => {
     return {
       ...wordObject,
@@ -106,11 +112,30 @@ module.exports = () => {
     };
   });
 
+  const soundObjects = sounds.map((sound) => {
+    return {
+      ...sound,
+      words: wordObjectsWithRelatedWords
+        .filter((word) => {
+          return word.translation.includes(sound.symbol);
+        })
+        .map((word) => word.word),
+    };
+  });
+
   /** Write the words database */
   wordObjectsWithRelatedWords.forEach((json) => {
     const yaml = jsYaml.safeDump(json);
     fs.writeFileSync(
       path.resolve(databasePath, 'words', `${json.word}.yaml`),
+      yaml,
+    );
+  });
+
+  soundObjects.forEach((json) => {
+    const yaml = jsYaml.safeDump(json);
+    fs.writeFileSync(
+      path.resolve(databasePath, 'sounds', `${json.symbol}.yaml`),
       yaml,
     );
   });

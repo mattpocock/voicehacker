@@ -1,5 +1,8 @@
 name: general-american
 displayName: General American
+sounds:
+  - R
+  - L
 wordsToRecord:
   - this
   - accept

@@ -1,5 +1,7 @@
 name: irish
 displayName: Irish
+sounds:
+  - R
 wordsToRecord:
   - this
   - accept

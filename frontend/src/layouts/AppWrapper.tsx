@@ -3,6 +3,8 @@ import styled from 'styled-components';
 import theme from '../config/theme';
 import 'sanitize.css';
 import { injectGlobal } from 'styled-components';
+// @ts-ignore
+import Backdrop from '../assets/images/backdrop.svg';
 
 injectGlobal`
   html {
@@ -12,7 +14,7 @@ injectGlobal`
 
 const AppWrapper = ({ children }: Props) => (
   <Wrapper>
-    <BackgroundMainColorWash />
+    <BackgroundMainColorWash preserveAspectRatio="none" />
     {children}
   </Wrapper>
 );
@@ -29,16 +31,12 @@ const Wrapper = styled.div`
   padding: 1.2rem;
 `;
 
-const BackgroundMainColorWash = styled.div`
+const BackgroundMainColorWash = styled(Backdrop)`
   position: fixed;
   top: 0;
   left: 0;
-  background-image: linear-gradient(
-    to right,
-    ${theme.mainColorDark},
-    ${theme.mainColorMid}
-  );
-  height: 60vh;
+
+  height: 66vh;
   width: 100%;
   z-index: -1;
 `;

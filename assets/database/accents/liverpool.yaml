@@ -1,5 +1,8 @@
 name: liverpool
 displayName: Liverpool
+sounds:
+  - R
+  - L
 wordsToRecord:
   - this
   - accept

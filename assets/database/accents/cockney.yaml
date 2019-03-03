@@ -1,5 +1,9 @@
 name: cockney
 displayName: Cockney
+sounds:
+  - TH
+  - DH
+  - L
 wordsToRecord:
   - this
   - accept

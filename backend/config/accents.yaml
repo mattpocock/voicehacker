@@ -1,10 +1,27 @@
 - name: general-american
   displayName: "General American"
+  sounds:
+    - "R"
+    - "L"
 - name: irish
   displayName: "Irish"
+  sounds:
+    - "R"
 - name: rp
   displayName: "RP"
+  sounds:
+    - "L"
+    - "R"
+    - "OW"
 - name: liverpool
   displayName: "Liverpool"
+  sounds:
+    - "R"
+    - "L"
+
 - name: cockney
   displayName: "Cockney"
+  sounds:
+    - "TH"
+    - "DH"
+    - "L"
