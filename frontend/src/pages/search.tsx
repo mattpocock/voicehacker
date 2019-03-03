@@ -1,15 +1,15 @@
-import React, { useState } from 'react';
 import { graphql } from 'gatsby';
-import FloatingWhiteBox from '../components/FloatingWhiteBox';
-import { Input, Tab, FormControl } from '@material-ui/core';
-import SubHeadingWithDivider from '../components/SubHeadingWithDivider';
-import Padding from '../components/Padding';
-import Table from '../components/Table';
+import React, { useState } from 'react';
 import CellHeading from '../components/CellHeading';
-import Flex from '../components/Flex';
 import CellHeadingSubtitle from '../components/CellHeadingSubtitle';
-import NextIcon from '../components/NextIcon';
+import Flex from '../components/Flex';
+import FloatingWhiteBox from '../components/FloatingWhiteBox';
 import Header from '../components/Header';
+import NextIcon from '../components/NextIcon';
+import Padding from '../components/Padding';
+import SearchInput from '../components/SearchInput';
+import SubHeadingWithDivider from '../components/SubHeadingWithDivider';
+import Table from '../components/Table';
 import AppWrapper from '../layouts/AppWrapper';
 
 const SearchPage = (props: Props) => {
@@ -19,13 +19,11 @@ const SearchPage = (props: Props) => {
       <Header white>Search</Header>
       <Padding />
       <FloatingWhiteBox>
-        <FormControl fullWidth>
-          <Input
-            type="text"
-            value={value}
-            onChange={(e) => onChange(e.target.value)}
-          />
-        </FormControl>
+        <SearchInput
+          value={value}
+          onChange={(e: any) => onChange(e.target.value)}
+          placeholder="Search words"
+        />
         <Padding />
         <SubHeadingWithDivider>Results</SubHeadingWithDivider>
         <Padding />

@@ -1,8 +1,7 @@
-import * as React from 'react';
 import { graphql } from 'gatsby';
+import * as React from 'react';
 import styled from 'styled-components';
 import FloatingWhiteBox from '../components/FloatingWhiteBox';
-import theme from '../config/theme';
 import Header from '../components/Header';
 import Padding from '../components/Padding';
 

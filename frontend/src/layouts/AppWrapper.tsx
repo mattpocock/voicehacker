@@ -30,7 +30,7 @@ const Wrapper = styled.div`
 `;
 
 const BackgroundMainColorWash = styled.div`
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   background-image: linear-gradient(

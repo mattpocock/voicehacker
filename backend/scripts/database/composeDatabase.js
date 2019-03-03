@@ -3,7 +3,7 @@ const path = require('path');
 const rimraf = require('rimraf');
 const jsYaml = require('js-yaml');
 const getCmellonTranslations = require('./utils/getCmellonTranslations');
-const words = require('../../words');
+const words = require('../../smallerWords');
 
 const wordsArray = words.split('\n');
 const databasePath = path.resolve(__dirname, '../../../assets/database');
