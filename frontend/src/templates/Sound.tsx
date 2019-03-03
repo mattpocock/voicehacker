@@ -1,17 +1,24 @@
-import React from 'react';
-import AppWrapper from '../layouts/AppWrapper';
-import FloatingWhiteBox from '../components/FloatingWhiteBox';
 import { graphql } from 'gatsby';
-import Header from '../components/Header';
-import Subheader from '../components/Subheader';
+import React from 'react';
+import { connect } from 'react-redux';
+import CellWithSubtitle from '../components/CellWithSubtitle';
 import Description from '../components/Description';
+import FloatingWhiteBox from '../components/FloatingWhiteBox';
+import Header from '../components/Header';
 import Padding from '../components/Padding';
+import Pill from '../components/Pill';
 import SubHeadingWithDivider from '../components/SubHeadingWithDivider';
 import Table from '../components/Table';
-import CellWithSubtitle from '../components/CellWithSubtitle';
+import AppWrapper from '../layouts/AppWrapper';
 import createAvailableAccentSubtitle from '../utils/createAvailableAccentSubtitle';
+import { ReduxState } from '../utils/redux/redux';
 
-const SoundPage = ({ data, navigate }: Props) => {
+const SoundPage = ({
+  data,
+  navigate,
+  practiceAccent,
+  practiceSound,
+}: Props) => {
   return (
     <AppWrapper>
       <FloatingWhiteBox>
@@ -35,6 +42,14 @@ const SoundPage = ({ data, navigate }: Props) => {
               <CellWithSubtitle
                 title={word.word}
                 subtitle={createAvailableAccentSubtitle(word.availableAccents)}
+                pills={
+                  practiceSound &&
+                  word.translation
+                    .filter((val) => val)
+                    .find(
+                      (translation) => translation.symbol === practiceSound,
+                    ) && [<Pill>Target Sound</Pill>]
+                }
               />
             ),
             onClick: (word: Word) => {
@@ -47,7 +62,10 @@ const SoundPage = ({ data, navigate }: Props) => {
   );
 };
 
-export default SoundPage;
+export default connect((state: ReduxState) => ({
+  practiceAccent: state.global.practiceAccent,
+  practiceSound: state.global.practiceSound,
+}))(SoundPage);
 
 interface Props {
   navigate: (string: string) => void;
@@ -59,12 +77,15 @@ interface Props {
       words: Word[];
     };
   };
+  practiceAccent: string;
+  practiceSound: string;
 }
 
 interface Word {
   id: string;
   word: string;
   availableAccents: string[];
+  translation: { symbol: string }[];
 }
 
 export const SOUND_QUERY = graphql`
@@ -77,6 +98,9 @@ export const SOUND_QUERY = graphql`
         id
         word
         availableAccents
+        translation {
+          symbol
+        }
       }
     }
   }

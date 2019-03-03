@@ -1,14 +1,16 @@
+import { navigate } from 'gatsby';
 import React from 'react';
 import { connect } from 'react-redux';
-import { ReduxState } from '../utils/redux/redux';
 import styled from 'styled-components';
 import theme from '../config/theme';
-import Pill from './Pill';
+import { beginPracticeMode } from '../utils/redux/globalReducer';
+import { ReduxState } from '../utils/redux/redux';
 import Flex from './Flex';
-import { endPracticeMode } from '../utils/redux/globalReducer';
+import Pill from './Pill';
 
 const PracticeBar = ({
   accentDisplayName,
+  accentName,
   soundDisplayName,
   isVisible,
   dispatch,
@@ -26,7 +28,19 @@ const PracticeBar = ({
             Practice Mode
           </Pill>
         </div>
-        <button onClick={() => dispatch(endPracticeMode())}>Stop</button>
+        <button
+          onClick={() => {
+            navigate(`/accents/${accentName}`);
+            dispatch(
+              beginPracticeMode({
+                accent: accentName,
+                accentDisplayName: accentDisplayName,
+              }),
+            );
+          }}
+        >
+          Back
+        </button>
       </Flex>
     </Bar>
   );
@@ -34,6 +48,7 @@ const PracticeBar = ({
 
 interface Props {
   accentDisplayName: string;
+  accentName: string;
   soundDisplayName: string;
   isVisible: boolean;
   dispatch: (any: any) => void;
@@ -41,7 +56,7 @@ interface Props {
 
 const mapStateToProps = (state: ReduxState) => ({
   isVisible: state.global.isInPracticeMode,
-  // accentSlug: state.global.practiceAccent,
+  accentName: state.global.practiceAccent,
   accentDisplayName: state.global.accentDisplayName,
   // soundSymbol: state.global.practiceSound,
   soundDisplayName: state.global.soundDisplayName,

@@ -1,9 +1,9 @@
 const initialState: GlobalStateSection = {
-  isInPracticeMode: true,
-  practiceAccent: 'general-american',
-  accentDisplayName: 'General American',
-  practiceSound: 'TH',
-  soundDisplayName: 'Think, Teeth',
+  isInPracticeMode: false,
+  practiceAccent: null,
+  accentDisplayName: null,
+  practiceSound: null,
+  soundDisplayName: null,
 };
 
 export interface GlobalStateSection {
@@ -26,6 +26,13 @@ const globalReducer = (
         practiceAccent: action.payload.accent,
         practiceSound: action.payload.sound || null,
         accentDisplayName: action.payload.accentDisplayName,
+        soundDisplayName: action.payload.soundDisplayName || null,
+      };
+    case CHANGE_SOUND:
+      return {
+        ...state,
+        isInPracticeMode: true,
+        practiceSound: action.payload.sound,
         soundDisplayName: action.payload.soundDisplayName,
       };
     case END_PRACTICE_MODE:
@@ -42,12 +49,21 @@ const globalReducer = (
 
 export const BEGIN_PRACTICE_MODE = 'BEGIN_PRACTICE_MODE';
 export const beginPracticeMode = (payload: {
-  action: string;
-  sound: string;
+  accent: string;
   accentDisplayName: string;
-  soundDisplayName: string;
+  sound?: string;
+  soundDisplayName?: string;
 }): Action => ({
   type: BEGIN_PRACTICE_MODE,
+  payload,
+});
+
+const CHANGE_SOUND = 'CHANGE_SOUND';
+export const changeSound = (payload: {
+  sound: string;
+  soundDisplayName: string;
+}) => ({
+  type: CHANGE_SOUND,
   payload,
 });
 

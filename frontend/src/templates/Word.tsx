@@ -73,10 +73,6 @@ const Word = (props: Props) => {
                   rowObject.availableAccents,
                 )}
                 pills={[
-                  ...(props.practiceAccent &&
-                  rowObject.availableAccents.includes(props.practiceAccent)
-                    ? [<Pill>Target Accent</Pill>]
-                    : []),
                   ...(props.practiceSound &&
                   rowObject.translation
                     .filter((val) => val)
