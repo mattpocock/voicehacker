@@ -1,17 +1,15 @@
 import { graphql } from 'gatsby';
 import React from 'react';
 import { connect } from 'react-redux';
+import CellHeading from '../components/CellHeading';
 import Description from '../components/Description';
 import FloatingWhiteBox from '../components/FloatingWhiteBox';
+import FullWidthButton from '../components/FullWidthButton';
 import Header from '../components/Header';
 import Padding from '../components/Padding';
+import RecordingTable from '../components/RecordingTable';
 import SubHeadingWithDivider from '../components/SubHeadingWithDivider';
 import { ReduxState } from '../utils/redux/redux';
-import Subheader from '../components/Subheader';
-import RecordingTable from '../components/RecordingTable';
-import CellHeading from '../components/CellHeading';
-import Button from '../components/Button';
-import FullWidthButton from '../components/FullWidthButton';
 
 const SoundOfAccentPage = ({
   data,
