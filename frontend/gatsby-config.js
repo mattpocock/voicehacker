@@ -10,6 +10,7 @@ module.exports = {
     'AccentsYaml.sounds': 'SoundsYaml.symbol',
   },
   plugins: [
+    'gatsby-plugin-layout',
     'gatsby-plugin-react-svg',
     'gatsby-plugin-typescript',
     'gatsby-plugin-styled-components',

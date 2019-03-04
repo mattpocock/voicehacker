@@ -20,45 +20,43 @@ const SoundPage = ({
   practiceSound,
 }: Props) => {
   return (
-    <AppWrapper>
-      <FloatingWhiteBox>
-        <Header style={{ fontSize: '2rem' }}>
-          {data.sound.words
-            .map((word) => word.word.toUpperCase())
-            .slice(0, 3)
-            .join(', ')}
-        </Header>
-        <Padding padding="0.5rem" />
-        <Description>{data.sound.name}</Description>
-        <Padding />
-        <SubHeadingWithDivider>Practice Words</SubHeadingWithDivider>
-        <Padding />
-        <Table
-          data={data.sound.words.filter(
-            (word) => word.availableAccents.length > 0,
-          )}
-          schema={{
-            renderCell: (word: Word) => (
-              <CellWithSubtitle
-                title={word.word}
-                subtitle={createAvailableAccentSubtitle(word.availableAccents)}
-                pills={
-                  practiceSound &&
-                  word.translation
-                    .filter((val) => val)
-                    .find(
-                      (translation) => translation.symbol === practiceSound,
-                    ) && [<Pill>Target Sound</Pill>]
-                }
-              />
-            ),
-            onClick: (word: Word) => {
-              navigate(`/words/${word.word}`);
-            },
-          }}
-        />
-      </FloatingWhiteBox>
-    </AppWrapper>
+    <FloatingWhiteBox>
+      <Header style={{ fontSize: '2rem' }}>
+        {data.sound.words
+          .map((word) => word.word.toUpperCase())
+          .slice(0, 3)
+          .join(', ')}
+      </Header>
+      <Padding padding="0.5rem" />
+      <Description>{data.sound.name}</Description>
+      <Padding />
+      <SubHeadingWithDivider>Practice Words</SubHeadingWithDivider>
+      <Padding />
+      <Table
+        data={data.sound.words.filter(
+          (word) => word.availableAccents.length > 0,
+        )}
+        schema={{
+          renderCell: (word: Word) => (
+            <CellWithSubtitle
+              title={word.word}
+              subtitle={createAvailableAccentSubtitle(word.availableAccents)}
+              pills={
+                practiceSound &&
+                word.translation
+                  .filter((val) => val)
+                  .find(
+                    (translation) => translation.symbol === practiceSound,
+                  ) && [<Pill>Target Sound</Pill>]
+              }
+            />
+          ),
+          onClick: (word: Word) => {
+            navigate(`/words/${word.word}`);
+          },
+        }}
+      />
+    </FloatingWhiteBox>
   );
 };
 

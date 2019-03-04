@@ -21,34 +21,32 @@ const Accent = (props: Props) => {
     );
   });
   return (
-    <AppWrapper>
-      <FloatingWhiteBox>
-        <Header>{props.data.accent.displayName}</Header>
-        <Padding />
-        <SubHeadingWithDivider>Top Sounds</SubHeadingWithDivider>
-        <Padding />
-        <Table
-          data={props.data.accent.sounds.filter((val) => val)}
-          schema={{
-            renderCell: (sound: Sound) => (
-              <CellWithSubtitle
-                title={sound.name}
-                subtitle={createWordsTitle(sound.words)}
-              />
-            ),
-            onClick: (sound: Sound) => {
-              props.dispatch(
-                changeSound({
-                  sound: sound.symbol,
-                  soundDisplayName: sound.name,
-                }),
-              );
-              props.navigate(`/sounds/${sound.symbol}`);
-            },
-          }}
-        />
-      </FloatingWhiteBox>
-    </AppWrapper>
+    <FloatingWhiteBox>
+      <Header>{props.data.accent.displayName}</Header>
+      <Padding />
+      <SubHeadingWithDivider>Top Sounds</SubHeadingWithDivider>
+      <Padding />
+      <Table
+        data={props.data.accent.sounds.filter((val) => val)}
+        schema={{
+          renderCell: (sound: Sound) => (
+            <CellWithSubtitle
+              title={sound.name}
+              subtitle={createWordsTitle(sound.words)}
+            />
+          ),
+          onClick: (sound: Sound) => {
+            props.dispatch(
+              changeSound({
+                sound: sound.symbol,
+                soundDisplayName: sound.name,
+              }),
+            );
+            props.navigate(`/sounds/${sound.symbol}`);
+          },
+        }}
+      />
+    </FloatingWhiteBox>
   );
 };
 

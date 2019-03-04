@@ -15,7 +15,7 @@ import AppWrapper from '../layouts/AppWrapper';
 const SearchPage = (props: Props) => {
   const [value, onChange] = useState('');
   return (
-    <AppWrapper>
+    <>
       <Header white>Search</Header>
       <Padding />
       <FloatingWhiteBox>
@@ -55,7 +55,7 @@ const SearchPage = (props: Props) => {
           }}
         />
       </FloatingWhiteBox>
-    </AppWrapper>
+    </>
   );
 };
 
