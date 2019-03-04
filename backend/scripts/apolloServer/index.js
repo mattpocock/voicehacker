@@ -3,7 +3,7 @@ const fs = require('fs');
 const path = require('path');
 const jsyaml = require('js-yaml');
 const env = require('../../env.json');
-const composeDatabase = require('../database/composeDatabase');
+const compileDatabase = require('../database/compileDatabase');
 
 const databaseDir = path.resolve(__dirname, '../../../assets/database');
 const audioDir = path.resolve(__dirname, '../../../assets/audio');
@@ -85,7 +85,7 @@ const resolvers = {
       try {
         const { stream } = await args.file;
         await writeToFileSystem(stream, args.accent, args.word);
-        composeDatabase();
+        compileDatabase();
         return true;
       } catch (e) {
         throw new Error(e);

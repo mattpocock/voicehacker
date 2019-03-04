@@ -8,12 +8,24 @@ translation:
   - IY
 availableAccents:
   - general-american
+  - irish
+  - rp
+  - liverpool
+  - cockney
 recordings:
   - accent: general-american
     src: general-american/already.webm
+  - accent: irish
+    src: irish/already.webm
+  - accent: rp
+    src: rp/already.webm
+  - accent: liverpool
+    src: liverpool/already.webm
+  - accent: cockney
+    src: cockney/already.webm
 relatedWords:
-  - during
   - believe
+  - treasure
   - carry
-  - almost
   - ahead
+  - during

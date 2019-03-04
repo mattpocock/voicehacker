@@ -6,12 +6,24 @@ translation:
   - V
 availableAccents:
   - general-american
+  - irish
+  - rp
+  - liverpool
+  - cockney
 recordings:
   - accent: general-american
     src: general-american/above.webm
+  - accent: irish
+    src: irish/above.webm
+  - accent: rp
+    src: rp/above.webm
+  - accent: liverpool
+    src: liverpool/above.webm
+  - accent: cockney
+    src: cockney/above.webm
 relatedWords:
   - admit
+  - once
   - believe
-  - admit
+  - one
   - afraid
-  - again

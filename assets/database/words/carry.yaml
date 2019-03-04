@@ -6,12 +6,24 @@ translation:
   - IY
 availableAccents:
   - general-american
+  - irish
+  - rp
+  - liverpool
+  - cockney
 recordings:
   - accent: general-american
     src: general-american/carry.webm
+  - accent: irish
+    src: irish/carry.webm
+  - accent: rp
+    src: rp/carry.webm
+  - accent: liverpool
+    src: liverpool/carry.webm
+  - accent: cockney
+    src: cockney/carry.webm
 relatedWords:
   - attack
   - already
   - back
-  - anything
-  - blink
+  - than
+  - think

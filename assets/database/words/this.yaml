@@ -3,12 +3,20 @@ translation:
   - DH
   - IH
   - S
-availableAccents: []
-recordings: []
+availableAccents:
+  - general-american
+  - irish
+  - rp
+recordings:
+  - accent: general-american
+    src: general-american/this.webm
+  - accent: irish
+    src: irish/this.webm
+  - accent: rp
+    src: rp/this.webm
 relatedWords:
-  - anything
-  - blink
   - than
+  - once
+  - busy
   - think
-  - behind
-  - almost
+  - believe

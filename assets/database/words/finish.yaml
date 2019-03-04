@@ -5,12 +5,17 @@ translation:
   - 'N'
   - IH
   - SH
-availableAccents: []
-recordings: []
+availableAccents:
+  - general-american
+  - irish
+recordings:
+  - accent: general-american
+    src: general-american/finish.webm
+  - accent: irish
+    src: irish/finish.webm
 relatedWords:
+  - anything
   - behind
   - evening
-  - anything
-  - blink
-  - think
   - admit
+  - believe

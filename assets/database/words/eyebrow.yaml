@@ -8,6 +8,8 @@ availableAccents:
   - general-american
   - irish
   - rp
+  - liverpool
+  - cockney
 recordings:
   - accent: general-american
     src: general-american/eyebrow.webm
@@ -15,9 +17,13 @@ recordings:
     src: irish/eyebrow.webm
   - accent: rp
     src: rp/eyebrow.webm
+  - accent: liverpool
+    src: liverpool/eyebrow.webm
+  - accent: cockney
+    src: cockney/eyebrow.webm
 relatedWords:
+  - by
   - behind
+  - treasure
+  - busy
   - carry
-  - believe
-  - during
-  - above

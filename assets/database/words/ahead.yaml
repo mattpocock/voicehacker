@@ -8,6 +8,8 @@ availableAccents:
   - general-american
   - irish
   - rp
+  - liverpool
+  - cockney
 recordings:
   - accent: general-american
     src: general-american/ahead.webm
@@ -15,9 +17,13 @@ recordings:
     src: irish/ahead.webm
   - accent: rp
     src: rp/ahead.webm
+  - accent: liverpool
+    src: liverpool/ahead.webm
+  - accent: cockney
+    src: cockney/ahead.webm
 relatedWords:
+  - again
   - already
   - admit
-  - afraid
   - behind
-  - admit
+  - against

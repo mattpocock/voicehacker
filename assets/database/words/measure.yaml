@@ -4,12 +4,17 @@ translation:
   - EH
   - ZH
   - ER
-availableAccents: []
-recordings: []
+availableAccents:
+  - general-american
+  - irish
+recordings:
+  - accent: general-american
+    src: general-american/measure.webm
+  - accent: irish
+    src: irish/measure.webm
 relatedWords:
-  - after
-  - admit
-  - again
-  - already
-  - admit
-  - ahead
+  - treasure
+  - forget
+  - empty
+  - anything
+  - against

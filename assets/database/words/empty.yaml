@@ -5,12 +5,20 @@ translation:
   - P
   - T
   - IY
-availableAccents: []
-recordings: []
+availableAccents:
+  - general-american
+  - irish
+  - rp
+recordings:
+  - accent: general-american
+    src: general-american/empty.webm
+  - accent: irish
+    src: irish/empty.webm
+  - accent: rp
+    src: rp/empty.webm
 relatedWords:
-  - admit
+  - forget
   - anything
-  - already
-  - almost
+  - treasure
   - admit
-  - after
+  - already

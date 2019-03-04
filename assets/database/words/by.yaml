@@ -2,12 +2,17 @@ word: by
 translation:
   - B
   - AY
-availableAccents: []
-recordings: []
+availableAccents:
+  - general-american
+  - irish
+recordings:
+  - accent: general-american
+    src: general-american/by.webm
+  - accent: irish
+    src: irish/by.webm
 relatedWords:
   - behind
   - eyebrow
   - believe
+  - busy
   - above
-  - back
-  - blink

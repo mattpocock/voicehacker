@@ -6,12 +6,24 @@ translation:
   - ER
 availableAccents:
   - general-american
+  - irish
+  - rp
+  - liverpool
+  - cockney
 recordings:
   - accent: general-american
     src: general-american/after.webm
+  - accent: irish
+    src: irish/after.webm
+  - accent: rp
+    src: rp/after.webm
+  - accent: liverpool
+    src: liverpool/after.webm
+  - accent: cockney
+    src: cockney/after.webm
 relatedWords:
+  - forget
   - attack
-  - back
-  - as
-  - carry
-  - than
+  - treasure
+  - against
+  - empty

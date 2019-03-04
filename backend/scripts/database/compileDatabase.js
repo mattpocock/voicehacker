@@ -80,7 +80,7 @@ module.exports = () => {
     .map(({ word, availableAccents }) => ({
       accentRequired: accents.find(
         ({ name }) => !availableAccents.includes(name),
-      ),
+      ).name,
       word,
     }));
 

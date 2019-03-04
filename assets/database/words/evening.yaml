@@ -9,6 +9,8 @@ availableAccents:
   - general-american
   - irish
   - rp
+  - liverpool
+  - cockney
 recordings:
   - accent: general-american
     src: general-american/evening.webm
@@ -16,9 +18,13 @@ recordings:
     src: irish/evening.webm
   - accent: rp
     src: rp/evening.webm
+  - accent: liverpool
+    src: liverpool/evening.webm
+  - accent: cockney
+    src: cockney/evening.webm
 relatedWords:
   - anything
   - believe
-  - blink
   - during
+  - busy
   - behind

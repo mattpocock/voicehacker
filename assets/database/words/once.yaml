@@ -4,12 +4,26 @@ translation:
   - AH
   - 'N'
   - S
-availableAccents: []
-recordings: []
+availableAccents:
+  - general-american
+  - irish
+  - rp
+  - liverpool
+  - cockney
+recordings:
+  - accent: general-american
+    src: general-american/once.webm
+  - accent: irish
+    src: irish/once.webm
+  - accent: rp
+    src: rp/once.webm
+  - accent: liverpool
+    src: liverpool/once.webm
+  - accent: cockney
+    src: cockney/once.webm
 relatedWords:
+  - one
+  - against
   - again
-  - admit
   - than
-  - anything
-  - above
-  - behind
+  - almost

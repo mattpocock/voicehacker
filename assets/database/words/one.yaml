@@ -3,12 +3,26 @@ translation:
   - W
   - AH
   - 'N'
-availableAccents: []
-recordings: []
+availableAccents:
+  - general-american
+  - irish
+  - rp
+  - liverpool
+  - cockney
+recordings:
+  - accent: general-american
+    src: general-american/one.webm
+  - accent: irish
+    src: irish/one.webm
+  - accent: rp
+    src: rp/one.webm
+  - accent: liverpool
+    src: liverpool/one.webm
+  - accent: cockney
+    src: cockney/one.webm
 relatedWords:
+  - once
   - again
+  - against
   - than
-  - anything
-  - above
-  - behind
   - evening

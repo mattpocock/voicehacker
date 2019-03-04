@@ -1,134 +1,140 @@
 import * as React from 'react';
-import { graphql } from 'gatsby';
-import {
-  Input,
-  Button,
-  FormControl,
-  InputLabel,
-  Grid,
-  Typography,
-} from '@material-ui/core';
-import { Formik } from 'formik';
+import { ReactMic } from 'react-mic';
+import client from '../utils/client';
+import gql from 'graphql-tag';
+import { CircularProgress, Button } from '@material-ui/core';
 
 export default class extends React.PureComponent<Props, State> {
   state: State = {
-    word: '',
+    recording: false,
+    wordIndex: 0,
+    isLoading: false,
+    words: [],
   };
+
+  handleBlob = async ({ blob }: { blob: Blob }) => {
+    const { wordIndex, words } = this.state;
+
+    const file = new File([blob], `${words[wordIndex].word}.webm`);
+
+    client.mutate({
+      mutation: gql`
+        mutation SubmitFile($word: String!, $accent: String!, $file: Upload!) {
+          submitWord(word: $word, accent: $accent, file: $file)
+        }
+      `,
+      variables: {
+        file,
+        word: words[wordIndex].word,
+        accent: words[wordIndex].accentRequired,
+      },
+    });
+
+    this.incrementWordIndex();
+  };
+
+  incrementWordIndex = () => {
+    const { wordIndex, words } = this.state;
+    if (wordIndex === words.length - 1) {
+      this.setState({ words: [], wordIndex: 0 });
+      this.getWords();
+    } else {
+      this.setState({ wordIndex: wordIndex + 1 });
+    }
+  };
+
+  listenForSpace = (e: KeyboardEvent) => {
+    if (e.keyCode === 32) {
+      this.toggleRecording();
+    }
+  };
+
+  toggleRecording = () => {
+    if (!this.state.recording) {
+      setTimeout(() => {
+        this.setState({ recording: true });
+      }, 200);
+    } else {
+      setTimeout(() => {
+        this.setState({ recording: false });
+      }, 400);
+    }
+  };
+
+  componentDidMount() {
+    window.addEventListener('keydown', this.listenForSpace);
+    this.getWords();
+  }
+
+  getWords = () => {
+    this.setState({ isLoading: true, words: [] });
+    client
+      .query({
+        query: gql`
+          query Words($limit: Int!) {
+            getMultiAccentWordsToRecord(limit: $limit) {
+              accentRequired
+              word
+            }
+          }
+        `,
+        variables: {
+          limit: 10,
+        },
+        fetchPolicy: 'no-cache',
+      })
+      .then((result: { data: { getMultiAccentWordsToRecord?: [Word] } }) => {
+        this.setState({
+          isLoading: false,
+          words: result.data.getMultiAccentWordsToRecord,
+        });
+      });
+  };
+
+  componentWillUnmount() {
+    window.removeEventListener('keydown', this.listenForSpace);
+  }
+
   render() {
-    const { data } = this.props;
+    const { recording, wordIndex, words, isLoading } = this.state;
     return (
       <>
-        <Formik
-          initialValues={{ word: '' }}
-          onSubmit={(values) => this.setState({ word: values.word })}
-        >
-          {({ handleChange, values, handleSubmit }) => (
-            <>
-              <Grid container justify="center" alignItems="center" spacing={8}>
-                <Grid item>
-                  <FormControl>
-                    <InputLabel>Search Term</InputLabel>
-                    <Input
-                      name="word"
-                      value={values.word}
-                      onChange={handleChange}
-                    />
-                  </FormControl>
-                </Grid>
-                <Grid item>
-                  <Button onClick={() => handleSubmit()}>Search</Button>
-                </Grid>
-              </Grid>
-            </>
-          )}
-        </Formik>
-        <h2>RP</h2>
-        <Grid container spacing={16} justify="center">
-          {data.rp.edges
-            .filter(({ node }) => node.word.includes(this.state.word))
-            .map(AudioSample)}
-        </Grid>
-        <h2>American</h2>
-        <Grid container spacing={16} justify="center">
-          {data.american &&
-            data.american.edges
-              .filter(({ node }) => node.word.includes(this.state.word))
-              .map(AudioSample)}
-        </Grid>
-        <h2>Irish</h2>
-        <Grid container spacing={16} justify="center">
-          {data.irish &&
-            data.irish.edges
-              .filter(({ node }) => node.word.includes(this.state.word))
-              .map(AudioSample)}
-        </Grid>
+        {isLoading ? (
+          <CircularProgress />
+        ) : (
+          <>
+            <ReactMic
+              record={recording && !isLoading}
+              onStop={this.handleBlob}
+            />
+            <h1>
+              {words &&
+                words[wordIndex] &&
+                `${words[wordIndex].word.toUpperCase()} - ${words[
+                  wordIndex
+                ].accentRequired.toLocaleUpperCase()}`}
+            </h1>
+            <Button onClick={this.toggleRecording}>
+              {recording ? 'Stop' : 'Start'}
+            </Button>
+            <Button onClick={this.incrementWordIndex}>Skip</Button>
+          </>
+        )}
       </>
     );
   }
 }
 
-const AudioSample = ({ node: { word, id, src } }: AccentProp) => (
-  <Grid item key={id}>
-    <Typography align="center" component="h2">
-      {word}
-    </Typography>
-    <audio src={src} controls />
-  </Grid>
-);
+interface Props {}
 
-// interface State {
-//   word: string;
-// }
+interface State {
+  recording: boolean;
+  wordIndex: number;
+  isLoading: boolean;
+  words: [Word?];
+}
 
-// interface Props {
-//   data: {
-//     american: AccentProps;
-//     rp: AccentProps;
-//     irish: AccentProps;
-//   };
-// }
-
-// interface AccentProps {
-//   edges: [AccentProp];
-// }
-
-// interface AccentProp {
-//   node: {
-//     word: string;
-//     src: string;
-//     id: string;
-//   };
-// }
-
-// export const GET_ALL_AUDIO = graphql`
-//   fragment SoundData on File {
-//     id
-//     word: name
-//     src: publicURL
-//   }
-//   {
-//     rp: allFile(filter: { sourceInstanceName: { eq: "rp" } }) {
-//       edges {
-//         node {
-//           ...SoundData
-//         }
-//       }
-//     }
-//     american: allFile(
-//       filter: { sourceInstanceName: { eq: "general-american" } }
-//     ) {
-//       edges {
-//         node {
-//           ...SoundData
-//         }
-//       }
-//     }
-//     irish: allFile(filter: { sourceInstanceName: { eq: "irish" } }) {
-//       edges {
-//         node {
-//           ...SoundData
-//         }
-//       }
-//     }
-//   }
-// `;
+interface Word {
+  accentRequired: string;
+  word: string;
+}

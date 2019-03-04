@@ -6,12 +6,23 @@ translation:
   - 'N'
   - S
   - T
-availableAccents: []
-recordings: []
+availableAccents:
+  - general-american
+  - irish
+  - rp
+  - liverpool
+recordings:
+  - accent: general-american
+    src: general-american/against.webm
+  - accent: irish
+    src: irish/against.webm
+  - accent: rp
+    src: rp/against.webm
+  - accent: liverpool
+    src: liverpool/against.webm
 relatedWords:
   - again
-  - almost
+  - forget
+  - once
   - admit
-  - attack
-  - admit
-  - ahead
+  - one

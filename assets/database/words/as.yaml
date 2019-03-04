@@ -6,6 +6,8 @@ availableAccents:
   - general-american
   - irish
   - rp
+  - liverpool
+  - cockney
 recordings:
   - accent: general-american
     src: general-american/as.webm
@@ -13,9 +15,13 @@ recordings:
     src: irish/as.webm
   - accent: rp
     src: rp/as.webm
+  - accent: liverpool
+    src: liverpool/as.webm
+  - accent: cockney
+    src: cockney/as.webm
 relatedWords:
-  - carry
   - attack
-  - than
+  - carry
+  - busy
   - after
   - back

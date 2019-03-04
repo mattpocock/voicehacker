@@ -8,12 +8,24 @@ translation:
   - T
 availableAccents:
   - general-american
+  - irish
+  - rp
+  - liverpool
+  - cockney
 recordings:
   - accent: general-american
     src: general-american/almost.webm
+  - accent: irish
+    src: irish/almost.webm
+  - accent: rp
+    src: rp/almost.webm
+  - accent: liverpool
+    src: liverpool/almost.webm
+  - accent: cockney
+    src: cockney/almost.webm
 relatedWords:
+  - empty
   - admit
   - admit
+  - against
   - already
-  - believe
-  - after

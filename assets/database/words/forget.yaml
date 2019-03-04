@@ -5,12 +5,17 @@ translation:
   - G
   - EH
   - T
-availableAccents: []
-recordings: []
+availableAccents:
+  - general-american
+  - irish
+recordings:
+  - accent: general-american
+    src: general-american/forget.webm
+  - accent: irish
+    src: irish/forget.webm
 relatedWords:
+  - treasure
   - after
+  - against
   - again
-  - already
-  - almost
-  - admit
-  - attack
+  - measure

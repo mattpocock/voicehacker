@@ -7,12 +7,24 @@ translation:
   - D
 availableAccents:
   - general-american
+  - irish
+  - rp
+  - liverpool
+  - cockney
 recordings:
   - accent: general-american
     src: general-american/afraid.webm
+  - accent: irish
+    src: irish/afraid.webm
+  - accent: rp
+    src: rp/afraid.webm
+  - accent: liverpool
+    src: liverpool/afraid.webm
+  - accent: cockney
+    src: cockney/afraid.webm
 relatedWords:
   - admit
   - already
-  - admit
-  - ahead
   - during
+  - ahead
+  - admit

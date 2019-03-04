@@ -6,12 +6,24 @@ translation:
   - 'N'
 availableAccents:
   - general-american
+  - irish
+  - rp
+  - liverpool
+  - cockney
 recordings:
   - accent: general-american
     src: general-american/again.webm
+  - accent: irish
+    src: irish/again.webm
+  - accent: rp
+    src: rp/again.webm
+  - accent: liverpool
+    src: liverpool/again.webm
+  - accent: cockney
+    src: cockney/again.webm
 relatedWords:
-  - ahead
+  - against
+  - one
   - anything
-  - admit
-  - than
-  - above
+  - ahead
+  - forget
