@@ -35,10 +35,7 @@ const PracticeBar = ({
         </div>
         <Button
           onClick={() => {
-            if (window.location.href.includes(accentName)) {
-              navigate(`/`);
-              dispatch(endPracticeMode());
-            } else if (
+            if (
               soundSymbol &&
               window.location.href.includes(`/${soundSymbol}`)
             ) {
@@ -49,8 +46,11 @@ const PracticeBar = ({
                   accentDisplayName: accentDisplayName,
                 }),
               );
+            } else if (window.location.href.includes(accentName)) {
+              navigate(`/`);
+              dispatch(endPracticeMode());
             } else if (soundSymbol) {
-              navigate(`/sounds/${soundSymbol}`);
+              navigate(`/accents/${accentName}/${soundSymbol}`);
             }
           }}
         >

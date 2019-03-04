@@ -11,8 +11,19 @@ import SearchInput from '../components/SearchInput';
 import SubHeadingWithDivider from '../components/SubHeadingWithDivider';
 import Table from '../components/Table';
 import AppWrapper from '../layouts/AppWrapper';
+import { connect } from 'react-redux';
+import { ReduxState } from '../utils/redux/redux';
+import CellWithSubtitle from '../components/CellWithSubtitle';
+import createAvailableAccentSubtitle from '../utils/createAvailableAccentSubtitle';
+import FullWidthButton from '../components/FullWidthButton';
+import Pill from '../components/Pill';
 
-const SearchPage = (props: Props) => {
+const SearchPage = ({
+  data,
+  navigate,
+  practiceAccent,
+  practiceSound,
+}: Props) => {
   const [value, onChange] = useState('');
   return (
     <>
@@ -28,7 +39,7 @@ const SearchPage = (props: Props) => {
         <SubHeadingWithDivider>Results</SubHeadingWithDivider>
         <Padding />
         <Table
-          data={props.data.words.edges
+          data={data.words.edges
             .filter(({ node }) =>
               new RegExp(value.toLowerCase()).test(node.word),
             )
@@ -36,24 +47,24 @@ const SearchPage = (props: Props) => {
             .map((edge) => ({ ...edge, id: edge.node.id }))}
           schema={{
             renderCell: ({ node }) => (
-              <Flex alignItems="center" gutter="1rem" style={{ width: '100%' }}>
-                <div style={{ flexGrow: 1 }}>
-                  <CellHeading style={{ marginBottom: '0.25rem' }}>
-                    {node.word}
-                  </CellHeading>
-                  <CellHeadingSubtitle>
-                    Available in {node.availableAccents.length} accent
-                    {node.availableAccents.length > 1 ? 's' : ''}
-                  </CellHeadingSubtitle>
-                </div>
-                <div>
-                  <NextIcon />
-                </div>
-              </Flex>
+              <CellWithSubtitle
+                title={node.word}
+                subtitle={createAvailableAccentSubtitle(node.availableAccents)}
+                pills={
+                  practiceAccent &&
+                  node.availableAccents.includes(practiceAccent) && [
+                    <Pill>Target Accent</Pill>,
+                  ]
+                }
+              />
             ),
-            onClick: ({ node }) => props.navigate(`/words/${node.word}`),
+            onClick: ({ node }) => navigate(`/words/${node.word}`),
           }}
         />
+        <Padding />
+        <FullWidthButton secondary onClick={() => navigate(`/`)}>
+          Back To Dashboard
+        </FullWidthButton>
       </FloatingWhiteBox>
     </>
   );
@@ -61,6 +72,8 @@ const SearchPage = (props: Props) => {
 
 interface Props {
   navigate: (url: string) => void;
+  practiceAccent: string;
+  practiceSound: string;
   data: {
     words: {
       edges: {
@@ -90,4 +103,9 @@ export const SEARCH_QUERY = graphql`
   }
 `;
 
-export default SearchPage;
+const mapStateToProps = (state: ReduxState) => ({
+  practiceAccent: state.global.practiceAccent,
+  practiceSound: state.global.practiceSound,
+});
+
+export default connect(mapStateToProps)(SearchPage);

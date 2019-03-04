@@ -3,15 +3,17 @@ import * as React from 'react';
 import CellWithSubtitle from '../components/CellWithSubtitle';
 import Description from '../components/Description';
 import FloatingWhiteBox from '../components/FloatingWhiteBox';
+import FullWidthButton from '../components/FullWidthButton';
 import Header from '../components/Header';
 import Padding from '../components/Padding';
 import SearchInput from '../components/SearchInput';
 import SubHeadingWithDivider from '../components/SubHeadingWithDivider';
 import Table from '../components/Table';
-import Button from '../components/Button';
+import useScrollToTopOnMount from '../hooks/useScrollToTopOnMount';
 
 export default ({ data: { accents }, navigate }: Props) => {
   const [searchValue, changeSearchValue] = React.useState('');
+  useScrollToTopOnMount();
   return (
     <>
       <Header white>Dashboard</Header>
@@ -45,12 +47,9 @@ export default ({ data: { accents }, navigate }: Props) => {
         <Padding />
         <SubHeadingWithDivider>Dictionary</SubHeadingWithDivider>
         <Padding />
-        <Button
-          style={{ width: '100%', padding: '0.8rem' }}
-          onClick={() => navigate(`/search`)}
-        >
+        <FullWidthButton secondary onClick={() => navigate(`/search`)}>
           Go To Dictionary
-        </Button>
+        </FullWidthButton>
       </FloatingWhiteBox>
     </>
   );

@@ -1,10 +1,11 @@
 import styled from 'styled-components';
 import theme from '../config/theme';
 
-const Button = styled.button`
+const Button = styled.button<{ secondary?: boolean }>`
   border: none;
   color: white;
-  background-color: ${theme.secondColorMidDark};
+  background-color: ${(props) =>
+    props.secondary ? theme.midLightGrey : theme.secondColorMidDark};
   padding: 0.2rem 1rem;
   font-weight: 800;
   text-transform: uppercase;

@@ -42,7 +42,9 @@ const Accent = (props: Props) => {
                 soundDisplayName: sound.name,
               }),
             );
-            props.navigate(`/sounds/${sound.symbol}`);
+            props.navigate(
+              `/accents/${props.data.accent.name}/${sound.symbol}`,
+            );
           },
         }}
       />

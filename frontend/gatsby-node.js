@@ -7,6 +7,9 @@ exports.createPages = ({ graphql, actions }) => {
     const wordTemplate = path.resolve('src/templates/Word.tsx');
     const accentTemplate = path.resolve('src/templates/Accent.tsx');
     const soundTemplate = path.resolve('src/templates/Sound.tsx');
+    const soundOfAccentTemplate = path.resolve(
+      'src/templates/SoundOfAccent.tsx',
+    );
     await graphql(
       `
         {
@@ -44,6 +47,10 @@ exports.createPages = ({ graphql, actions }) => {
             accent: node {
               id
               name
+              sounds {
+                id
+                symbol
+              }
             }
           }
         }
@@ -59,6 +66,17 @@ exports.createPages = ({ graphql, actions }) => {
           context: {
             accentId: accent.id,
           },
+        });
+        accent.sounds.forEach((sound) => {
+          if (!sound) return;
+          createPage({
+            path: `accents/${accent.name}/${sound.symbol}`,
+            component: soundOfAccentTemplate,
+            context: {
+              accentId: accent.id,
+              soundId: sound.id,
+            },
+          });
         });
       });
     });

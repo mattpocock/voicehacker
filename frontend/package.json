@@ -24,6 +24,7 @@
     "react-pose": "^4.0.7",
     "react-redux": "^6.0.1",
     "redux": "^4.0.1",
+    "redux-persist": "^5.10.0",
     "sanitize.css": "^8.0.0",
     "styled-components": "^3"
   },

@@ -9,7 +9,6 @@ import Padding from '../components/Padding';
 import Pill from '../components/Pill';
 import SubHeadingWithDivider from '../components/SubHeadingWithDivider';
 import Table from '../components/Table';
-import AppWrapper from '../layouts/AppWrapper';
 import createAvailableAccentSubtitle from '../utils/createAvailableAccentSubtitle';
 import { ReduxState } from '../utils/redux/redux';
 

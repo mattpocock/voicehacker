@@ -1,4 +1,4 @@
-import { graphql } from 'gatsby';
+import { graphql, navigate } from 'gatsby';
 import React from 'react';
 import { connect } from 'react-redux';
 import CellHeading from '../components/CellHeading';
@@ -14,6 +14,7 @@ import useScrollToTopOnMount from '../hooks/useScrollToTopOnMount';
 import createAvailableAccentSubtitle from '../utils/createAvailableAccentSubtitle';
 import createWordsTitle from '../utils/createWordsTitle';
 import { ReduxState } from '../utils/redux/redux';
+import FullWidthButton from '../components/FullWidthButton';
 
 const Word = (props: Props) => {
   useScrollToTopOnMount();
@@ -69,14 +70,14 @@ const Word = (props: Props) => {
               subtitle={createAvailableAccentSubtitle(
                 rowObject.availableAccents,
               )}
-              pills={[
-                ...(props.practiceSound &&
+              pills={
+                props.practiceSound &&
                 rowObject.translation
                   .filter((val) => val)
-                  .find(({ symbol }) => symbol === props.practiceSound)
-                  ? [<Pill>Target Sound</Pill>]
-                  : []),
-              ]}
+                  .find(({ symbol }) => symbol === props.practiceSound) && [
+                  <Pill>Target Sound</Pill>,
+                ]
+              }
             />
           ),
         }}
@@ -104,6 +105,10 @@ const Word = (props: Props) => {
           },
         }}
       />
+      <Padding />
+      <FullWidthButton secondary onClick={() => navigate(`/search`)}>
+        Back To Search
+      </FullWidthButton>
     </FloatingWhiteBox>
   );
 };
