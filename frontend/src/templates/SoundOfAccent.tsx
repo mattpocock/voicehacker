@@ -41,10 +41,6 @@ const SoundOfAccentPage = ({
           renderCell: (word: Word) => <CellHeading>{word.word}</CellHeading>,
         }}
       />
-      <Padding />
-      <FullWidthButton secondary onClick={() => navigate(`/search`)}>
-        Go To Dictionary
-      </FullWidthButton>
     </FloatingWhiteBox>
   );
 };

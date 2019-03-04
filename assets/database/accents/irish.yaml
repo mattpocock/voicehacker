@@ -1,7 +1,15 @@
 name: irish
 displayName: Irish
 sounds:
-  - R
+  - AE
+  - L
+  - AH
+  - DH
+  - TH
+  - EY
+  - OW
+  - OY
+  - AY
 wordsToRecord:
   - this
   - accept

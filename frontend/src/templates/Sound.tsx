@@ -12,22 +12,17 @@ import Table from '../components/Table';
 import createAvailableAccentSubtitle from '../utils/createAvailableAccentSubtitle';
 import { ReduxState } from '../utils/redux/redux';
 
-const SoundPage = ({
-  data,
-  navigate,
-  practiceAccent,
-  practiceSound,
-}: Props) => {
+const SoundPage = ({ data, navigate, practiceSound }: Props) => {
   return (
     <FloatingWhiteBox>
-      <Header style={{ fontSize: '2rem' }}>
+      <Header>{data.sound.name}</Header>
+      <Padding padding="0.5rem" />
+      <Description>
         {data.sound.words
           .map((word) => word.word.toUpperCase())
           .slice(0, 3)
           .join(', ')}
-      </Header>
-      <Padding padding="0.5rem" />
-      <Description>{data.sound.name}</Description>
+      </Description>
       <Padding />
       <SubHeadingWithDivider>Practice Words</SubHeadingWithDivider>
       <Padding />

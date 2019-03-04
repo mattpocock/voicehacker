@@ -90,8 +90,8 @@ const Word = (props: Props) => {
         schema={{
           renderCell: (translation: Translation) => (
             <CellWithSubtitle
-              title={createWordsTitle(translation.words)}
-              subtitle={translation.name}
+              title={translation.name}
+              subtitle={createWordsTitle(translation.words)}
               pills={
                 props.practiceSound &&
                 translation.symbol === props.practiceSound && [

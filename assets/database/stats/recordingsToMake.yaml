@@ -4,6 +4,8 @@
     sounds:
       - R
       - L
+      - EY
+      - OW
   word: during
 - accentRequired: *ref_0
   word: attack
@@ -27,7 +29,15 @@
     name: irish
     displayName: Irish
     sounds:
-      - R
+      - AE
+      - L
+      - AH
+      - DH
+      - TH
+      - EY
+      - OW
+      - OY
+      - AY
   word: admit
 - accentRequired: *ref_1
   word: carry
@@ -51,6 +61,7 @@
     sounds:
       - R
       - L
+      - AE
   word: one
 - accentRequired: *ref_2
   word: once

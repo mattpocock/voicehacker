@@ -3,10 +3,19 @@
   sounds:
     - "R"
     - "L"
+    - "AE"
 - name: irish
   displayName: "Irish"
   sounds:
-    - "R"
+    - "AE"
+    - "L"
+    - "AH"
+    - "DH"
+    - "TH"
+    - "EY"
+    - "OW"
+    - "OY"
+    - "AY"
 - name: rp
   displayName: "RP"
   sounds:
@@ -18,10 +27,12 @@
   sounds:
     - "R"
     - "L"
-
+    - "EY"
+    - "OW"
 - name: cockney
   displayName: "Cockney"
   sounds:
     - "TH"
     - "DH"
     - "L"
+    - "AY"
