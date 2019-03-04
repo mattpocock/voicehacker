@@ -8,6 +8,7 @@ import Padding from '../components/Padding';
 import SearchInput from '../components/SearchInput';
 import SubHeadingWithDivider from '../components/SubHeadingWithDivider';
 import Table from '../components/Table';
+import Button from '../components/Button';
 
 export default ({ data: { accents }, navigate }: Props) => {
   const [searchValue, changeSearchValue] = React.useState('');
@@ -20,6 +21,15 @@ export default ({ data: { accents }, navigate }: Props) => {
           Your accent learning dashboard. Pick an accent to start learning, or
           dive right in to the dictionary.
         </Description>
+        <Padding />
+        <SubHeadingWithDivider>Dictionary</SubHeadingWithDivider>
+        <Padding />
+        <Button
+          style={{ width: '100%', padding: '0.8rem' }}
+          onClick={() => navigate(`/search`)}
+        >
+          Go To Dictionary
+        </Button>
         <Padding />
         <SubHeadingWithDivider>Accents</SubHeadingWithDivider>
         <Padding />
