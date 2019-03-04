@@ -91,7 +91,12 @@ const Word = (props: Props) => {
             <CellWithSubtitle
               title={createWordsTitle(translation.words)}
               subtitle={translation.name}
-              // pills={}
+              pills={
+                props.practiceSound &&
+                translation.symbol === props.practiceSound && [
+                  <Pill>Target Sound</Pill>,
+                ]
+              }
             />
           ),
           onClick: (translation: Translation) => {

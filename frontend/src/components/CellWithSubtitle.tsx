@@ -29,7 +29,7 @@ const CellWithSubtitle = ({ title = '', subtitle = '', pills }: Props) => {
 
 interface Props {
   title: string;
-  subtitle: string;
+  subtitle?: string;
   pills?: any[];
 }
 

@@ -3,15 +3,20 @@ import React from 'react';
 import { connect } from 'react-redux';
 import styled from 'styled-components';
 import theme from '../config/theme';
-import { beginPracticeMode } from '../utils/redux/globalReducer';
+import {
+  beginPracticeMode,
+  endPracticeMode,
+} from '../utils/redux/globalReducer';
 import { ReduxState } from '../utils/redux/redux';
 import Flex from './Flex';
 import Pill from './Pill';
+import Button from './Button';
 
 const PracticeBar = ({
   accentDisplayName,
   accentName,
   soundDisplayName,
+  soundSymbol,
   isVisible,
   dispatch,
 }: Props) => {
@@ -28,19 +33,29 @@ const PracticeBar = ({
             Practice Mode
           </Pill>
         </div>
-        <button
+        <Button
           onClick={() => {
-            navigate(`/accents/${accentName}`);
-            dispatch(
-              beginPracticeMode({
-                accent: accentName,
-                accentDisplayName: accentDisplayName,
-              }),
-            );
+            if (window.location.href.includes(accentName)) {
+              navigate(`/`);
+              dispatch(endPracticeMode());
+            } else if (
+              soundSymbol &&
+              window.location.href.includes(`/${soundSymbol}`)
+            ) {
+              navigate(`/accents/${accentName}`);
+              dispatch(
+                beginPracticeMode({
+                  accent: accentName,
+                  accentDisplayName: accentDisplayName,
+                }),
+              );
+            } else if (soundSymbol) {
+              navigate(`/sounds/${soundSymbol}`);
+            }
           }}
         >
           Back
-        </button>
+        </Button>
       </Flex>
     </Bar>
   );
@@ -50,6 +65,7 @@ interface Props {
   accentDisplayName: string;
   accentName: string;
   soundDisplayName: string;
+  soundSymbol: string;
   isVisible: boolean;
   dispatch: (any: any) => void;
 }
@@ -58,7 +74,7 @@ const mapStateToProps = (state: ReduxState) => ({
   isVisible: state.global.isInPracticeMode,
   accentName: state.global.practiceAccent,
   accentDisplayName: state.global.accentDisplayName,
-  // soundSymbol: state.global.practiceSound,
+  soundSymbol: state.global.practiceSound,
   soundDisplayName: state.global.soundDisplayName,
 });
 

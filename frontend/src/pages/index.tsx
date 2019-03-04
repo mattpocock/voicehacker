@@ -1,63 +1,79 @@
 import { graphql } from 'gatsby';
 import * as React from 'react';
-import styled from 'styled-components';
+import CellWithSubtitle from '../components/CellWithSubtitle';
+import Description from '../components/Description';
 import FloatingWhiteBox from '../components/FloatingWhiteBox';
 import Header from '../components/Header';
 import Padding from '../components/Padding';
+import SearchInput from '../components/SearchInput';
+import SubHeadingWithDivider from '../components/SubHeadingWithDivider';
+import Table from '../components/Table';
 
-export default ({
-  data: {
-    allFile: { edges },
-  },
-}: Props) => (
-  <Wrapper>
-    <Header white>Hello</Header>
-    <Padding padding="1.5rem" />
-    <FloatingWhiteBox>
-      {edges.map(({ node: { src, word } }) => (
-        <>
-          <p>{word}</p>
-          <audio src={src} controls />
-        </>
-      ))}
-    </FloatingWhiteBox>
-  </Wrapper>
-);
+export default ({ data: { accents }, navigate }: Props) => {
+  const [searchValue, changeSearchValue] = React.useState('');
+  return (
+    <>
+      <Header white>Dashboard</Header>
+      <Padding />
+      <FloatingWhiteBox>
+        <Description>
+          Your accent learning dashboard. Pick an accent to start learning, or
+          dive right in to the dictionary.
+        </Description>
+        <Padding />
+        <SubHeadingWithDivider>Accents</SubHeadingWithDivider>
+        <Padding />
+        <SearchInput
+          placeholder="Search accents"
+          value={searchValue}
+          onChange={(e: any) => changeSearchValue(e.target.value)}
+        />
+        <Table
+          data={accents.edges
+            .map(({ node }) => node)
+            .filter((accent) => accent.name.includes(searchValue.toLowerCase()))
+            .slice(0, 5)}
+          schema={{
+            renderCell: (accent: Accent) => (
+              <CellWithSubtitle title={accent.displayName} />
+            ),
+            onClick: (accent: Accent) => navigate(`/accents/${accent.name}`),
+          }}
+        />
+      </FloatingWhiteBox>
+    </>
+  );
+};
 
 interface Props {
+  navigate: (string: string) => void;
   data: {
-    allFile: {
+    accents: {
       edges: [
         {
-          node: {
-            id: string;
-            word: string;
-            src: string;
-          };
+          node: Accent;
         }
       ];
     };
   };
 }
 
+interface Accent {
+  name: string;
+  displayName: string;
+  id: string;
+}
+
 export const SOUND_QUERY = graphql`
   {
-    allFile(
-      filter: { sourceInstanceName: { eq: "audio" }, name: { eq: "thank" } }
-    ) {
+    accents: allAccentsYaml {
       edges {
         node {
+          name
+          displayName
           id
-          word: name
-          src: publicURL
         }
       }
     }
   }
-`;
-
-const Wrapper = styled.div`
-  min-height: 100vh;
-  justify-content: center;
-  align-items: center;
 `;

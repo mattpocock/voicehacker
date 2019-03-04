@@ -1,14 +1,12 @@
 import * as React from 'react';
-import styled from 'styled-components';
-import theme from '../config/theme';
+import { connect } from 'react-redux';
 import 'sanitize.css';
-import { injectGlobal } from 'styled-components';
+import styled, { injectGlobal } from 'styled-components';
 // @ts-ignore
 import Backdrop from '../assets/images/backdrop.svg';
-import PracticeBar from '../components/PracticeBar';
-import { connect } from 'react-redux';
-import { ReduxState } from '../utils/redux/redux';
 import Padding from '../components/Padding';
+import PracticeBar from '../components/PracticeBar';
+import { ReduxState } from '../utils/redux/redux';
 
 injectGlobal`
   html {
@@ -16,14 +14,16 @@ injectGlobal`
   }
 `;
 
-const AppWrapper = ({ children, isInPracticeMode }: Props) => (
-  <Wrapper>
-    <BackgroundMainColorWash preserveAspectRatio="none" />
-    {children}
-    {isInPracticeMode && <Padding padding="5rem" />}
-    <PracticeBar />
-  </Wrapper>
-);
+const AppWrapper = ({ children, isInPracticeMode }: Props) => {
+  return (
+    <Wrapper>
+      <BackgroundMainColorWash preserveAspectRatio="none" />
+      {children}
+      {isInPracticeMode && <Padding padding="5rem" />}
+      <PracticeBar />
+    </Wrapper>
+  );
+};
 
 export default connect((state: ReduxState) => ({
   isInPracticeMode: state.global.isInPracticeMode,
