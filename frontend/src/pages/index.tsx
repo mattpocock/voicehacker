@@ -22,15 +22,6 @@ export default ({ data: { accents }, navigate }: Props) => {
           dive right in to the dictionary.
         </Description>
         <Padding />
-        <SubHeadingWithDivider>Dictionary</SubHeadingWithDivider>
-        <Padding />
-        <Button
-          style={{ width: '100%', padding: '0.8rem' }}
-          onClick={() => navigate(`/search`)}
-        >
-          Go To Dictionary
-        </Button>
-        <Padding />
         <SubHeadingWithDivider>Accents</SubHeadingWithDivider>
         <Padding />
         <SearchInput
@@ -38,6 +29,7 @@ export default ({ data: { accents }, navigate }: Props) => {
           value={searchValue}
           onChange={(e: any) => changeSearchValue(e.target.value)}
         />
+        <Padding />
         <Table
           data={accents.edges
             .map(({ node }) => node)
@@ -50,6 +42,15 @@ export default ({ data: { accents }, navigate }: Props) => {
             onClick: (accent: Accent) => navigate(`/accents/${accent.name}`),
           }}
         />
+        <Padding />
+        <SubHeadingWithDivider>Dictionary</SubHeadingWithDivider>
+        <Padding />
+        <Button
+          style={{ width: '100%', padding: '0.8rem' }}
+          onClick={() => navigate(`/search`)}
+        >
+          Go To Dictionary
+        </Button>
       </FloatingWhiteBox>
     </>
   );
