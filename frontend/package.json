@@ -11,6 +11,10 @@
   "dependencies": {
     "@material-ui/core": "^3.9.2",
     "@material-ui/icons": "^3.0.2",
+    "aws-amplify": "^1.1.22",
+    "aws-amplify-react": "^2.3.2",
+    "aws-sdk": "^2.422.0",
+    "formik": "^1.5.1",
     "gatsby": "^2.0.111",
     "gatsby-plugin-layout": "^1.0.12",
     "gatsby-plugin-react-svg": "^2.0.0",
