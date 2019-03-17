@@ -1,15 +1,14 @@
-import React, { useEffect } from 'react';
 import { graphql } from 'gatsby';
-import AppWrapper from '../layouts/AppWrapper';
+import React, { useEffect } from 'react';
+import { connect } from 'react-redux';
+import CellWithSubtitle from '../components/CellWithSubtitle';
 import FloatingWhiteBox from '../components/FloatingWhiteBox';
 import Header from '../components/Header';
 import Padding from '../components/Padding';
 import SubHeadingWithDivider from '../components/SubHeadingWithDivider';
 import Table from '../components/Table';
-import CellWithSubtitle from '../components/CellWithSubtitle';
-import { connect } from 'react-redux';
-import { beginPracticeMode, changeSound } from '../utils/redux/globalReducer';
 import createWordsTitle from '../utils/createWordsTitle';
+import { beginPracticeMode, changeSound } from '../utils/redux/globalReducer';
 
 const Accent = ({ dispatch, data, navigate }: Props) => {
   useEffect(() => {

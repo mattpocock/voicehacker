@@ -10,42 +10,38 @@ import Padding from '../components/Padding';
 import RecordingTable from '../components/RecordingTable';
 import SubHeadingWithDivider from '../components/SubHeadingWithDivider';
 import { ReduxState } from '../utils/redux/redux';
-import PageWrapper from '../components/PageWrapper';
 
 const SoundOfAccentPage = ({
   data,
   navigate,
   practiceAccent,
   practiceSound,
-  location,
 }: Props) => {
   return (
-    <PageWrapper key={location.key}>
-      <FloatingWhiteBox>
-        <Header style={{ fontSize: '2rem' }}>{data.sound.name}</Header>
-        <Padding padding="0.5rem" />
-        <Description>{data.accent.displayName}</Description>
-        <Padding />
-        <SubHeadingWithDivider>Practice Words</SubHeadingWithDivider>
-        <Padding />
-        <RecordingTable
-          data={data.sound.words
-            .filter(({ availableAccents }) =>
-              availableAccents.includes(data.accent.name),
-            )
-            .map((word) => ({
-              id: word.id,
-              word: word.word,
-              src: word.recordings.find(
-                (recording) => recording.accent.name === data.accent.name,
-              ).src,
-            }))}
-          schema={{
-            renderCell: (word: Word) => <CellHeading>{word.word}</CellHeading>,
-          }}
-        />
-      </FloatingWhiteBox>
-    </PageWrapper>
+    <FloatingWhiteBox>
+      <Header style={{ fontSize: '2rem' }}>{data.sound.name}</Header>
+      <Padding padding="0.5rem" />
+      <Description>{data.accent.displayName}</Description>
+      <Padding />
+      <SubHeadingWithDivider>Practice Words</SubHeadingWithDivider>
+      <Padding />
+      <RecordingTable
+        data={data.sound.words
+          .filter(({ availableAccents }) =>
+            availableAccents.includes(data.accent.name),
+          )
+          .map((word) => ({
+            id: word.id,
+            word: word.word,
+            src: word.recordings.find(
+              (recording) => recording.accent.name === data.accent.name,
+            ).src,
+          }))}
+        schema={{
+          renderCell: (word: Word) => <CellHeading>{word.word}</CellHeading>,
+        }}
+      />
+    </FloatingWhiteBox>
   );
 };
 
