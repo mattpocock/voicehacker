@@ -1,35 +1,27 @@
 import { graphql } from 'gatsby';
 import React, { useState } from 'react';
-import CellHeading from '../components/CellHeading';
-import CellHeadingSubtitle from '../components/CellHeadingSubtitle';
-import Flex from '../components/Flex';
+import { connect } from 'react-redux';
+import CellWithSubtitle from '../components/CellWithSubtitle';
+import Description from '../components/Description';
 import FloatingWhiteBox from '../components/FloatingWhiteBox';
 import Header from '../components/Header';
-import NextIcon from '../components/NextIcon';
 import Padding from '../components/Padding';
+import Pill from '../components/Pill';
 import SearchInput from '../components/SearchInput';
 import SubHeadingWithDivider from '../components/SubHeadingWithDivider';
 import Table from '../components/Table';
-import AppWrapper from '../layouts/AppWrapper';
-import { connect } from 'react-redux';
-import { ReduxState } from '../utils/redux/redux';
-import CellWithSubtitle from '../components/CellWithSubtitle';
 import createAvailableAccentSubtitle from '../utils/createAvailableAccentSubtitle';
-import FullWidthButton from '../components/FullWidthButton';
-import Pill from '../components/Pill';
+import { ReduxState } from '../utils/redux/redux';
 
-const SearchPage = ({
-  data,
-  navigate,
-  practiceAccent,
-  practiceSound,
-}: Props) => {
+const SearchPage = ({ data, navigate, practiceAccent }: Props) => {
   const [value, onChange] = useState('');
   return (
     <>
-      <Header white>Search</Header>
+      <Header white>Dictionary</Header>
       <Padding />
       <FloatingWhiteBox>
+        <Description>Explore our library of accents, word by word.</Description>
+        <Padding />
         <SearchInput
           value={value}
           onChange={(e: any) => onChange(e.target.value)}
@@ -61,10 +53,6 @@ const SearchPage = ({
             onClick: ({ node }) => navigate(`/words/${node.word}`),
           }}
         />
-        <Padding />
-        <FullWidthButton secondary onClick={() => navigate(`/`)}>
-          Back To Dashboard
-        </FullWidthButton>
       </FloatingWhiteBox>
     </>
   );

@@ -18,7 +18,6 @@ const PracticeBar = ({
   soundDisplayName,
   soundSymbol,
   isVisible,
-  dispatch,
 }: Props) => {
   return (
     <Bar isVisible={isVisible}>
@@ -40,15 +39,8 @@ const PracticeBar = ({
               window.location.href.includes(`/${soundSymbol}`)
             ) {
               navigate(`/accents/${accentName}`);
-              dispatch(
-                beginPracticeMode({
-                  accent: accentName,
-                  accentDisplayName: accentDisplayName,
-                }),
-              );
             } else if (window.location.href.includes(accentName)) {
               navigate(`/`);
-              dispatch(endPracticeMode());
             } else if (soundSymbol) {
               navigate(`/accents/${accentName}/${soundSymbol}`);
             }

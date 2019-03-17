@@ -1,5 +1,5 @@
 import { graphql } from 'gatsby';
-import React, { useEffect } from 'react';
+import React from 'react';
 import { connect } from 'react-redux';
 import CellWithSubtitle from '../components/CellWithSubtitle';
 import FloatingWhiteBox from '../components/FloatingWhiteBox';
@@ -8,17 +8,8 @@ import Padding from '../components/Padding';
 import SubHeadingWithDivider from '../components/SubHeadingWithDivider';
 import Table from '../components/Table';
 import createWordsTitle from '../utils/createWordsTitle';
-import { beginPracticeMode, changeSound } from '../utils/redux/globalReducer';
 
-const Accent = ({ dispatch, data, navigate }: Props) => {
-  useEffect(() => {
-    dispatch(
-      beginPracticeMode({
-        accent: data.accent.name,
-        accentDisplayName: data.accent.displayName,
-      }),
-    );
-  });
+const Accent = ({ data, navigate }: Props) => {
   return (
     <>
       <FloatingWhiteBox>
@@ -36,12 +27,6 @@ const Accent = ({ dispatch, data, navigate }: Props) => {
               />
             ),
             onClick: (sound: Sound) => {
-              dispatch(
-                changeSound({
-                  sound: sound.symbol,
-                  soundDisplayName: sound.name,
-                }),
-              );
               navigate(`/accents/${data.accent.name}/${sound.symbol}`);
             },
           }}

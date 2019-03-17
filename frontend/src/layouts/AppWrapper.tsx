@@ -8,6 +8,7 @@ import Backdrop from '../assets/images/backdrop.svg';
 import Padding from '../components/Padding';
 import PracticeBar from '../components/PracticeBar';
 import { ReduxState } from '../utils/redux/redux';
+import BottomNav from '../components/BottomNav';
 
 const timeout = 350;
 
@@ -38,7 +39,7 @@ const transitionStyles: { [index: string]: {} } = {
   },
 };
 
-const AppWrapper = ({ children, isInPracticeMode, location }: Props) => {
+const AppWrapper = ({ children, location }: Props) => {
   return (
     <Wrapper>
       <BackgroundMainColorWash preserveAspectRatio="none" />
@@ -56,8 +57,8 @@ const AppWrapper = ({ children, isInPracticeMode, location }: Props) => {
           )}
         </Transition>
       </TransitionGroup>
-      {isInPracticeMode && <Padding padding="5rem" />}
-      <PracticeBar />
+      <Padding padding="3.5rem" />
+      <BottomNav />
     </Wrapper>
   );
 };
