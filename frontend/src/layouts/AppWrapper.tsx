@@ -1,24 +1,61 @@
 import * as React from 'react';
 import { connect } from 'react-redux';
+import { Transition, TransitionGroup } from 'react-transition-group';
 import 'sanitize.css';
-import styled, { injectGlobal } from 'styled-components';
+import styled from 'styled-components';
 // @ts-ignore
 import Backdrop from '../assets/images/backdrop.svg';
 import Padding from '../components/Padding';
 import PracticeBar from '../components/PracticeBar';
 import { ReduxState } from '../utils/redux/redux';
 
-injectGlobal`
-  html {
-    scroll-behavior: smooth;
-  }
-`;
+const timeout = 350;
 
-const AppWrapper = ({ children, isInPracticeMode }: Props) => {
+const transitionStyles: { [index: string]: {} } = {
+  entering: {
+    position: 'absolute',
+    pointerEvents: 'none',
+    transform: 'translate(100vw, 0px)',
+    opacity: 0,
+  },
+  entered: {
+    transform: 'translate(0px, 0px)',
+  },
+  exiting: {
+    pointerEvents: 'none',
+
+    width: 'calc(100% - 2rem)',
+    position: 'absolute',
+    opacity: 0,
+    transform: 'translate(-100vw, 0px)',
+  },
+  exited: {
+    position: 'absolute',
+    width: 'calc(100% - 2rem)',
+    transform: 'translate(-100vw, 0px)',
+    opacity: 0,
+    display: 'none',
+  },
+};
+
+const AppWrapper = ({ children, isInPracticeMode, location }: Props) => {
   return (
     <Wrapper>
       <BackgroundMainColorWash preserveAspectRatio="none" />
-      {children}
+      <TransitionGroup>
+        <Transition key={location.key} timeout={200}>
+          {(state) => (
+            <div
+              style={{
+                transition: `all ${timeout}ms ease-in-out`,
+                ...transitionStyles[state],
+              }}
+            >
+              {children}
+            </div>
+          )}
+        </Transition>
+      </TransitionGroup>
       {isInPracticeMode && <Padding padding="5rem" />}
       <PracticeBar />
     </Wrapper>
@@ -32,12 +69,16 @@ export default connect((state: ReduxState) => ({
 interface Props {
   children: any;
   isInPracticeMode: boolean;
+  location: {
+    key: string;
+  };
 }
 
 const Wrapper = styled.div`
   min-height: 100vh;
   position: relative;
   padding: 1.2rem;
+  overflow: hidden;
 `;
 
 const BackgroundMainColorWash = styled(Backdrop)`

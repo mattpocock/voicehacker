@@ -1,22 +1,18 @@
-import React, { useEffect } from 'react';
-import AppWrapper from './AppWrapper';
+import React from 'react';
 import { Provider } from 'react-redux';
-import createStore from '../utils/redux/createStore';
 import { PersistGate } from 'redux-persist/integration/react';
-import Amplify from 'aws-amplify';
 import useAuthentication from '../hooks/useAuthentication';
+import createStore from '../utils/redux/createStore';
+import AppWrapper from './AppWrapper';
 
 const { store, persistor } = createStore();
 
-const Layout = ({ children }: Props) => {
+const Layout = ({ children, location }: Props) => {
   const auth = useAuthentication();
-  useEffect(() => {
-    auth.submitSignIn('mattpocock', 'dadisabigoldpoo');
-  }, []);
   return (
     <Provider store={store}>
       <PersistGate persistor={persistor} loading={null}>
-        <AppWrapper>{children}</AppWrapper>
+        <AppWrapper location={location}>{children}</AppWrapper>
       </PersistGate>
     </Provider>
   );
@@ -24,6 +20,7 @@ const Layout = ({ children }: Props) => {
 
 interface Props {
   children: any;
+  location: any;
 }
 
 export default Layout;

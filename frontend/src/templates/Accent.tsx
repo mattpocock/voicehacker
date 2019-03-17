@@ -11,44 +11,44 @@ import { connect } from 'react-redux';
 import { beginPracticeMode, changeSound } from '../utils/redux/globalReducer';
 import createWordsTitle from '../utils/createWordsTitle';
 
-const Accent = (props: Props) => {
+const Accent = ({ dispatch, data, navigate }: Props) => {
   useEffect(() => {
-    props.dispatch(
+    dispatch(
       beginPracticeMode({
-        accent: props.data.accent.name,
-        accentDisplayName: props.data.accent.displayName,
+        accent: data.accent.name,
+        accentDisplayName: data.accent.displayName,
       }),
     );
   });
   return (
-    <FloatingWhiteBox>
-      <Header>{props.data.accent.displayName}</Header>
-      <Padding />
-      <SubHeadingWithDivider>Top Sounds</SubHeadingWithDivider>
-      <Padding />
-      <Table
-        data={props.data.accent.sounds.filter((val) => val)}
-        schema={{
-          renderCell: (sound: Sound) => (
-            <CellWithSubtitle
-              title={sound.name}
-              subtitle={createWordsTitle(sound.words)}
-            />
-          ),
-          onClick: (sound: Sound) => {
-            props.dispatch(
-              changeSound({
-                sound: sound.symbol,
-                soundDisplayName: sound.name,
-              }),
-            );
-            props.navigate(
-              `/accents/${props.data.accent.name}/${sound.symbol}`,
-            );
-          },
-        }}
-      />
-    </FloatingWhiteBox>
+    <>
+      <FloatingWhiteBox>
+        <Header>{data.accent.displayName}</Header>
+        <Padding />
+        <SubHeadingWithDivider>Top Sounds</SubHeadingWithDivider>
+        <Padding />
+        <Table
+          data={data.accent.sounds.filter((val) => val)}
+          schema={{
+            renderCell: (sound: Sound) => (
+              <CellWithSubtitle
+                title={sound.name}
+                subtitle={createWordsTitle(sound.words)}
+              />
+            ),
+            onClick: (sound: Sound) => {
+              dispatch(
+                changeSound({
+                  sound: sound.symbol,
+                  soundDisplayName: sound.name,
+                }),
+              );
+              navigate(`/accents/${data.accent.name}/${sound.symbol}`);
+            },
+          }}
+        />
+      </FloatingWhiteBox>
+    </>
   );
 };
 

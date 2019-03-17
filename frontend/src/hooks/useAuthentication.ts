@@ -23,21 +23,9 @@ const useAuthentication = () => {
     });
   }, []);
 
-  const submitSignIn = async (
-    username: string,
-    password: string,
-  ): Promise<any> => {
-    try {
-      await Auth.signIn(username, password);
-    } catch (e) {
-      changeError(e);
-    }
-  };
-
   return {
     isLoggedIn,
     isCheckingLogIn,
-    submitSignIn,
     error,
   };
 };

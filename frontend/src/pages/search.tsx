@@ -17,16 +17,18 @@ import CellWithSubtitle from '../components/CellWithSubtitle';
 import createAvailableAccentSubtitle from '../utils/createAvailableAccentSubtitle';
 import FullWidthButton from '../components/FullWidthButton';
 import Pill from '../components/Pill';
+import PageWrapper from '../components/PageWrapper';
 
 const SearchPage = ({
   data,
   navigate,
   practiceAccent,
   practiceSound,
+  location,
 }: Props) => {
   const [value, onChange] = useState('');
   return (
-    <>
+    <PageWrapper key={location.key}>
       <Header white>Search</Header>
       <Padding />
       <FloatingWhiteBox>
@@ -66,7 +68,7 @@ const SearchPage = ({
           Back To Dashboard
         </FullWidthButton>
       </FloatingWhiteBox>
-    </>
+    </PageWrapper>
   );
 };
 

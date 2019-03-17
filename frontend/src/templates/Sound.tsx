@@ -11,46 +11,49 @@ import SubHeadingWithDivider from '../components/SubHeadingWithDivider';
 import Table from '../components/Table';
 import createAvailableAccentSubtitle from '../utils/createAvailableAccentSubtitle';
 import { ReduxState } from '../utils/redux/redux';
+import PageWrapper from '../components/PageWrapper';
 
-const SoundPage = ({ data, navigate, practiceSound }: Props) => {
+const SoundPage = ({ data, navigate, practiceSound, location }: Props) => {
   return (
-    <FloatingWhiteBox>
-      <Header>{data.sound.name}</Header>
-      <Padding padding="0.5rem" />
-      <Description>
-        {data.sound.words
-          .map((word) => word.word.toUpperCase())
-          .slice(0, 3)
-          .join(', ')}
-      </Description>
-      <Padding />
-      <SubHeadingWithDivider>Practice Words</SubHeadingWithDivider>
-      <Padding />
-      <Table
-        data={data.sound.words.filter(
-          (word) => word.availableAccents.length > 0,
-        )}
-        schema={{
-          renderCell: (word: Word) => (
-            <CellWithSubtitle
-              title={word.word}
-              subtitle={createAvailableAccentSubtitle(word.availableAccents)}
-              pills={
-                practiceSound &&
-                word.translation
-                  .filter((val) => val)
-                  .find(
-                    (translation) => translation.symbol === practiceSound,
-                  ) && [<Pill>Target Sound</Pill>]
-              }
-            />
-          ),
-          onClick: (word: Word) => {
-            navigate(`/words/${word.word}`);
-          },
-        }}
-      />
-    </FloatingWhiteBox>
+    <PageWrapper key={location.key}>
+      <FloatingWhiteBox>
+        <Header>{data.sound.name}</Header>
+        <Padding padding="0.5rem" />
+        <Description>
+          {data.sound.words
+            .map((word) => word.word.toUpperCase())
+            .slice(0, 3)
+            .join(', ')}
+        </Description>
+        <Padding />
+        <SubHeadingWithDivider>Practice Words</SubHeadingWithDivider>
+        <Padding />
+        <Table
+          data={data.sound.words.filter(
+            (word) => word.availableAccents.length > 0,
+          )}
+          schema={{
+            renderCell: (word: Word) => (
+              <CellWithSubtitle
+                title={word.word}
+                subtitle={createAvailableAccentSubtitle(word.availableAccents)}
+                pills={
+                  practiceSound &&
+                  word.translation
+                    .filter((val) => val)
+                    .find(
+                      (translation) => translation.symbol === practiceSound,
+                    ) && [<Pill>Target Sound</Pill>]
+                }
+              />
+            ),
+            onClick: (word: Word) => {
+              navigate(`/words/${word.word}`);
+            },
+          }}
+        />
+      </FloatingWhiteBox>
+    </PageWrapper>
   );
 };
 

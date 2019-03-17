@@ -15,101 +15,103 @@ import createAvailableAccentSubtitle from '../utils/createAvailableAccentSubtitl
 import createWordsTitle from '../utils/createWordsTitle';
 import { ReduxState } from '../utils/redux/redux';
 import FullWidthButton from '../components/FullWidthButton';
+import PageWrapper from '../components/PageWrapper';
 
-const Word = (props: Props) => {
+const Word = ({ data, practiceAccent, practiceSound, location }: Props) => {
   useScrollToTopOnMount();
+
   return (
-    <FloatingWhiteBox>
-      <Header>{props.data.wordInfo.name.toUpperCase()}</Header>
-      {props.practiceSound &&
-        props.data.wordInfo.translation
-          .filter((val) => val)
-          .find(
-            (translation) => translation.symbol === props.practiceSound,
-          ) && (
-          <>
-            <Padding padding="0.5rem" />
-            <Pill>Target Sound</Pill>
-          </>
-        )}
-      <Padding />
-      <SubHeadingWithDivider>Accents</SubHeadingWithDivider>
-      <Padding />
-      <RecordingTable
-        data={props.data.wordInfo.recordings.map((recording) => ({
-          ...recording,
-          id: recording.src.id,
-        }))}
-        schema={{
-          renderCell: ({ accent }: Recording) => {
-            return (
-              <div>
-                <CellHeading>{accent.displayName}</CellHeading>
-                {props.practiceAccent && accent.name === props.practiceAccent && (
-                  <>
-                    <Padding padding="0.5rem" />
-                    <Pill>Target Accent</Pill>
-                  </>
+    <PageWrapper key={location.key}>
+      <FloatingWhiteBox>
+        <Header>{data.wordInfo.name.toUpperCase()}</Header>
+        {practiceSound &&
+          data.wordInfo.translation
+            .filter((val) => val)
+            .find((translation) => translation.symbol === practiceSound) && (
+            <>
+              <Padding padding="0.5rem" />
+              <Pill>Target Sound</Pill>
+            </>
+          )}
+        <Padding />
+        <SubHeadingWithDivider>Accents</SubHeadingWithDivider>
+        <Padding />
+        <RecordingTable
+          data={data.wordInfo.recordings.map((recording) => ({
+            ...recording,
+            id: recording.src.id,
+          }))}
+          schema={{
+            renderCell: ({ accent }: Recording) => {
+              return (
+                <div>
+                  <CellHeading>{accent.displayName}</CellHeading>
+                  {practiceAccent && accent.name === practiceAccent && (
+                    <>
+                      <Padding padding="0.5rem" />
+                      <Pill>Target Accent</Pill>
+                    </>
+                  )}
+                </div>
+              );
+            },
+          }}
+        />
+        <Padding />
+        <SubHeadingWithDivider>Related Words</SubHeadingWithDivider>
+        <Padding />
+        <Table
+          data={props.data.wordInfo.relatedWords.slice(0, 3)}
+          schema={{
+            onClick: (rowObject: RelatedWord) =>
+              props.navigate(`/words/${rowObject.word}`),
+            renderCell: (rowObject: RelatedWord) => (
+              <CellWithSubtitle
+                title={rowObject.word}
+                subtitle={createAvailableAccentSubtitle(
+                  rowObject.availableAccents,
                 )}
-              </div>
-            );
-          },
-        }}
-      />
-      <Padding />
-      <SubHeadingWithDivider>Related Words</SubHeadingWithDivider>
-      <Padding />
-      <Table
-        data={props.data.wordInfo.relatedWords.slice(0, 3)}
-        schema={{
-          onClick: (rowObject: RelatedWord) =>
-            props.navigate(`/words/${rowObject.word}`),
-          renderCell: (rowObject: RelatedWord) => (
-            <CellWithSubtitle
-              title={rowObject.word}
-              subtitle={createAvailableAccentSubtitle(
-                rowObject.availableAccents,
-              )}
-              pills={
-                props.practiceSound &&
-                rowObject.translation
-                  .filter((val) => val)
-                  .find(({ symbol }) => symbol === props.practiceSound) && [
-                  <Pill>Target Sound</Pill>,
-                ]
-              }
-            />
-          ),
-        }}
-      />
-      <Padding />
-      <SubHeadingWithDivider>Sounds</SubHeadingWithDivider>
-      <Padding />
-      <Table
-        data={props.data.wordInfo.translation.filter((value) => value)}
-        schema={{
-          renderCell: (translation: Translation) => (
-            <CellWithSubtitle
-              title={translation.name}
-              subtitle={createWordsTitle(translation.words)}
-              pills={
-                props.practiceSound &&
-                translation.symbol === props.practiceSound && [
-                  <Pill>Target Sound</Pill>,
-                ]
-              }
-            />
-          ),
-          onClick: (translation: Translation) => {
-            props.navigate(`/sounds/${translation.symbol}`);
-          },
-        }}
-      />
-      <Padding />
-      <FullWidthButton secondary onClick={() => navigate(`/search`)}>
-        Back To Search
-      </FullWidthButton>
-    </FloatingWhiteBox>
+                pills={
+                  props.practiceSound &&
+                  rowObject.translation
+                    .filter((val) => val)
+                    .find(({ symbol }) => symbol === props.practiceSound) && [
+                    <Pill>Target Sound</Pill>,
+                  ]
+                }
+              />
+            ),
+          }}
+        />
+        <Padding />
+        <SubHeadingWithDivider>Sounds</SubHeadingWithDivider>
+        <Padding />
+        <Table
+          data={props.data.wordInfo.translation.filter((value) => value)}
+          schema={{
+            renderCell: (translation: Translation) => (
+              <CellWithSubtitle
+                title={translation.name}
+                subtitle={createWordsTitle(translation.words)}
+                pills={
+                  props.practiceSound &&
+                  translation.symbol === props.practiceSound && [
+                    <Pill>Target Sound</Pill>,
+                  ]
+                }
+              />
+            ),
+            onClick: (translation: Translation) => {
+              props.navigate(`/sounds/${translation.symbol}`);
+            },
+          }}
+        />
+        <Padding />
+        <FullWidthButton secondary onClick={() => navigate(`/search`)}>
+          Back To Search
+        </FullWidthButton>
+      </FloatingWhiteBox>
+    </PageWrapper>
   );
 };
 
