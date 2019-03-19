@@ -5,10 +5,10 @@ import 'sanitize.css';
 import styled from 'styled-components';
 // @ts-ignore
 import Backdrop from '../assets/images/backdrop.svg';
-import Padding from '../components/Padding';
-import PracticeBar from '../components/PracticeBar';
-import { ReduxState } from '../utils/redux/redux';
 import BottomNav from '../components/BottomNav';
+import Padding from '../components/Padding';
+import TopHeader from '../components/TopHeader';
+import { ReduxState } from '../utils/redux/redux';
 
 const timeout = 350;
 
@@ -43,6 +43,7 @@ const AppWrapper = ({ children, location }: Props) => {
   return (
     <Wrapper>
       <BackgroundMainColorWash preserveAspectRatio="none" />
+      <TopHeader />
       <TransitionGroup>
         <Transition key={location.key} timeout={200}>
           {(state) => (

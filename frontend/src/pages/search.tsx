@@ -17,9 +17,9 @@ const SearchPage = ({ data, navigate, practiceAccent }: Props) => {
   const [value, onChange] = useState('');
   return (
     <>
-      <Header white>Dictionary</Header>
-      <Padding />
       <FloatingWhiteBox>
+        <Header>Dictionary</Header>
+        <Padding />
         <Description>Explore our library of accents, word by word.</Description>
         <Padding />
         <SearchInput

@@ -13,9 +13,9 @@ export default ({ data: { accents }, navigate }: Props) => {
   const [searchValue, changeSearchValue] = React.useState('');
   return (
     <>
-      <Header white>Accents</Header>
-      <Padding />
       <FloatingWhiteBox>
+        <Header>Accents</Header>
+        <Padding />
         <Description>
           Your accent learning dashboard. Pick an accent to start learning.
         </Description>

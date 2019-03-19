@@ -1,10 +1,9 @@
+import NextArrow from '@material-ui/icons/NavigateNext';
+import { Link } from 'gatsby';
 import React from 'react';
 import styled from 'styled-components';
-import Flex from './Flex';
-import { Link } from 'gatsby';
-import NextArrow from '@material-ui/icons/NavigateNext';
 import theme from '../config/theme';
-import Pill from './Pill';
+import Flex from './Flex';
 import GreyPill from './GreyPill';
 
 const Breadcrumbs = ({ links = [] }: Props) => {
