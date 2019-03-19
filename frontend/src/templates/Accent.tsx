@@ -8,11 +8,18 @@ import Padding from '../components/Padding';
 import SubHeadingWithDivider from '../components/SubHeadingWithDivider';
 import Table from '../components/Table';
 import createWordsTitle from '../utils/createWordsTitle';
+import Breadcrumbs from '../components/Breadcrumbs';
 
 const Accent = ({ data, navigate }: Props) => {
   return (
     <>
       <FloatingWhiteBox>
+        <Breadcrumbs
+          links={[
+            { label: 'Accents', to: '/' },
+            // { readOnly: true, label: data.accent.displayName },
+          ]}
+        />
         <Header>{data.accent.displayName}</Header>
         <Padding />
         <SubHeadingWithDivider>Top Sounds</SubHeadingWithDivider>

@@ -1,10 +1,10 @@
 import { graphql } from 'gatsby';
 import React from 'react';
 import { connect } from 'react-redux';
+import Breadcrumbs from '../components/Breadcrumbs';
 import CellHeading from '../components/CellHeading';
 import Description from '../components/Description';
 import FloatingWhiteBox from '../components/FloatingWhiteBox';
-import FullWidthButton from '../components/FullWidthButton';
 import Header from '../components/Header';
 import Padding from '../components/Padding';
 import RecordingTable from '../components/RecordingTable';
@@ -19,6 +19,18 @@ const SoundOfAccentPage = ({
 }: Props) => {
   return (
     <FloatingWhiteBox>
+      <Breadcrumbs
+        links={[
+          {
+            to: `/`,
+            label: 'Accents',
+          },
+          {
+            to: `/accents/${data.accent.name}`,
+            label: data.accent.displayName,
+          },
+        ]}
+      />
       <Header style={{ fontSize: '2rem' }}>{data.sound.name}</Header>
       <Padding padding="0.5rem" />
       <Description>{data.accent.displayName}</Description>
