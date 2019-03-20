@@ -57,7 +57,7 @@ const LinkWrapper = styled.div`
     box-shadow: none;
     padding: 0.8rem;
     color: ${theme.midGrey};
-    font-weight: 100;
+    font-weight: 300;
     font-size: 0.8rem;
     text-decoration: none;
     text-align: center;
