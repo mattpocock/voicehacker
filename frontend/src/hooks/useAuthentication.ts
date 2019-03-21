@@ -10,24 +10,38 @@ Amplify.configure({
   },
 });
 
-const useAuthentication = () => {
+const useAuthentication: UseAuthentication = ({ afterLogOut } = {}) => {
   const [isLoggedIn, changeIsLoggedIn] = useState(false);
   const [isCheckingLogIn, changeIsCheckingLogIn] = useState(false);
   const [error, changeError] = useState(null);
 
-  useEffect(() => {
-    changeIsCheckingLogIn(true);
-    checkIfUserIsLoggedIn().then((res) => {
-      changeIsLoggedIn(res);
-      changeIsCheckingLogIn(res);
-    });
-  }, []);
+  const makeLoginCheck = () => changeIsCheckingLogIn(true);
+  checkIfUserIsLoggedIn().then((res) => {
+    changeIsLoggedIn(res);
+    changeIsCheckingLogIn(res);
+  });
+
+  useEffect(makeLoginCheck, []);
 
   return {
     isLoggedIn,
     isCheckingLogIn,
-    error,
+    submitLogOut: () =>
+      Auth.signOut().then(() => {
+        if (afterLogOut) {
+          makeLoginCheck();
+          afterLogOut();
+        }
+      }),
   };
+};
+
+type UseAuthentication = (params?: {
+  afterLogOut?: () => void;
+}) => {
+  isLoggedIn: boolean;
+  isCheckingLogIn: boolean;
+  submitLogOut: () => void;
 };
 
 const checkIfUserIsLoggedIn = async (): Promise<boolean> => {

@@ -5,6 +5,7 @@ import styled from 'styled-components';
 import theme from '../config/theme';
 import { buttonStyles } from './Button';
 import { inputStyles } from './Input';
+import { navigate } from 'gatsby';
 
 const authenticatorTheme = {
   signInButton: {
@@ -16,11 +17,21 @@ const authenticatorTheme = {
   },
 };
 
-const Authenticator = () => (
-  <AuthenticatorWrapper>
-    <AuthenticatorComponent theme={authenticatorTheme} />
-  </AuthenticatorWrapper>
-);
+const Authenticator = () => {
+  const handleStateChange = (state: string) => {
+    if (state === 'signedIn') {
+      navigate(`/`);
+    }
+  };
+  return (
+    <AuthenticatorWrapper>
+      <AuthenticatorComponent
+        theme={authenticatorTheme}
+        onStateChange={handleStateChange}
+      />
+    </AuthenticatorWrapper>
+  );
+};
 
 export default Authenticator;
 
