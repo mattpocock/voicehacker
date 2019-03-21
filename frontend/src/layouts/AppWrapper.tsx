@@ -39,11 +39,11 @@ const transitionStyles: { [index: string]: {} } = {
   },
 };
 
-const AppWrapper = ({ children, location }: Props) => {
+const AppWrapper = ({ children, location, navigate }: Props) => {
   return (
     <Wrapper>
       <BackgroundMainColorWash preserveAspectRatio="none" />
-      <TopHeader />
+      <TopHeader navigate={navigate} />
       <TransitionGroup>
         <Transition key={location.key} timeout={200}>
           {(state) => (
@@ -74,6 +74,7 @@ interface Props {
   location: {
     key: string;
   };
+  navigate: (string: string) => void;
 }
 
 const Wrapper = styled.div`

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useContext, useEffect } from 'react';
 import { Transition, TransitionGroup } from 'react-transition-group';
 import styled from 'styled-components';
 import GreyButton from './GreyButton';
@@ -6,8 +6,10 @@ import Flex from './Flex';
 import theme from '../config/theme';
 import Padding from './Padding';
 import FullWidthButton from './FullWidthButton';
-import useAuthentication from '../hooks/useAuthentication';
-import { navigate } from 'gatsby';
+import AuthContext from './AuthWrapper/context';
+import useWatchForTruthy from '../hooks/useWatchForTruthy';
+import Description from './Description';
+import Header from './Header';
 
 const transitionStyles: { [index: string]: {} } = {
   entering: {
@@ -47,13 +49,13 @@ const blankTransitionStyles: { [index: string]: {} } = {
   },
 };
 
-const Menu = ({ closeMenu, isVisible }: Props) => {
-  const { isLoggedIn, submitLogOut } = useAuthentication({
-    afterLogOut: () => {
-      navigate(`/`);
-      closeMenu();
-    },
+const Menu = ({ closeMenu, isVisible, navigate }: Props) => {
+  const { isLoggedIn, submitLogOut } = useContext(AuthContext);
+  useWatchForTruthy(isLoggedIn === false, () => {
+    navigate(`/`);
+    closeMenu();
   });
+
   return (
     <>
       <TransitionGroup>
@@ -64,14 +66,33 @@ const Menu = ({ closeMenu, isVisible }: Props) => {
                 <Wrapper
                   style={{ transition: `all 0.2s`, ...transitionStyles[state] }}
                 >
-                  <Flex justifyContent="flex-end">
+                  <Flex justifyContent="space-between" alignItems="center">
+                    <Header>Menu</Header>
                     <GreyButton onClick={closeMenu}>Close</GreyButton>
                   </Flex>
                   <Padding />
+                  <FullWidthButtonGrey
+                    onClick={() => {
+                      navigate(`/`);
+                      closeMenu();
+                    }}
+                  >
+                    Accents
+                  </FullWidthButtonGrey>
+                  <Padding padding="1rem" />
+                  <FullWidthButtonGrey
+                    onClick={() => {
+                      navigate(`/search`);
+                      closeMenu();
+                    }}
+                  >
+                    Dictionary
+                  </FullWidthButtonGrey>
+                  <Padding padding="1rem" />
                   {isLoggedIn ? (
-                    <FullWidthButton onClick={submitLogOut}>
+                    <FullWidthButtonGrey onClick={submitLogOut}>
                       Log Out
-                    </FullWidthButton>
+                    </FullWidthButtonGrey>
                   ) : (
                     <>
                       <FullWidthButton
@@ -80,21 +101,13 @@ const Menu = ({ closeMenu, isVisible }: Props) => {
                           closeMenu();
                         }}
                       >
-                        Sign Up
-                      </FullWidthButton>
-                      <Padding />
-                      <FullWidthButton
-                        onClick={() => {
-                          navigate(`/login`);
-                          closeMenu();
-                        }}
-                      >
-                        Sign In
+                        Sign Up / Sign In
                       </FullWidthButton>
                     </>
                   )}
                 </Wrapper>
                 <WholePageBlanked
+                  onClick={closeMenu}
                   style={{
                     transition: `all 0.2s`,
                     ...blankTransitionStyles[state],
@@ -112,6 +125,7 @@ const Menu = ({ closeMenu, isVisible }: Props) => {
 interface Props {
   closeMenu: () => void;
   isVisible: boolean;
+  navigate: (string: string) => void;
 }
 
 const Wrapper = styled.div`
@@ -122,6 +136,10 @@ const Wrapper = styled.div`
   padding: 1.5rem;
   z-index: 20;
   background-color: ${theme.white};
+`;
+
+const FullWidthButtonGrey = styled(FullWidthButton)`
+  background-color: ${theme.midLightGrey};
 `;
 
 const WholePageBlanked = styled.div`

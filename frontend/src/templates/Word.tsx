@@ -4,21 +4,18 @@ import { connect } from 'react-redux';
 import CellHeading from '../components/CellHeading';
 import CellWithSubtitle from '../components/CellWithSubtitle';
 import FloatingWhiteBox from '../components/FloatingWhiteBox';
+import FullWidthButton from '../components/FullWidthButton';
 import Header from '../components/Header';
 import Padding from '../components/Padding';
 import Pill from '../components/Pill';
 import RecordingTable from '../components/RecordingTable';
 import SubHeadingWithDivider from '../components/SubHeadingWithDivider';
 import Table from '../components/Table';
-import useScrollToTopOnMount from '../hooks/useScrollToTopOnMount';
 import createAvailableAccentSubtitle from '../utils/createAvailableAccentSubtitle';
 import createWordsTitle from '../utils/createWordsTitle';
 import { ReduxState } from '../utils/redux/redux';
-import FullWidthButton from '../components/FullWidthButton';
 
 const Word = ({ data, practiceAccent, practiceSound }: Props) => {
-  useScrollToTopOnMount();
-
   return (
     <FloatingWhiteBox>
       <Header>{data.wordInfo.name.toUpperCase()}</Header>

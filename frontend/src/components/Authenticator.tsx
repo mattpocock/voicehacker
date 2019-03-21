@@ -1,11 +1,15 @@
-// @ts-ignore
-import { Authenticator as AuthenticatorComponent } from 'aws-amplify-react';
-import React from 'react';
+import {
+  Authenticator as AuthenticatorComponent,
+  Greetings,
+  // @ts-ignore
+} from 'aws-amplify-react';
+import React, { useContext } from 'react';
 import styled from 'styled-components';
 import theme from '../config/theme';
 import { buttonStyles } from './Button';
 import { inputStyles } from './Input';
 import { navigate } from 'gatsby';
+import AuthContext from './AuthWrapper/context';
 
 const authenticatorTheme = {
   signInButton: {
@@ -18,16 +22,19 @@ const authenticatorTheme = {
 };
 
 const Authenticator = () => {
+  const auth = useContext(AuthContext);
   const handleStateChange = (state: string) => {
     if (state === 'signedIn') {
       navigate(`/`);
     }
+    auth.makeLoginCheck();
   };
   return (
     <AuthenticatorWrapper>
       <AuthenticatorComponent
         theme={authenticatorTheme}
         onStateChange={handleStateChange}
+        hide={[Greetings]}
       />
     </AuthenticatorWrapper>
   );

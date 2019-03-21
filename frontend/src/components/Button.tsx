@@ -1,5 +1,7 @@
+import React from 'react';
 import styled, { css } from 'styled-components';
 import theme from '../config/theme';
+import { CircularProgress } from '@material-ui/core';
 
 export const buttonStyles = css`
   border: none;
@@ -13,7 +15,25 @@ export const buttonStyles = css`
   margin: 0;
 `;
 
-const Button = styled.button<{ secondary?: boolean }>`
+const Button = ({ children, isLoading, ...props }: Props) => {
+  if (isLoading) {
+    return (
+      <StyledButton {...props}>
+        <CircularProgress style={{ color: 'white' }} size={20} />
+      </StyledButton>
+    );
+  }
+  return <StyledButton {...props}>{children}</StyledButton>;
+};
+
+interface Props {
+  children: any;
+  onClick?: any;
+  isLoading?: boolean;
+  secondary?: boolean;
+}
+
+const StyledButton = styled.button<{ secondary?: boolean }>`
 ${buttonStyles}
 background-color: ${(props) =>
   props.secondary ? theme.midLightGrey : theme.secondColorMidDark};

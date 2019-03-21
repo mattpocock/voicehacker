@@ -1,14 +1,13 @@
 import React, { useState } from 'react';
-import Header from './Header';
 import styled from 'styled-components';
-import Flex from './Flex';
-import Padding from './Padding';
-import GreyButton from './GreyButton';
-import Button from './Button';
 import theme from '../config/theme';
+import Button from './Button';
+import Flex from './Flex';
+import Header from './Header';
 import Menu from './Menu';
+import Padding from './Padding';
 
-const TopHeader = () => {
+const TopHeader = ({ navigate }: { navigate: (string: string) => void }) => {
   const [menuIsVisible, setMenuIsVisible] = useState(false);
   return (
     <>
@@ -20,6 +19,7 @@ const TopHeader = () => {
       </Flex>
       <Padding padding="1.2rem" />
       <Menu
+        navigate={navigate}
         closeMenu={() => setMenuIsVisible(false)}
         isVisible={menuIsVisible}
       />
